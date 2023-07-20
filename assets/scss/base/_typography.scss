@@ -1,0 +1,47 @@
+/*======TYPOGRAPHY======*/
+.description-text {
+  display: block;
+  width: 100%;
+  font-family: $Prompt;
+  @include fluid-type(320px, 1199px, 14px, 16px);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  &.small {
+    @include fluid-type(320px, 1199px, 12px, 14px);
+  }
+  &.big {
+    @include fluid-type(320px, 1199px, 18px, 20px); 
+  }
+  &.font-bold {
+    font-weight: 700;
+  }
+  &.font-black {
+    font-weight: 900;
+  }
+  &.black {
+    color: $black;
+  }
+  &.white {
+    color: $white;
+  }
+  &.grey-01 {
+    color: $grey01;
+  }
+  &.grey-02 {
+    color: $grey02;
+  }
+  &.color-01 {
+    color: $color01;
+  }
+  &.color-02 {
+    color: $color02;
+  }
+  &.uppercase {
+    text-transform: uppercase;
+  }
+  &.capitalize {
+    text-transform: capitalize;
+  }
+
+}
