@@ -101,6 +101,7 @@
               <i
                 class="fa-solid fa-xl"
                 :class="openMenu ? 'fa-xmark' : 'fa-bars'"
+                :style="openMenu ? ['color: #5e5e5e'] : ''"
               ></i>
               <p class="description-text uppercase grey-02 d-none d-md-block">
                 {{ openMenu ? "CLOSE" : "MENU" }}
@@ -185,27 +186,29 @@
             </li>
             <li>
               <div class="d-flex justify-content-end">
-              <div class="navbar-menu-social d-inline-flex align-items-center">
-                <a
-                  href=""
-                  class="d-flex align-items-center justify-content-center"
+                <div
+                  class="navbar-menu-social d-inline-flex align-items-center"
                 >
-                  <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a
-                  href=""
-                  class="d-flex align-items-center justify-content-center"
-                >
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a
-                  href=""
-                  class="d-flex align-items-center justify-content-center"
-                >
-                  <i class="fa-brands fa-youtube"></i>
-                </a>
+                  <a
+                    href=""
+                    class="d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
               </div>
-            </div>
             </li>
           </ul>
         </div>
