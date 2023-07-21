@@ -1,3 +1,3 @@
 <template>
-    wwwwwwwwwwwwwww
+This is a test
 </template>

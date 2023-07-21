@@ -1,7 +1,7 @@
 /*======GLOBAL======*/
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Prompt:wght@400;700;900&display=swap');
 :root {
-  --swiper-pagination-color: #00ffd8;
+  --swiper-pagination-color: #ff0000;
 }
 
 html,
@@ -11,45 +11,33 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: $Prompt;
+  font-family: $Millimetre-Regular;
   font-weight: normal;
   font-style: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
-  // @include transition2(all, 0.5s, ease-in-out);
   @include fluid-type(320px, 1680px, 12px, 16px);
+  font-size: 32px;
   overflow-x: hidden;
   color: $black;
   scroll-behavior: smooth;
-  scrollbar-color: $color02;
+  scrollbar-color: $black;
   scrollbar-width: thin;
-  &.no-overflow {
-    overflow: visible;
-    body {
-      position: fixed;
-      width: 100%;
-      left: 0;
-      right: 0;
-      overflow: visible scroll;
-    }
-  }
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
   &::-webkit-scrollbar {
-    width: 5px;
+    width: 0;
   }
-
   /* Track */
   &::-webkit-scrollbar-track {
     background: transparent;
   }
-
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    background: $color02;
-  }
-  &::-webkit-scrollbar-thumb:window-inactive {
-    background: $color02;
+    background: transparent;
   }
 }
 

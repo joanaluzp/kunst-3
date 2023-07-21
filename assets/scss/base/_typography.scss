@@ -2,7 +2,7 @@
 .description-text {
   display: block;
   width: 100%;
-  font-family: $Prompt;
+  font-family: $Millimetre-Regular;
   @include fluid-type(320px, 1199px, 14px, 16px);
   text-align: left;
   margin: 0;
@@ -35,7 +35,6 @@
     color: $color01;
   }
   &.color-02 {
-    color: $color02;
   }
   &.uppercase {
     text-transform: uppercase;

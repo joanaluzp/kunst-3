@@ -101,7 +101,7 @@
               <i
                 class="fa-solid fa-xl"
                 :class="openMenu ? 'fa-xmark' : 'fa-bars'"
-                :style="openMenu ? ['color: #5e5e5e'] : ''"
+                :style="openMenu ? ['color: #000000'] : ''"
               ></i>
               <p class="description-text uppercase grey-02 d-none d-md-block">
                 {{ openMenu ? "CLOSE" : "MENU" }}
@@ -113,41 +113,41 @@
           <ul class="menu-list-options d-flex flex-column">
             <li>
               <NuxtLink to="/" @click="openMenu = false"
-                ><p class="description-text color-01 uppercase big font-bold">
+                ><p class="description-text black uppercase big font-bold">
                   about us
                 </p></NuxtLink
               >
             </li>
             <li>
               <NuxtLink to="/" @click="openMenu = false"
-                ><p class="description-text color-01 uppercase big font-bold">
+                ><p class="description-text black uppercase big font-bold">
                   Information for media
                 </p></NuxtLink
               >
             </li>
             <li>
               <NuxtLink to="/" @click="openMenu = false"
-                ><p class="description-text color-01 uppercase big font-bold">
+                ><p class="description-text black uppercase big font-bold">
                   people
                 </p></NuxtLink
               >
             </li>
             <li>
               <NuxtLink to="/" @click="openMenu = false"
-                ><p class="description-text color-01 uppercase big font-bold">
+                ><p class="description-text black uppercase big font-bold">
                   partners
                 </p></NuxtLink
               >
             </li>
             <li>
               <NuxtLink to="/" @click="openMenu = false"
-                ><p class="description-text color-01 uppercase big font-bold">
+                ><p class="description-text black uppercase big font-bold">
                   events
                 </p></NuxtLink
               >
             </li>
             <li>
-              <p class="description-text color-01 uppercase big font-bold">
+              <p class="description-text black uppercase big font-bold">
                 <span>
                   <i class="fa-regular fa-circle-question"></i>
                 </span>
@@ -170,7 +170,7 @@
               >
             </li>
             <li>
-              <p class="description-text color-01 uppercase big font-bold">
+              <p class="description-text black uppercase big font-bold">
                 <span>
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </span>
@@ -297,4 +297,20 @@
 </template>
 <script setup>
 const openMenu = ref(false);
+
+const logoHover = () => {
+  const logo = document.querySelector('.header-logo img');
+  window.addEventListener('scroll', () => {
+    logo.style.transform = "rotateZ(40deg) scale(7)";
+    setTimeout(
+    function() {
+      logo.style.transform = "rotateZ(0) scale(1)";
+    }, 1000);
+  })
+};
+
+
+onMounted(() => {
+  logoHover();
+})
 </script>
