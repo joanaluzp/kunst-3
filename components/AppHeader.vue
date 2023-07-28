@@ -20,22 +20,23 @@
     </div>
     <nav class="navbar" :class="openMenu ? 'open' : ''">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-end">
           <div
             class="navbar-menu-list col-12 d-flex align-items-center justify-content-end"
+            :style="openMenu ? 'background-color: transparent' : ''"
           >
             <div
-              class="menu-list-icon d-none d-md-flex flex-column justify-content-center align-items-center"
+              class="menu-list-icon d-none d-md-flex justify-content-center align-items-center"
               :class="openMenu ? 'v-hidden' : 'v-visible'"
-              :style="
-                openMenu
-                  ? 'transition: none'
-                  : 'transition: all 0.3s ease-in-out'
-              "
+              @mouseover="openLang"
             >
               <i class="fa-solid fa-globe fa-xl"></i>
               <p class="description-text uppercase grey-02">A⇆ü</p>
-              <ul class="menu-list-options">
+              <ul
+                class="menu-list-options"
+                :class="{ 'd-block': openLang }"
+                @mouseout="!openLang"
+              >
                 <li class="description-text grey-01 capitalize small">
                   Language
                 </li>
@@ -48,17 +49,13 @@
               </ul>
             </div>
             <div
-              class="menu-list-icon d-none d-md-flex flex-column justify-content-center align-items-center"
+              class="menu-list-icon d-none d-md-flex justify-content-center align-items-center"
               :class="openMenu ? 'v-hidden' : 'v-visible'"
-              :style="
-                openMenu
-                  ? 'transition: none'
-                  : 'transition: all 0.3s ease-in-out'
-              "
+              @click="openHelp = !openHelp"
             >
               <i class="fa-regular fa-circle-question fa-xl"></i>
               <p class="description-text uppercase grey-02">HELP</p>
-              <ul class="menu-list-options">
+              <ul class="menu-list-options" :class="{ 'd-block': openHelp }">
                 <li class="description-text grey-01 capitalize small">Help</li>
                 <li class="description-text black option capitalize small">
                   how to get here
@@ -72,17 +69,16 @@
               </ul>
             </div>
             <div
-              class="menu-list-icon d-none d-md-flex flex-column justify-content-center align-items-center"
+              class="menu-list-icon d-none d-md-flex justify-content-center align-items-center"
               :class="openMenu ? 'v-hidden' : 'v-visible'"
-              :style="
-                openMenu
-                  ? 'transition: none'
-                  : 'transition: all 0.3s ease-in-out'
-              "
+              @click="openSearch = !openSearch"
             >
               <i class="fa-solid fa-magnifying-glass fa-xl"></i>
               <p class="description-text uppercase grey-02">SEARCH</p>
-              <div class="menu-list-options search">
+              <div
+                class="menu-list-options search"
+                :class="{ 'd-block': openSearch }"
+              >
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input
                   type="search"
@@ -94,14 +90,14 @@
               </div>
             </div>
             <div
-              class="menu-list-icon d-flex flex-column justify-content-center align-items-center"
+              class="menu-list-icon d-flex justify-content-center align-items-center"
               @click="openMenu = !openMenu"
               :class="{ open: openMenu }"
             >
               <i
                 class="fa-solid fa-xl"
                 :class="openMenu ? 'fa-xmark' : 'fa-bars'"
-                :style="openMenu ? ['color: #000000'] : ''"
+                :style="openMenu ? 'color: #000000' : ''"
               ></i>
               <p class="description-text uppercase grey-02 d-none d-md-block">
                 {{ openMenu ? "CLOSE" : "MENU" }}
@@ -236,49 +232,53 @@
           @swiper="setGallerySwiper"
         >
           <SwiperSlide>
-            <picture>
+            <video autoplay muted loop>
               <source
-                media="(min-width: 768px)"
-                src="../assets/images/kunst_3_dance.jpg"
-                alt="background"
-                title=""
+                src="../assets/videos/kunst_3_video_cinema.mp4"
+                type="video/mp4"
               />
-              <img
-                src="../assets/images/kunst_3_dance.jpg"
-                alt="background"
-                title=""
+              Your browser does not support the video tag.
+            </video>
+          </SwiperSlide>
+          <SwiperSlide>
+            <video autoplay muted loop>
+              <source
+                src="../assets/videos/kunst_3_video_performance.mp4"
+                type="video/mp4"
               />
-            </picture>
+              Your browser does not support the video tag.
+            </video>
           </SwiperSlide>
           <SwiperSlide>
             <picture>
               <source
                 media="(min-width: 768px)"
-                src="../assets/images/kunst_3_kino.jpg"
+                src="../assets/images/kunst_3_the-raspberry-reich.jpg"
                 alt="background"
                 title=""
               />
               <img
-                src="../assets/images/kunst_3_kino.jpg"
+                src="../assets/images/kunst_3_the-raspberry-reich.jpg"
                 alt="background"
                 title=""
+                class="d-none d-lg-block"
+              />
+              <img
+                src="../assets/images/kunst_3_the-raspberry-reich_mobile.jpg"
+                alt="background"
+                title=""
+                class="d-block d-lg-none"
               />
             </picture>
           </SwiperSlide>
           <SwiperSlide>
-            <picture>
+            <video autoplay muted loop>
               <source
-                media="(min-width: 768px)"
-                src="../assets/images/kunst_3_performance.jpg"
-                alt="background"
-                title=""
+                src="../assets/videos/kunst_3_video_super8mm.mp4"
+                type="video/mp4"
               />
-              <img
-                src="../assets/images/kunst_3_performance.jpg"
-                alt="background"
-                title=""
-              />
-            </picture>
+              Your browser does not support the video tag.
+            </video>
           </SwiperSlide>
         </Swiper>
       </div>
@@ -296,21 +296,22 @@
   </header>
 </template>
 <script setup>
+const openLang = ref(false);
+const openHelp = ref(false);
+const openSearch = ref(false);
 const openMenu = ref(false);
 
 const logoHover = () => {
-  const logo = document.querySelector('.header-logo img');
-  window.addEventListener('scroll', () => {
+  const logo = document.querySelector(".header-logo img");
+  window.addEventListener("scroll", () => {
     logo.style.transform = "rotateZ(40deg) scale(7)";
-    setTimeout(
-    function() {
+    setTimeout(function () {
       logo.style.transform = "rotateZ(0) scale(1)";
     }, 1000);
-  })
+  });
 };
-
 
 onMounted(() => {
   logoHover();
-})
+});
 </script>

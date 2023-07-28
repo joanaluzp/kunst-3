@@ -2,7 +2,7 @@
 .description-text {
   display: block;
   width: 100%;
-  font-family: $Millimetre-Regular;
+  font-family: $Gramatika-Regular;
   @include fluid-type(320px, 1199px, 14px, 16px);
   text-align: left;
   margin: 0;
@@ -14,10 +14,10 @@
     @include fluid-type(320px, 1199px, 18px, 20px); 
   }
   &.font-bold {
-    font-weight: 700;
+    font-family: $Gramatika-Bold;
   }
   &.font-black {
-    font-weight: 900;
+    font-family: $Archivo-Black;
   }
   &.black {
     color: $black;

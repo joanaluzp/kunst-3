@@ -32,7 +32,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Prompt:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -2942,8 +2942,24 @@ section {
   }
 }
 @font-face {
-  font-family: "Millimetre-Regular";
-  src: url("/assets/scss/fonts/Millimetre-Regular.woff");
+  font-family: "Gramatika-Regular";
+  src: url("/assets/scss/fonts/Gramatika-Regular.ttf");
+}
+@font-face {
+  font-family: "Gramatika-Light";
+  src: url("/assets/scss/fonts/Gramatika-Light.ttf");
+}
+@font-face {
+  font-family: "Gramatika-Italic";
+  src: url("/assets/scss/fonts/Gramatika-Italic.ttf");
+}
+@font-face {
+  font-family: "Gramatika-Bold";
+  src: url("/assets/scss/fonts/Gramatika-Bold.ttf");
+}
+@font-face {
+  font-family: "Fungal";
+  src: url("/assets/scss/fonts/Fungal-Grow500Thickness500.woff2");
 }
 /*======COLORS======*/
 /*======FONTS======*/
@@ -2951,7 +2967,7 @@ section {
 .description-text {
   display: block;
   width: 100%;
-  font-family: "Millimetre-Regular", sans-serif;
+  font-family: "Gramatika-Regular", sans-serif;
   text-align: left;
   margin: 0;
   padding: 0;
@@ -3005,10 +3021,10 @@ section {
   }
 }
 .description-text.font-bold {
-  font-weight: 700;
+  font-family: "Gramatika-Bold", sans-serif;
 }
 .description-text.font-black {
-  font-weight: 900;
+  font-family: "Archivo Black", sans-serif;
 }
 .description-text.black {
   color: #000;
@@ -3044,7 +3060,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: "Millimetre-Regular", sans-serif;
+  font-family: "Gramatika-Regular", sans-serif;
   font-weight: normal;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -3115,7 +3131,7 @@ header {
   -moz-user-select: none;
        user-select: none; /* Standard syntax */
   position: relative;
-  background-color: #a9b9ff;
+  background-color: #fff;
 }
 header .header-background-wrapper {
   width: 100%;
@@ -3147,14 +3163,12 @@ header .header-background-wrapper .header-background {
   width: 100%;
   height: 100%;
 }
-header .header-background-wrapper .header-background img {
+header .header-background-wrapper .header-background video, header .header-background-wrapper .header-background img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  box-shadow: -30px 10px 0px -4px #0026ff;
 }
 header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-prev,
 header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-next {
@@ -3171,7 +3185,7 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-next i {
 }
 header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-prev i:hover,
 header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-next i:hover {
-  text-shadow: -1px 3px 0px #000;
+  text-shadow: -1px 3px 0px #2f00ff;
 }
 header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-prev:hover,
 header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-next:hover {
@@ -3187,7 +3201,7 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-next {
 .navbar {
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 80px;
   z-index: 100;
   top: 0;
   left: 0;
@@ -3282,38 +3296,44 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-next {
   min-width: 50px;
   max-width: 200px;
   width: 100%;
-  box-shadow: -30px 10px 0px -4px #000;
 }
 .navbar-menu-logo img:hover {
   filter: hue-rotate(180deg);
 }
 
 .navbar-menu-list {
+  width: -moz-fit-content;
+  width: fit-content;
   position: relative;
   z-index: 99;
-  padding: 20px 30px;
+  height: 80px;
+  border-radius: 0 0 30px 30px;
+  background-color: #fff;
 }
 .navbar-menu-list .menu-list-icon {
+  height: 50px;
   position: relative;
-  height: 100px;
   cursor: pointer;
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: 6px solid #FF0000;
   margin-left: 20px;
-  transition: all 0.3s ease-in-out;
 }
 .navbar-menu-list .menu-list-icon i {
-  color: #fff;
+  color: #aaaaaa;
+  margin-right: 10px;
 }
 .navbar-menu-list .menu-list-icon i:hover {
-  text-shadow: -1px 3px 0px #000;
+  text-shadow: -1px 3px 0px #2f00ff;
 }
 .navbar-menu-list .menu-list-icon p {
-  margin-top: 15px;
+  height: 100%;
 }
 .navbar-menu-list .menu-list-icon .menu-list-options {
   display: none;
   background-color: #fff;
   position: absolute;
-  top: 80px;
+  top: 70px;
   right: -20px;
   padding: 15px;
   border-radius: 10px;
@@ -3329,9 +3349,6 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-next {
   border-bottom: none;
   padding-bottom: 0;
 }
-.navbar-menu-list .menu-list-icon .menu-list-options li.option {
-  transition: all 0.3s ease-in-out;
-}
 .navbar-menu-list .menu-list-icon .menu-list-options li.option:hover {
   color: #aaaaaa;
 }
@@ -3342,27 +3359,13 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-next {
   width: 80%;
   border: 1px solid #fff;
   padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .navbar-menu-list .menu-list-icon .menu-list-options .search:active, .navbar-menu-list .menu-list-icon .menu-list-options .search:focus {
   border: 1px solid #000;
   border-radius: 5px;
-}
-.navbar-menu-list .menu-list-icon .menu-list-options::before {
-  content: "";
-  border: 10px solid transparent;
-  position: absolute;
-  border-bottom-color: #fff;
-  border-top: 0;
-  top: -10px;
-  left: 75%;
-}
-.navbar-menu-list .menu-list-icon:hover .menu-list-options {
-  display: block;
-}
-.navbar-menu-list .menu-list-icon:hover .menu-list-options.search {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 @media (min-width: 576px) {
@@ -3376,12 +3379,6 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-next {
   }
   .navbar.open {
     overflow-y: auto;
-  }
-  .navbar-menu-list .menu-list-icon:hover {
-    transform: translateY(5px);
-  }
-  .navbar-menu-list .menu-list-icon.open {
-    transform: translateY(0);
   }
 }
 @media (min-width: 1200px) {
@@ -3400,8 +3397,8 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-next {
 /*======NAV======*/
 footer {
   width: 100%;
-  background-color: #000;
-  border-radius: 30px 30px 0 0;
+  background-color: #a9b9ff;
+  border-radius: 100px 100px 0 0;
 }
 
 .footer-wrapper {

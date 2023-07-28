@@ -6,7 +6,7 @@ header {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
   position: relative;
-  background-color: $color01;
+  background-color: $white;
 
   .header-background-wrapper {
     width: 100%;
@@ -37,15 +37,11 @@ header {
     .header-background {
       width: 100%;
       height: 100%;
-      img {
+      video, img {
         display: block;
         object-fit: cover;
         width: 100%;
         height: 100%;
-        border-radius: 50%;
-        -webkit-box-shadow: -30px 10px 0px -4px $color02;
-        -moz-box-shadow: -30px 10px 0px -4px $color02;
-        box-shadow: -30px 10px 0px -4px $color02;
       }
     }
     .slider-arrows-wrapper {
@@ -60,7 +56,7 @@ header {
         i {
           color: $white;
           &:hover {
-            text-shadow: -1px 3px 0px $black;
+            text-shadow: -1px 3px 0px $color02;
           }
         }
         &:hover {
@@ -80,7 +76,7 @@ header {
 .navbar {
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 80px;
   z-index: 100;
   top: 0;
   left: 0;
@@ -173,9 +169,6 @@ header {
     min-width: 50px;
     max-width: 200px;
     width: 100%;
-    -webkit-box-shadow: -30px 10px 0px -4px $black;
-    -moz-box-shadow: -30px 10px 0px -4px $black;
-    box-shadow: -30px 10px 0px -4px $black;
     &:hover {
       filter: hue-rotate(180deg);
     }
@@ -183,29 +176,35 @@ header {
 }
 
 .navbar-menu-list {
+  width:fit-content;
   position: relative;
   z-index: 99;
-  padding: 20px 30px;
+  height: 80px;
+  border-radius: 0 0 30px 30px;
+  background-color: $white;
   .menu-list-icon {
+    height: 50px;
     position: relative;
-    height: 100px;
     cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 6px solid $color03;
     margin-left: 20px;
-    @include transition;
     i {
-      color: $white;
+      color: $grey02;
+      margin-right: 10px;
       &:hover {
-        text-shadow: -1px 3px 0px $black;
+        text-shadow: -1px 3px 0px $color02;
       }
     }
     p {
-      margin-top: 15px;
+      height: 100%;
     }
     .menu-list-options {
       display: none;
       background-color: $white;
       position: absolute;
-      top: 80px;
+      top: 70px;
       right: -20px;
       padding: 15px;
       border-radius: 10px;
@@ -222,7 +221,6 @@ header {
           padding-bottom: 0;
         }
         &.option {
-          @include transition;
           &:hover {
             color: $grey02;
           }
@@ -235,29 +233,13 @@ header {
         width: 80%;
         border: 1px solid $white;
         padding: 3px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         &:active,
         &:focus {
           border: 1px solid $black;
           border-radius: 5px;
-        }
-      }
-      &::before {
-        content: "";
-        border: 10px solid transparent;
-        position: absolute;
-        border-bottom-color: $white;
-        border-top: 0;
-        top: -10px;
-        left: 75%;
-      }
-    }
-    &:hover {
-      .menu-list-options {
-        display: block;
-        &.search {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
         }
       }
     }
@@ -282,16 +264,6 @@ header {
   .navbar {
     &.open {
       overflow-y: auto;
-    }
-  }
-  .navbar-menu-list {
-    .menu-list-icon {
-      &:hover {
-        transform: translateY(5px);
-      }
-      &.open {
-        transform: translateY(0);
-      }
     }
   }
 }
