@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div
-          class="navbar-menu-logo col-4 d-flex align-items-center justify-content-start"
+          class="navbar-menu-logo col-4 d-none d-lg-flex align-items-center justify-content-start"
           :style="openMenu ? ['z-index: 6'] : ''"
         >
           <NuxtLink to="/">
@@ -25,83 +25,86 @@
             class="navbar-menu-list col-12 d-flex align-items-center justify-content-end"
             :style="openMenu ? 'background-color: transparent' : ''"
           >
-            <div
-              class="menu-list-icon d-none d-md-flex justify-content-center align-items-center"
-              :class="openMenu ? 'v-hidden' : 'v-visible'"
-              @mouseover="openLang"
-            >
-              <i class="fa-solid fa-globe fa-xl"></i>
-              <p class="description-text uppercase grey-02">A⇆ü</p>
-              <ul
-                class="menu-list-options"
-                :class="{ 'd-block': openLang }"
-                @mouseout="!openLang"
-              >
-                <li class="description-text grey-01 capitalize small">
-                  Language
-                </li>
-                <li class="description-text black option capitalize small">
-                  English
-                </li>
-                <li class="description-text black option capitalize small">
-                  Deutsch
-                </li>
-              </ul>
-            </div>
-            <div
-              class="menu-list-icon d-none d-md-flex justify-content-center align-items-center"
-              :class="openMenu ? 'v-hidden' : 'v-visible'"
-              @click="openHelp = !openHelp"
-            >
-              <i class="fa-regular fa-circle-question fa-xl"></i>
-              <p class="description-text uppercase grey-02">HELP</p>
-              <ul class="menu-list-options" :class="{ 'd-block': openHelp }">
-                <li class="description-text grey-01 capitalize small">Help</li>
-                <li class="description-text black option capitalize small">
-                  how to get here
-                </li>
-                <li class="description-text black option capitalize small">
-                  FAQ
-                </li>
-                <li class="description-text black option capitalize small">
-                  support KUNST 3
-                </li>
-              </ul>
-            </div>
-            <div
-              class="menu-list-icon d-none d-md-flex justify-content-center align-items-center"
-              :class="openMenu ? 'v-hidden' : 'v-visible'"
-              @click="openSearch = !openSearch"
-            >
-              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
-              <p class="description-text uppercase grey-02">SEARCH</p>
+            <div class="d-flex align-items-center">
               <div
-                class="menu-list-options search"
-                :class="{ 'd-block': openSearch }"
+                class="menu-list-icon icon-lang d-none d-md-flex justify-content-center align-items-center"
+                :class="openMenu ? 'v-hidden' : 'v-visible'"
+                :style="openMenu ? 'transition:none' : ''"
               >
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input
-                  type="search"
-                  id="site-search"
-                  class="search"
-                  name="search"
-                  placeholder="search"
-                />
+                <i class="fa-solid fa-globe fa-lg"></i>
+                <p class="description-text uppercase grey-02">A⇆ü</p>
+                <ul class="menu-list-options">
+                  <li class="description-text grey-01 capitalize small">
+                    <a href="">Language</a>
+                  </li>
+                  <li class="description-text black option capitalize small">
+                    <a href="">English</a>
+                  </li>
+                  <li class="description-text black option capitalize small">
+                    <a href="">Deutsch</a>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div
-              class="menu-list-icon d-flex justify-content-center align-items-center"
-              @click="openMenu = !openMenu"
-              :class="{ open: openMenu }"
-            >
-              <i
-                class="fa-solid fa-xl"
-                :class="openMenu ? 'fa-xmark' : 'fa-bars'"
-                :style="openMenu ? 'color: #000000' : ''"
-              ></i>
-              <p class="description-text uppercase grey-02 d-none d-md-block">
-                {{ openMenu ? "CLOSE" : "MENU" }}
-              </p>
+            <div class="d-flex align-items-center">
+              <div
+                class="menu-list-icon icon-help d-none d-md-flex justify-content-center align-items-center"
+                :class="openMenu ? 'v-hidden' : 'v-visible'"
+                :style="openMenu ? 'transition:none' : ''"
+              >
+                <i class="fa-regular fa-circle-question fa-lg"></i>
+                <p class="description-text uppercase grey-02">HELP</p>
+                <ul class="menu-list-options">
+                  <li class="description-text grey-01 capitalize small">
+                    Help
+                  </li>
+                  <li class="description-text black option capitalize small">
+                    <a href="">how to get here</a>
+                  </li>
+                  <li class="description-text black option capitalize small">
+                    <a href="">FAQ</a>
+                  </li>
+                  <li class="description-text black option capitalize small">
+                    <a href="">support KUNST 3</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div
+                class="menu-list-icon icon-search d-none d-md-flex justify-content-center align-items-center"
+                :class="openMenu ? 'v-hidden' : 'v-visible'"
+                :style="openMenu ? 'transition:none' : ''"
+              >
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                <p class="description-text uppercase grey-02">SEARCH</p>
+                <div class="menu-list-options search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input
+                    type="search"
+                    id="site-search"
+                    class="search"
+                    name="search"
+                    placeholder="search"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div
+                class="menu-list-icon icon-menu d-flex justify-content-center align-items-center"
+                @click="openMenu = !openMenu"
+                :class="{ open: openMenu }"
+              >
+                <i
+                  class="fa-solid fa-lg"
+                  :class="openMenu ? 'fa-xmark' : 'fa-bars'"
+                  :style="openMenu ? 'color: #000000' : ''"
+                ></i>
+                <p class="description-text uppercase grey-02 d-none d-md-block">
+                  {{ openMenu ? "CLOSE" : "MENU" }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -214,16 +217,16 @@
       class="header-background-wrapper"
       :style="openMenu ? 'opacity: 0.2' : ''"
     >
-      <div class="header-logo">
-        <img src="../assets/images/kunst_3_logo2.png" alt="logo" />
-      </div>
       <div class="header-background">
         <Swiper
-          :modules="[SwiperPagination, SwiperNavigation]"
+          :modules="[SwiperAutoplay, SwiperNavigation]"
           :slides-per-view="1"
           :pagination="{ clickable: true }"
           :speed="1000"
           :loop="true"
+          :autoplay="{
+            delay: 5000,
+          }"
           style="height: 100vh"
           :navigation="{
             nextEl: '.arrow-gallery-next',
@@ -232,6 +235,30 @@
           @swiper="setGallerySwiper"
         >
           <SwiperSlide>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="header-background-text col-12">
+                  <div class="left col-6 col-lg-4">
+                    <h1
+                      class="description-title white text-outline text-header font-black uppercase"
+                    >
+                      Classic Movies
+                    </h1>
+                    <span
+                      class="description-title white text-outline text-header font-italic"
+                      >Wednesday(s)</span
+                    >
+                  </div>
+                  <div class="right col-6 col-lg-4">
+                    <p class="description-text white text-outline text-right">
+                      <span>/ </span>Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Dolor molestias ipsam nisi ad animi
+                      soluta non unde minima.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <video autoplay muted loop>
               <source
                 src="../assets/videos/kunst_3_video_cinema.mp4"
@@ -241,6 +268,30 @@
             </video>
           </SwiperSlide>
           <SwiperSlide>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="header-background-text col-12">
+                  <div class="left col-6 col-sm-4">
+                    <h1
+                      class="description-title white text-outline text-header font-black uppercase"
+                    >
+                      if i fall you lose
+                    </h1>
+                    <span
+                      class="description-title white text-outline text-header font-italic"
+                      >performance</span
+                    >
+                  </div>
+                  <div class="right col-6 col-sm-4">
+                    <p class="description-text white text-outline text-right">
+                      <span>/ </span>Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Dolor molestias ipsam nisi ad animi
+                      soluta non unde minima.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <video autoplay muted loop>
               <source
                 src="../assets/videos/kunst_3_video_performance.mp4"
@@ -250,28 +301,69 @@
             </video>
           </SwiperSlide>
           <SwiperSlide>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="header-background-text col-12">
+                  <div class="left col-6 col-lg-4">
+                    <h1
+                      class="description-title white text-outline text-header font-black uppercase"
+                    >
+                      angela schanelec
+                    </h1>
+                    <span
+                      class="description-title white text-outline text-header font-italic"
+                    ></span>
+                  </div>
+                  <div class="right col-6 col-lg-4">
+                    <p class="description-text white text-outline text-right">
+                      <span>/ </span>Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Dolor molestias ipsam nisi ad animi
+                      soluta non unde minima.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <picture>
               <source
                 media="(min-width: 768px)"
-                src="../assets/images/kunst_3_the-raspberry-reich.jpg"
+                src="../assets/images/kunst_3_angela_schanelec.png"
                 alt="background"
                 title=""
               />
               <img
-                src="../assets/images/kunst_3_the-raspberry-reich.jpg"
+                src="../assets/images/kunst_3_angela_schanelec.png"
                 alt="background"
                 title=""
-                class="d-none d-lg-block"
-              />
-              <img
-                src="../assets/images/kunst_3_the-raspberry-reich_mobile.jpg"
-                alt="background"
-                title=""
-                class="d-block d-lg-none"
               />
             </picture>
           </SwiperSlide>
           <SwiperSlide>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="header-background-text col-12">
+                  <div class="left col-6 col-lg-4">
+                    <h1
+                      class="description-title white text-outline text-header font-black uppercase"
+                    >
+                      super 8 workshop
+                    </h1>
+                    <span
+                      class="description-title white text-outline text-header font-italic"
+                    >
+                      sunday(s)</span
+                    >
+                  </div>
+                  <div class="right col-6 col-lg-4">
+                    <p class="description-text white text-outline text-right">
+                      <span>/ </span>Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Dolor molestias ipsam nisi ad animi
+                      soluta non unde minima.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <video autoplay muted loop>
               <source
                 src="../assets/videos/kunst_3_video_super8mm.mp4"
@@ -286,32 +378,29 @@
         class="slider-arrows-wrapper d-none d-md-flex justify-content-between align-items-center"
       >
         <button type="button" class="arrow-prev arrow-gallery-prev">
-          <i class="fa-solid fa-circle-arrow-left fa-2x"></i>
+          <i class="fa-solid fa-caret-left fa-lg"></i>
         </button>
         <button type="button" class="arrow-prev arrow-gallery-next">
-          <i class="fa-solid fa-circle-arrow-right fa-2x"></i>
+          <i class="fa-solid fa-caret-right fa-lg"></i>
+        </button>
+        <button type="button" class="arrow-prev arrow-gallery-down">
+          <i class="fa-regular fa-hand fa-2x"></i>
         </button>
       </div>
     </div>
   </header>
 </template>
 <script setup>
-const openLang = ref(false);
-const openHelp = ref(false);
-const openSearch = ref(false);
 const openMenu = ref(false);
 
-const logoHover = () => {
-  const logo = document.querySelector(".header-logo img");
-  window.addEventListener("scroll", () => {
-    logo.style.transform = "rotateZ(40deg) scale(7)";
-    setTimeout(function () {
-      logo.style.transform = "rotateZ(0) scale(1)";
-    }, 1000);
-  });
-};
-
-onMounted(() => {
-  logoHover();
-});
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector('.navbar-menu-list').style.top = "0";
+  } else {
+    document.querySelector('.navbar-menu-list').style.top = "-80px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 </script>
