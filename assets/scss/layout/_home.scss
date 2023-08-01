@@ -1,0 +1,90 @@
+/*====== HOME ======*/
+/*=== GRID ===*/
+.section-home-grid {
+  position: relative;
+  min-height: 100vh;
+}
+
+.home-grid-menu {
+  position: fixed;
+  bottom: 30px;
+  li {
+    display: inline-flex;
+    margin: 5px 0;
+    padding: 3px 10px;
+    background-color: $white;
+    border: 2px solid $black;
+    border-radius: 15px;
+    width: fit-content;
+    cursor: pointer;
+    &:hover {
+      animation: shake 0.3s ease-in-out infinite;
+    }
+
+    &.active {
+      border: 2px solid $color04;
+      animation: strobe 0.3s infinite;
+
+      p {
+        color: $color04;
+      }
+    }
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes strobe {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.home-grid-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-grid-item {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .home-grid-item {
+    width: 47%;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .home-grid-item {
+    width: 32%;
+  }
+}

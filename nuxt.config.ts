@@ -49,6 +49,8 @@ export default defineNuxtConfig({
         },
       ],
     },
+    pageTransition: { name: 'page', mode: 'out-in' },
+    layoutTransition: { name: 'slide', mode: 'out-in' },
   },
   modules: ["nuxt-swiper"],
   css: ["@/assets/scss/style.css"],

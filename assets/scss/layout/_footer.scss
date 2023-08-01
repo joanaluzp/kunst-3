@@ -1,11 +1,18 @@
 /*======NAV======*/
 footer {
   width: 100%;
-  background-color: $color01;
-  border-radius: 100px 100px 0 0;
+  position: relative;
+  height: 100px;
 }
 
 .footer-wrapper {
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  @include transition2(all, 2s, ease-in-out);
+  background-color: $color01;
+  border-radius: 100px 100px 0 0;
+  position: absolute;
   padding: 20px 30px;
   justify-content: center;
   p {

@@ -16,8 +16,14 @@
   &.font-bold {
     font-family: $Gramatika-Bold;
   }
+  &.font-italic {
+    font-family: $Gramatika-Italic;
+  }
   &.font-black {
     font-family: $Archivo-Black;
+  }
+  &.font-fungal {
+    font-family: $Fungal;
   }
   &.text-right {
     text-align: right;
@@ -75,6 +81,9 @@
   }
   &.font-italic {
     font-family: $Gramatika-Italic;
+  }
+  &.font-fungal {
+    font-family: $Fungal;
   }
   &.black {
     color: $black;

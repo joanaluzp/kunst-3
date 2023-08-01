@@ -1,5 +1,6 @@
 <template>
-  <client-only> <AppHeader /></client-only>
+  <client-only>
+    <AppNavbar />
+  </client-only>
   <NuxtPage />
-  <AppFooter />
 </template>
