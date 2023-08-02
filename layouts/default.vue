@@ -1,6 +1,8 @@
 <template>
-  <client-only>
-    <AppNavbar />
-  </client-only>
-  <NuxtPage />
+  <div class="main">
+    <client-only>
+      <AppNavbar />
+    </client-only>
+    <NuxtPage />
+  </div>
 </template>

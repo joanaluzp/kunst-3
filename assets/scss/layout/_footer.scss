@@ -8,7 +8,6 @@ footer {
 .footer-wrapper {
   bottom: 0;
   width: 100%;
-  height: 100%;
   @include transition2(all, 2s, ease-in-out);
   background-color: $color01;
   border-radius: 100px 100px 0 0;

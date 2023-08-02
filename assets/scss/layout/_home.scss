@@ -3,11 +3,16 @@
 .section-home-grid {
   position: relative;
   min-height: 100vh;
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
-
 .home-grid-menu {
   position: fixed;
-  bottom: 30px;
+  left: 60px;
+  bottom: 60px;
+  width: fit-content;
   li {
     display: inline-flex;
     margin: 5px 0;
@@ -20,7 +25,6 @@
     &:hover {
       animation: shake 0.3s ease-in-out infinite;
     }
-
     &.active {
       border: 2px solid $color04;
       animation: strobe 0.3s infinite;
@@ -68,15 +72,54 @@
 }
 
 .home-grid-item {
+  background-color: $white;
+  margin: 4px;
+  border: 1px solid $black;
+  border-radius: 15px;
   width: 100%;
+  padding: 15px;
+  @include transition;
   img {
+    object-fit: cover;
+    height: 250px;
     width: 100%;
+    border-radius: 10px;
+    border: 1px solid $black;
+  }
+  .grid-item-title {
+    height: 115px;
+    max-height: 115px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    h3, h4 {
+      @include line-clamp(2);
+    }
+  }
+  .grid-item-wrapper {
+    margin-bottom: 5px;
+    &:last-child {
+      margin: 0;
+    }
+    .grid-item-info {
+      width: fit-content;
+      margin-right: 20px;
+    }
+    .btn {
+      width: fit-content;
+      padding: 3px 5px;
+      border: 1px solid $black;
+      border-radius: 15px;
+    }
+  }
+  &:hover {
+    animation: shake 0.3s ease-in-out infinite;
+    background-color: $grey02;
   }
 }
 
 @media (min-width: 576px) {
   .home-grid-item {
-    width: 47%;
+    width: 48%;
   }
 }
 
@@ -84,7 +127,11 @@
 }
 
 @media (min-width: 992px) {
+  .home-grid-options {
+    padding: 60px 0;
+    justify-content: start;
+  }
   .home-grid-item {
-    width: 32%;
+    width: 31%;
   }
 }

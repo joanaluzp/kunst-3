@@ -23,17 +23,17 @@
                 <div class="header-background-text col-12">
                   <div class="left col-6 col-lg-4">
                     <h1
-                      class="description-title white text-header font-black uppercase"
+                      class="description-title text-outline white text-header font-black uppercase"
                     >
                       Classic Movies
                     </h1>
                     <span
-                      class="description-title white text-header font-italic"
+                      class="description-title white text-outline text-header font-italic"
                       >Wednesday(s)</span
                     >
                   </div>
                   <div class="right col-6 col-lg-4">
-                    <p class="description-text white text-right">
+                    <p class="description-text text-outline white text-right">
                       <span>/ </span>Lorem ipsum dolor sit amet consectetur
                       adipisicing elit. Dolor molestias ipsam nisi ad animi
                       soluta non unde minima.
@@ -56,17 +56,17 @@
                 <div class="header-background-text col-12">
                   <div class="left col-6 col-sm-4">
                     <h1
-                      class="description-title white text-header font-black uppercase"
+                      class="description-title text-outline white text-header font-black uppercase"
                     >
                       if i fall you lose
                     </h1>
                     <span
-                      class="description-title white text-header font-italic"
+                      class="description-title text-outline white text-header font-italic"
                       >performance</span
                     >
                   </div>
                   <div class="right col-6 col-sm-4">
-                    <p class="description-text white text-right">
+                    <p class="description-text text-outline white text-right">
                       <span>/ </span>Lorem ipsum dolor sit amet consectetur
                       adipisicing elit. Dolor molestias ipsam nisi ad animi
                       soluta non unde minima.
@@ -89,16 +89,16 @@
                 <div class="header-background-text col-12">
                   <div class="left col-6 col-lg-4">
                     <h1
-                      class="description-title white text-header font-black uppercase"
+                      class="description-title white text-outline text-header font-black uppercase"
                     >
                       angela schanelec
                     </h1>
                     <span
-                      class="description-title white text-header font-italic"
+                      class="description-title white text-outline text-header font-italic"
                     ></span>
                   </div>
                   <div class="right col-6 col-lg-4">
-                    <p class="description-text white text-right">
+                    <p class="description-text text-outline white text-right">
                       <span>/ </span>Lorem ipsum dolor sit amet consectetur
                       adipisicing elit. Dolor molestias ipsam nisi ad animi
                       soluta non unde minima.
@@ -127,18 +127,18 @@
                 <div class="header-background-text col-12">
                   <div class="left col-6 col-lg-4">
                     <h1
-                      class="description-title white text-header font-black uppercase"
+                      class="description-title text-outline white text-header font-black uppercase"
                     >
                       super 8 workshop
                     </h1>
                     <span
-                      class="description-title white text-header font-italic"
+                      class="description-title text-outline white text-header font-italic"
                     >
                       sunday(s)</span
                     >
                   </div>
                   <div class="right col-6 col-lg-4">
-                    <p class="description-text white text-right">
+                    <p class="description-text text-outline white text-right">
                       <span>/ </span>Lorem ipsum dolor sit amet consectetur
                       adipisicing elit. Dolor molestias ipsam nisi ad animi
                       soluta non unde minima.

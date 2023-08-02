@@ -6,7 +6,7 @@
           class="navbar-menu-logo col-3 d-none d-lg-flex align-items-center justify-content-start"
           :style="openMenu ? ['z-index: 6'] : ''"
         >
-          <NuxtLink to="/index">
+          <NuxtLink to="/">
             <img
               src="../assets/images/kunst_3_logo.png"
               :style="
@@ -99,6 +99,13 @@
       <div class="row">
         <div class="navbar-menu col-12" :class="openMenu ? 'open' : 'close'">
           <ul class="menu-list-options d-flex flex-column">
+            <li>
+              <NuxtLink to="/" @click="openMenu = false"
+                ><p class="description-text black uppercase big font-bold">
+                  home
+                </p></NuxtLink
+              >
+            </li>
             <li>
               <NuxtLink to="/" @click="openMenu = false"
                 ><p class="description-text black uppercase big font-bold">

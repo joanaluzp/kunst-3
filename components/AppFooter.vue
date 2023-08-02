@@ -1,26 +1,26 @@
 <template>
   <footer>
-    <div class="footer-wrapper d-flex">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 d-flex align-items-center">
-            <NuxtLink to="/"
-              ><p class="description-text font-bold big black">
-                contacts
-              </p></NuxtLink
-            >
-            <NuxtLink to="/"
-              ><p class="description-text font-bold big black">
-                contacts
-              </p></NuxtLink
-            >
-            <NuxtLink to="/"
-              ><p class="description-text font-bold big black">
-                contacts
-              </p></NuxtLink
-            >
-          </div>
-        </div>
+    <div
+      class="d-flex align-items-center justify-content-between footer-wrapper"
+    >
+      <div class="">
+        <NuxtLink to="/"
+          ><p class="description-text font-bold big black">
+            © 2023–2023 Kunst 3. All rights reserved
+          </p></NuxtLink
+        >
+      </div>
+      <div class="">
+        <NuxtLink to="/"
+          ><p class="description-text font-bold big black">
+            contacts
+          </p></NuxtLink
+        >
+        <NuxtLink to="/"
+          ><p class="description-text font-bold big black">
+            contacts
+          </p></NuxtLink
+        >
       </div>
     </div>
   </footer>
