@@ -3058,8 +3058,14 @@ section {
 .description-text.grey-02 {
   color: #aaaaaa;
 }
+.description-text.color-03 {
+  color: #4c45fa;
+}
 .description-text.uppercase {
   text-transform: uppercase;
+}
+.description-text.lowercase {
+  text-transform: lowercase;
 }
 .description-text.capitalize {
   text-transform: capitalize;
@@ -3168,8 +3174,14 @@ section {
 .description-title.grey-02 {
   color: #aaaaaa;
 }
+.description-title.color-03 {
+  color: #4c45fa;
+}
 .description-title.uppercase {
   text-transform: uppercase;
+}
+.description-title.lowercase {
+  text-transform: lowercase;
 }
 .description-title.capitalize {
   text-transform: capitalize;
@@ -3246,6 +3258,45 @@ a {
   color: inherit;
 }
 
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes strobe {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translate(50%, 0);
+  }
+  50% {
+    transform: translate(50%, -15px);
+  }
+  100% {
+    transform: translate(50%, 0px);
+  }
+}
 /*======BUTTONS======*/ /*======NAV======*/
 header {
   width: 100%;
@@ -3301,6 +3352,7 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down {
   cursor: pointer;
   bottom: 30px;
   right: 50%;
+  transform: translateX(50%);
   transition: all 0.3s ease-in-out;
 }
 header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down i {
@@ -3311,21 +3363,9 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down:hov
   text-shadow: -1px 3px 0px #ff00f2;
 }
 
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50% {
-    transform: translate(0, -15px);
-  }
-  100% {
-    transform: translate(0, 0px);
-  }
-}
 .navbar {
   position: fixed;
   width: 100%;
-  height: 120px;
   z-index: 100;
   top: 0;
   left: 0;
@@ -3386,8 +3426,14 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down:hov
 .navbar-menu .menu-list-options {
   background-color: #fff;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 80px;
   padding: 20px;
+}
+.navbar-menu .menu-list-options .menu-list-logo {
+  width: 20%;
+}
+.navbar-menu .menu-list-options .menu-list-logo img {
+  width: 100%;
 }
 .navbar-menu .menu-list-options li {
   padding: 15px 0;
@@ -3438,17 +3484,7 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down:hov
   margin: 0 10px;
 }
 .navbar-menu .menu-list-options img {
-  width: 50%;
-}
-
-.navbar-menu-logo img {
-  cursor: pointer;
-  display: block;
-  min-width: 50px;
-  width: 50%;
-}
-.navbar-menu-logo img:hover {
-  filter: hue-rotate(180deg);
+  width: 20%;
 }
 
 .navbar-menu-list {
@@ -3496,14 +3532,14 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down:hov
 .navbar-menu-list .menu-list-icon .menu-list-options li {
   margin-bottom: 5px;
   padding: 0 10px 5px 10px;
-  border-bottom: 1px solid #f0f0f0;
 }
-.navbar-menu-list .menu-list-icon .menu-list-options li:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
+.navbar-menu-list .menu-list-icon .menu-list-options li:not(:first-child) {
+  border: 1px solid #5e5e5e;
+  padding-top: 5px;
+  border-radius: 10px;
 }
-.navbar-menu-list .menu-list-icon .menu-list-options li.option:hover {
-  color: #aaaaaa;
+.navbar-menu-list .menu-list-icon .menu-list-options li:not(:first-child):hover {
+  animation: shake 0.3s ease-in-out infinite;
 }
 .navbar-menu-list .menu-list-icon .menu-list-options i {
   color: #5e5e5e;
@@ -3519,6 +3555,13 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down:hov
 .navbar-menu-list .menu-list-icon .menu-list-options .search:active, .navbar-menu-list .menu-list-icon .menu-list-options .search:focus {
   border: 1px solid #000;
   border-radius: 5px;
+}
+.navbar-menu-list .menu-list-logo {
+  margin: 0 15px;
+}
+.navbar-menu-list .menu-list-logo img {
+  width: 50px;
+  height: 100%;
 }
 .navbar-menu-list > div {
   height: 100px;
@@ -3566,7 +3609,11 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down:hov
 
 @media (min-width: 768px) {
   .navbar-menu {
+    box-shadow: -85px 56px 4px -80px #ff00f2;
     width: 30%;
+  }
+  .navbar-menu .menu-list-options {
+    margin-top: 100px;
   }
   .navbar-menu-list .menu-list-icon {
     margin: 0 10px;
@@ -3579,11 +3626,6 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down:hov
   }
   .swiper .header-background-text .right {
     right: 80px;
-  }
-}
-@media (min-width: 992px) {
-  .navbar .container:first-child .row {
-    justify-content: space-between;
   }
 }
 @media (min-width: 1200px) {
@@ -3644,14 +3686,14 @@ footer {
   padding-right: 0;
 }
 
-.home-grid-menu {
+.home-grid-list-wrapper {
   position: fixed;
   left: 60px;
   bottom: 60px;
   width: -moz-fit-content;
   width: fit-content;
 }
-.home-grid-menu li {
+.home-grid-list-wrapper li {
   display: inline-flex;
   margin: 5px 0;
   padding: 3px 10px;
@@ -3662,48 +3704,21 @@ footer {
   width: fit-content;
   cursor: pointer;
 }
-.home-grid-menu li:hover {
+.home-grid-list-wrapper li:hover {
   animation: shake 0.3s ease-in-out infinite;
 }
-.home-grid-menu li.active {
+.home-grid-list-wrapper li.active {
   border: 2px solid #ff0000;
   animation: strobe 0.3s infinite;
 }
-.home-grid-menu li.active p {
+.home-grid-list-wrapper li.active p {
   color: #ff0000;
 }
 
-@keyframes shake {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(3deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(-3deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes strobe {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.home-grid-options {
+.home-grid-items-wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .home-grid-item {
@@ -3768,7 +3783,7 @@ footer {
   }
 }
 @media (min-width: 992px) {
-  .home-grid-options {
+  .home-grid-items-wrapper {
     padding: 60px 0;
     justify-content: start;
   }

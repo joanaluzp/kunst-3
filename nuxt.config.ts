@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   runtimeConfig: {},
   app: {
     head: {
-      title: "KUNST 3",
+      title: "KUNST3",
       htmlAttrs: {
         lang: "en",
       },

@@ -51,8 +51,14 @@
   &.grey-02 {
     color: $grey02;
   }
+  &.color-03 {
+    color: $color03;
+  }
   &.uppercase {
     text-transform: uppercase;
+  }
+  &.lowercase {
+    text-transform: lowercase;
   }
   &.capitalize {
     text-transform: capitalize;
@@ -111,8 +117,14 @@
   &.grey-02 {
     color: $grey02;
   }
+  &.color-03 {
+    color: $color03;
+  }
   &.uppercase {
     text-transform: uppercase;
+  }
+  &.lowercase {
+    text-transform: lowercase;
   }
   &.capitalize {
     text-transform: capitalize;

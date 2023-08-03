@@ -3,28 +3,22 @@
     <div class="container">
       <div class="row">
         <div
-          class="navbar-menu-logo col-3 d-none d-lg-flex align-items-center justify-content-start"
-          :style="openMenu ? ['z-index: 6'] : ''"
+          class="navbar-menu-list col-12 d-flex align-items-center justify-content-end"
         >
-          <NuxtLink to="/">
-            <img
-              src="../assets/images/kunst_3_logo.png"
-              :style="
-                openMenu
-                  ? ['opacity: 0.2', 'transition:none']
-                  : 'transition: all 0.3s ease-in-out'
-              "
-          /></NuxtLink>
-        </div>
-        <div
-          class="navbar-menu-list col-9 d-flex align-items-center justify-content-end"
-        >
+          <div class="d-flex align-items-center">
+            <NuxtLink to="/">
+              <div
+                class="menu-list-logo d-none d-md-flex justify-content-center align-items-center"
+              >
+                <img src="../assets/images/kunst_3_logo.png" /></div
+            ></NuxtLink>
+          </div>
           <div class="d-flex align-items-center">
             <div
               class="menu-list-icon icon-lang d-none d-md-flex justify-content-center align-items-center"
             >
               <i class="fa-solid fa-globe fa-lg"></i>
-              <p class="description-text uppercase grey-02">A⇆ü</p>
+              <p class="description-text uppercase big color-03">A⇆ü</p>
               <ul class="menu-list-options">
                 <li class="description-text grey-01 capitalize">
                   <a href="">Language</a>
@@ -43,7 +37,7 @@
               class="menu-list-icon icon-help d-none d-md-flex justify-content-center align-items-center"
             >
               <i class="fa-regular fa-circle-question fa-lg"></i>
-              <p class="description-text uppercase grey-02">HELP</p>
+              <p class="description-text uppercase big color-03">HELP</p>
               <ul class="menu-list-options">
                 <li class="description-text grey-01 capitalize">Help</li>
                 <li class="description-text black option capitalize small">
@@ -63,7 +57,7 @@
               class="menu-list-icon icon-search d-none d-md-flex justify-content-center align-items-center"
             >
               <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-              <p class="description-text uppercase grey-02">SEARCH</p>
+              <p class="description-text uppercase big color-03">SEARCH</p>
               <div class="menu-list-options search">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input
@@ -85,9 +79,8 @@
               <i
                 class="fa-solid fa-lg"
                 :class="openMenu ? 'fa-xmark' : 'fa-bars'"
-                :style="openMenu ? 'color: #000000' : ''"
               ></i>
-              <p class="description-text uppercase grey-02 d-none d-md-block">
+              <p class="description-text uppercase big color-03 d-none d-md-block">
                 {{ openMenu ? "CLOSE" : "MENU" }}
               </p>
             </div>
@@ -99,13 +92,13 @@
       <div class="row">
         <div class="navbar-menu col-12" :class="openMenu ? 'open' : 'close'">
           <ul class="menu-list-options d-flex flex-column">
-            <li>
-              <NuxtLink to="/" @click="openMenu = false"
-                ><p class="description-text black uppercase big font-bold">
-                  home
-                </p></NuxtLink
-              >
-            </li>
+            <div
+              class="menu-list-logo d-inline-flex d-md-none justify-content-start align-items-center"
+            >
+              <NuxtLink to="/" @click="openMenu = false">
+                <img src="../assets/images/kunst_3_logo.png"
+              /></NuxtLink>
+            </div>
             <li>
               <NuxtLink to="/" @click="openMenu = false"
                 ><p class="description-text black uppercase big font-bold">

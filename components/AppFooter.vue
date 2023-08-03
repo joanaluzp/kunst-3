@@ -26,9 +26,8 @@
   </footer>
 </template>
 <script setup>
-let prevScrollpos = window.pageYOffset;
-
 const handleScrollFooter = () => {
+  let prevScrollpos = window.pageYOffset;
   let currentScrollPos = window.pageYOffset;
   if (prevScrollpos < currentScrollPos) {
     document.querySelector(".footer-wrapper").style.display = "flex";

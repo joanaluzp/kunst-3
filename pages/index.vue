@@ -158,12 +158,12 @@
         </Swiper>
       </div>
       <div
-        class="slider-arrows-wrapper d-none d-md-flex justify-content-between align-items-center"
+        class="slider-arrows-wrapper justify-content-between align-items-center"
       >
-        <button type="button" class="arrow-prev arrow-gallery-prev">
+        <button type="button" class="d-none d-md-flex arrow-prev arrow-gallery-prev">
           <i class="fa-solid fa-caret-left fa-lg"></i>
         </button>
-        <button type="button" class="arrow-prev arrow-gallery-next">
+        <button type="button" class="d-none d-md-flex arrow-prev arrow-gallery-next">
           <i class="fa-solid fa-caret-right fa-lg"></i>
         </button>
         <button type="button" class="arrow-prev arrow-gallery-down">
