@@ -71,25 +71,6 @@ header {
   z-index: 100;
   top: 0;
   left: 0;
-  &.open {
-    scrollbar-width: thin;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-    &::-webkit-scrollbar {
-      width: 0;
-    }
-
-    /* Track */
-    &::-webkit-scrollbar-track {
-      background: transparent;
-    }
-
-    /* Handle */
-    &::-webkit-scrollbar-thumb {
-      background: transparent;
-    }
-  }
   .container {
     &:first-child {
       .row {
@@ -135,7 +116,6 @@ header {
   .menu-list-options {
     background-color: $white;
     width: 100%;
-    margin-top: 80px;
     padding: 20px;
     .menu-list-logo {
       width: 20%;
@@ -149,11 +129,15 @@ header {
       margin: 5px 0;
       border-radius: 10px;
       padding: 10px;
+      @include transition;
       &:hover {
         border-radius: 1px solid $white;
         background-color: $color03;
+        box-shadow: inset 0 0 40px $white;
+        border: 1px solid $white;
         p {
-          color: $white;
+          color: white;
+          font-family: $Gramatika-Bold-Italic;
         }
         .search {
           color: $white;
@@ -193,7 +177,7 @@ header {
 }
 
 .navbar-menu-list {
-  position:relative;
+  position: relative;
   width: fit-content;
   top: 0;
   z-index: 99;
@@ -201,17 +185,18 @@ header {
   border-radius: 0 0 30px 30px;
   transition: top 0.3s;
   background-color: $white;
-  border: 3px solid $color03;
+  border: 2px solid $color03;
   border-top: none;
   box-shadow: 10px 7px 30px -4px rgba(76, 69, 250, 0.37);
   .menu-list-icon {
+    min-width: 100px;
     height: 50px;
     position: relative;
     cursor: pointer;
     background-color: $white;
     border-radius: 20px;
     padding: 10px 15px;
-    border: 3px solid $color03;
+    border: 2px solid $color03;
     @include transition;
     i {
       color: $grey02;
@@ -220,7 +205,7 @@ header {
       }
     }
     .menu-list-options {
-      border: 3px solid $color03;
+      border: 2px solid $color03;
       display: none;
       background-color: $white;
       position: absolute;
@@ -233,12 +218,13 @@ header {
       li {
         margin-bottom: 5px;
         padding: 0 10px 5px 10px;
+        @include transition;
         &:not(:first-child) {
           border: 1px solid $grey01;
           padding-top: 5px;
           border-radius: 10px;
           &:hover {
-            animation: shake 0.3s ease-in-out infinite;
+            transform: skew(5deg, 5deg);
           }
         }
       }
@@ -273,6 +259,9 @@ header {
     &:hover {
       .menu-list-icon {
         border-radius: 50%;
+        p {
+          transform: scale(2);
+        }
         .menu-list-options {
           display: block;
           &.search {
@@ -289,22 +278,26 @@ header {
   }
 }
 
+.icon-help {
+  cursor: help;
+}
+
 .swiper {
   position: relative;
-  .header-background-text {
+  .header-background-content {
     width: 100%;
-    .left {
-      position: absolute;
-      top: 150px;
-      left: 30px;
-      z-index: 40;
-      h1 {
-        @include transition;
-        &:hover {
-          transform: translate3d(10px, 10px, 10px) skewX(10deg);
-        }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .description-title {
+      @include transition;
+      text-align: center;
+      &:hover {
+        transform: translate3d(10px, 10px, 10px) skewX(10deg);
       }
     }
+
     .right {
       position: absolute;
       bottom: 30px;
@@ -318,14 +311,37 @@ header {
 @media (min-width: 768px) {
   .navbar-menu {
     box-shadow: -85px 56px 4px -80px $color02;
-;  width: 30%;
+    width: 30%;
+    bottom: 0;
+    top: auto;
+    height: 80vh;
+    border-radius: 15px 0 0 0;
+    &.pt-70 {
+      padding: 0;
+    }
+    &.open {
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: $white;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: $black;
+        border-radius: 50%;
+      }
+    }
     .menu-list-options {
-      margin-top: 100px;
+      border-radius: 15px 0 0 0;
     }
   }
   .navbar-menu-list {
     .menu-list-icon {
       margin: 0 10px;
+      min-width: 110px;
       i {
         margin-right: 10px;
       }

@@ -11,7 +11,7 @@
     @include fluid-type(320px, 1199px, 12px, 14px);
   }
   &.big {
-    @include fluid-type(320px, 1199px, 18px, 20px); 
+    @include fluid-type(320px, 1199px, 18px, 20px);
   }
   &.font-bold {
     font-family: $Gramatika-Bold;
@@ -31,15 +31,18 @@
   &.text-right {
     text-align: right;
   }
+  &.text-justify {
+    text-align: justify;
+  }
+  &.text-center {
+    text-align: center;
+  }
   &.black {
     color: $black;
   }
   &.text-outline {
-    text-shadow:
-		-1px -1px 0 $black,
-		1px -1px 0 $black,
-		-1px 1px 0 $black,
-		1px 1px 0 $black;
+    text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black,
+      1px 1px 0 $black;
     letter-spacing: 2px;
   }
   &.white {
@@ -77,10 +80,19 @@
     @include fluid-type(320px, 1199px, 18px, 22px);
   }
   &.big {
-    @include fluid-type(320px, 1199px, 24px, 28px); 
+    @include fluid-type(320px, 1199px, 24px, 28px);
   }
   &.text-header {
-    @include fluid-type(320px, 1199px, 20px, 40px); 
+    @include fluid-type(320px, 1199px, 20px, 40px);
+  }
+  &.text-right {
+    text-align: right;
+  }
+  &.text-justify {
+    text-align: justify;
+  }
+  &.text-center {
+    text-align: center;
   }
   &.font-bold {
     font-family: $Gramatika-Bold;
@@ -104,11 +116,8 @@
     color: $white;
   }
   &.text-outline {
-    text-shadow:
-		-1px -1px 0 $black,
-		1px -1px 0 $black,
-		-1px 1px 0 $black,
-		1px 1px 0 $black;
+    text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black,
+      1px 1px 0 $black;
     letter-spacing: 6px;
   }
   &.grey-01 {
@@ -130,4 +139,3 @@
     text-transform: capitalize;
   }
 }
-

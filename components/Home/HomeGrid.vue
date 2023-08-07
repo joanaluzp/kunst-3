@@ -49,7 +49,7 @@
           </ul>
         </div>
         <!--<Transition>-->
-        <div class="home-grid-items-wrapper col-12 offset-lg-3 col-lg-9">
+        <div class="home-grid-items-wrapper pt-70 col-12 offset-lg-3 col-lg-9">
           <NuxtLink
             to="/programme/sample"
             class="home-grid-item"
@@ -76,11 +76,11 @@
               >
                 28/11 wednesday
               </p>
-              <button
+              <div
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 22:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -107,11 +107,11 @@
               >
                 12/11 sunday
               </p>
-              <button
+              <div
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 19:00
-              </button>
+              </div>
             </div>
             <div
               class="grid-item-wrapper d-flex justify-content-start align-items-center"
@@ -121,11 +121,11 @@
               >
                 30/11 monday
               </p>
-              <button
+              <div
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 21:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -155,11 +155,11 @@
               >
                 20/11 friday
               </p>
-              <button
+              <div
                 class="btn description-text lowercase small black font-bold-italic d-inline-flex align-items-center"
               >
                 20:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -188,11 +188,11 @@
               >
                 15/11 sunday
               </p>
-              <button
+              <div
                 class="btn description-text lowercase small black font-bold-italic d-inline-flex align-items-center"
               >
                 19:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -222,11 +222,11 @@
               >
                 sunday(s)
               </p>
-              <button
+              <div
                 class="btn description-text lowercase small black font-bold-italic d-inline-flex align-items-center"
               >
                 10:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -255,11 +255,11 @@
               >
                 5/1 saturday
               </p>
-              <button
+              <div
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 22:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -286,11 +286,11 @@
               >
                 9/10 wednesday
               </p>
-              <button
+              <div
                 class="btn description-text small black lowercase font-bold-italic d-inline-flex align-items-center"
               >
                 21:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -319,11 +319,11 @@
               >
                 1/11 friday
               </p>
-              <button
+              <div
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 21:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -350,11 +350,11 @@
               >
                 28/10 wednesday
               </p>
-              <button
+              <div
                 class="btn description-text small black lowercase font-bold-italic d-inline-flex align-items-center"
               >
                 18:00
-              </button>
+              </div>
             </div>
             <div
               class="grid-item-wrapper d-flex justify-content-start align-items-center"
@@ -364,11 +364,11 @@
               >
                 10/10 thuesday
               </p>
-              <button
+              <div
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 18:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -397,11 +397,11 @@
               >
                 20/11 friday
               </p>
-              <button
+              <div
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 19:00
-              </button>
+              </div>
             </div>
             <div
               class="grid-item-wrapper d-flex justify-content-start align-items-center"
@@ -411,11 +411,11 @@
               >
                 23/10 thuesday
               </p>
-              <button
+              <div
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 18:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -442,11 +442,11 @@
               >
                 21/10 thursday
               </p>
-              <button
+              <div
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 19:00
-              </button>
+              </div>
             </div>
             <div
               class="grid-item-wrapper d-flex justify-content-start align-items-center"
@@ -456,11 +456,11 @@
               >
                 30/11 thuesday
               </p>
-              <button
+              <div
                 class="btn description-text small black lowercase font-bold-italic d-inline-flex align-items-center"
               >
                 21:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -489,11 +489,11 @@
               >
                 10/11 saturday
               </p>
-              <button
+              <div
                 class="btn description-text small black lowercase font-bold-italic d-inline-flex align-items-center"
               >
                 22:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -522,11 +522,11 @@
               >
                 26/11 friday
               </p>
-              <button
+              <div
                 class="btn description-text lowercase small black font-bold-italic d-inline-flex align-items-center"
               >
                 20:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -553,11 +553,11 @@
               >
                 12/11 thursday
               </p>
-              <button
+              <div
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 21:00
-              </button>
+              </div>
             </div>
             <div
               class="grid-item-wrapper d-flex justify-content-start align-items-center"
@@ -567,11 +567,11 @@
               >
                 3/11 monday
               </p>
-              <button
+              <div
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 19:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -599,11 +599,11 @@
               >
                 19/10 friday
               </p>
-              <button
+              <div
                 class="btn description-text small black lowercase font-bold-italic d-inline-flex align-items-center"
               >
                 18:00
-              </button>
+              </div>
             </div>
             <div
               class="grid-item-wrapper d-flex justify-content-start align-items-center"
@@ -613,11 +613,11 @@
               >
                 30/11 saturday
               </p>
-              <button
+              <div
                 class="btn description-text small black lowercase font-bold-italic d-inline-flex align-items-center"
               >
                 19:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -644,11 +644,11 @@
               >
                 17/11 wednesday
               </p>
-              <button
+              <div
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 21:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -675,11 +675,11 @@
               >
                 1/10 wednesday
               </p>
-              <button
+              <div
                 class="btn description-text small black lowercase font-bold-italic d-inline-flex align-items-center"
               >
                 21:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -711,11 +711,11 @@
               >
                 8/12 saturday
               </p>
-              <button
+              <div
                 class="btn description-text small black lowercase font-bold-italic d-inline-flex align-items-center"
               >
                 21:30
-              </button>
+              </div>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -742,11 +742,11 @@
               >
                 22/10 monday
               </p>
-              <button
+              <div
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 21:00
-              </button>
+              </div>
             </div>
             <div
               class="grid-item-wrapper d-flex justify-content-start align-items-center"
@@ -756,11 +756,11 @@
               >
                 30/10 thuesday
               </p>
-              <button
+              <div
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 19:00
-              </button>
+              </div>
             </div>
           </NuxtLink>
         </div>
@@ -768,9 +768,6 @@
       </div>
     </div>
   </section>
-  <client-only>
-    <AppFooter />
-  </client-only>
 </template>
 <script setup>
 const searchType = ref("default");

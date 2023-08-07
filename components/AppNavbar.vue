@@ -17,8 +17,9 @@
             <div
               class="menu-list-icon icon-lang d-none d-md-flex justify-content-center align-items-center"
             >
-              <i class="fa-solid fa-globe fa-lg"></i>
-              <p class="description-text uppercase big color-03">A⇆ü</p>
+              <p class="description-text uppercase big text-center color-03">
+                A⇆ü
+              </p>
               <ul class="menu-list-options">
                 <li class="description-text grey-01 capitalize">
                   <a href="">Language</a>
@@ -36,8 +37,9 @@
             <div
               class="menu-list-icon icon-help d-none d-md-flex justify-content-center align-items-center"
             >
-              <i class="fa-regular fa-circle-question fa-lg"></i>
-              <p class="description-text uppercase big color-03">HELP</p>
+              <p class="description-text uppercase big text-center color-03">
+                HELP
+              </p>
               <ul class="menu-list-options">
                 <li class="description-text grey-01 capitalize">Help</li>
                 <li class="description-text black option capitalize small">
@@ -56,8 +58,9 @@
             <div
               class="menu-list-icon icon-search d-none d-md-flex justify-content-center align-items-center"
             >
-              <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-              <p class="description-text uppercase big color-03">SEARCH</p>
+              <p class="description-text uppercase big text-center color-03">
+                SEARCH
+              </p>
               <div class="menu-list-options search">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input
@@ -76,11 +79,9 @@
               @click="openMenu = !openMenu"
               :class="{ open: openMenu }"
             >
-              <i
-                class="fa-solid fa-lg"
-                :class="openMenu ? 'fa-xmark' : 'fa-bars'"
-              ></i>
-              <p class="description-text uppercase big color-03 d-none d-md-block">
+              <p
+                class="description-text uppercase big text-center color-03 navbar-menu-toggle"
+              >
                 {{ openMenu ? "CLOSE" : "MENU" }}
               </p>
             </div>
@@ -90,7 +91,10 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="navbar-menu col-12" :class="openMenu ? 'open' : 'close'">
+        <div
+          class="navbar-menu pt-70 col-12"
+          :class="openMenu ? 'open' : 'close'"
+        >
           <ul class="menu-list-options d-flex flex-column">
             <div
               class="menu-list-logo d-inline-flex d-md-none justify-content-start align-items-center"
@@ -103,6 +107,13 @@
               <NuxtLink to="/" @click="openMenu = false"
                 ><p class="description-text black uppercase big font-bold">
                   about us
+                </p></NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink to="/programme" @click="openMenu = false"
+                ><p class="description-text black uppercase big font-bold">
+                  programme
                 </p></NuxtLink
               >
             </li>
@@ -128,30 +139,26 @@
               >
             </li>
             <li>
-              <NuxtLink to="/" @click="openMenu = false"
-                ><p class="description-text black uppercase big font-bold">
-                  events
-                </p></NuxtLink
-              >
-            </li>
-            <li>
-              <p class="description-text black uppercase big font-bold">
+              <p class="description-text black uppercase big font-bold icon-help">
                 <span>
                   <i class="fa-regular fa-circle-question"></i>
                 </span>
                 help
               </p>
               <NuxtLink to="/" @click="openMenu = false"
+              class="icon-help"
                 ><p class="description-text grey-01 capitalize">
                   how to get here
                 </p></NuxtLink
               >
               <NuxtLink to="/" @click="openMenu = false"
+              class="icon-help"
                 ><p class="description-text grey-01 capitalize">
                   FAQ
                 </p></NuxtLink
               >
               <NuxtLink to="/" @click="openMenu = false"
+              class="icon-help"
                 ><p class="description-text grey-01 capitalize">
                   support KUNST 3
                 </p></NuxtLink
@@ -213,6 +220,21 @@
 <script setup>
 const openMenu = ref(false);
 let prevScrollpos = window.pageYOffset;
+
+const clickOutside = () => {
+  document.addEventListener("click", (event) => {
+    console.log(event.target.classList);
+    if (
+      !event.target.classList.contains("navbar-menu") ||
+      !event.target.classList.contains("navbar-menu-toggle")
+    ) {
+      openMenu.value = false;
+    } else {
+      openMenu.value = true;
+
+    }
+  });
+};
 
 const handleScrollNavbar = () => {
   let currentScrollPos = window.pageYOffset;
