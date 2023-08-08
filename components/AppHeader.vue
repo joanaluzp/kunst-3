@@ -19,10 +19,8 @@
           <SwiperSlide>
             <div class="container-fluid">
               <div class="row">
-                <div class="header-marquee col-12">
-                  <h1
-                    class="description-title red text-header font-black uppercase"
-                  >
+                <div class="header-background-text col-12">
+                  <h1 class="description-title red font-black uppercase">
                     Classic Movies every wednesday
                   </h1>
                 </div>
@@ -39,10 +37,8 @@
           <SwiperSlide>
             <div class="container-fluid">
               <div class="row">
-                <div class="header-marquee col-12">
-                  <h1
-                    class="description-title red text-header font-black uppercase"
-                  >
+                <div class="header-background-text col-12">
+                  <h1 class="description-title red font-black uppercase">
                     if i fall you lose (performance)
                   </h1>
                 </div>
@@ -59,10 +55,8 @@
           <SwiperSlide>
             <div class="container-fluid">
               <div class="row">
-                <div class="header-marquee col-12">
-                  <h1
-                    class="description-title red text-header font-black uppercase"
-                  >
+                <div class="header-background-text col-12">
+                  <h1 class="description-title red font-black uppercase">
                     angela schanelec: all the movies
                   </h1>
                 </div>
@@ -85,7 +79,7 @@
           <SwiperSlide>
             <div class="container-fluid">
               <div class="row">
-                <div class="header-marquee col-12">
+                <div class="header-background-text col-12">
                   <h1
                     class="description-title red text-header font-black uppercase"
                   >
@@ -121,9 +115,14 @@
         </button>
         <button type="button" class="arrow-prev arrow-gallery-down">
           <NuxtLink to="/programme">
-            <i class="fa-regular fa-hand fa-4x"></i
-          ></NuxtLink>
+            <img src="../assets/images/sign-next.svg"
+          /></NuxtLink>
         </button>
+      </div>
+      <div class="header-marquee" data-text="K3">
+        <p class="d-inline-block description-title font-bold-italic">K3</p>
+        <p class="d-inline-block description-title font-bold-italic">K3</p>
+
       </div>
     </div>
   </header>
@@ -131,12 +130,10 @@
 <script setup>
 const hover3dEffect = () => {
   let elm = document.querySelector(".swiper");
-
   const height = elm.clientHeight;
   const width = elm.clientWidth;
 
   elm.addEventListener("mousemove", handleMove);
-
   function handleMove(e) {
     const xVal = e.layerX;
     const yVal = e.layerY;

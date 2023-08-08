@@ -3342,6 +3342,11 @@ a {
     opacity: 0;
   }
 }
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
 @keyframes floating {
   0% {
     transform: translate(50%, 0);
@@ -3370,20 +3375,8 @@ header .header-background-wrapper {
   height: 100%;
   position: relative;
 }
-header .header-background-wrapper::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url("./../../images/kunst_3_angela_schanelec.png");
-  border-radius: 50px;
-  width: 700px;
-  height: 700px;
-  transition: all 0.3s ease-in-out;
-}
 header .header-background-wrapper .header-background {
+  z-index: 4;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -3419,7 +3412,7 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-next {
 }
 header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down {
   position: absolute;
-  z-index: 5;
+  z-index: 10;
   cursor: pointer;
   bottom: 50px;
   right: 50%;
@@ -3427,12 +3420,74 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down {
   transition: all 0.3s ease-in-out;
   animation: floating 3s ease-in-out infinite;
 }
-header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down i {
-  color: #000;
+header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down img {
+  transform: scale(1);
   transition: all 0.3s ease-in-out;
 }
-header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down i:hover {
+header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down img:hover {
   transform: scale(3);
+}
+header .header-background-wrapper .header-marquee {
+  background-color: black;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 100%;
+}
+header .header-background-wrapper .header-marquee .description-title {
+  z-index: 9999;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 20px;
+  color: #5eff00;
+  text-overflow: ellipsis;
+  animation: marquee 2s infinite linear;
+}
+header .header-background-wrapper .header-marquee .description-title {
+  font-size: 50px;
+}
+@media screen and (min-width: 320px) {
+  header .header-background-wrapper .header-marquee .description-title {
+    font-size: calc(
+          50px + 150 *
+            ((100vw - 320px) / 879)
+        );
+  }
+}
+@media screen and (min-width: 1199px) {
+  header .header-background-wrapper .header-marquee .description-title {
+    font-size: 200px;
+  }
+}
+header .header-background-wrapper .header-marquee .description-title::before {
+  border-radius: 100%;
+  transform: scaleY(1.2);
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0.425rem;
+  bottom: 0.425rem;
+  left: 0;
+  right: 0;
+  border-radius: 1.7rem;
+  transition: border-radius 0.1s cubic-bezier(0.1, 0.6, 0.4, 1), transform 0.1s cubic-bezier(0.1, 0.6, 0.4, 1);
+}
+header .header-background-wrapper .header-marquee .description-title::after {
+  content: attr(data-title);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  color: #fff;
+  transform: translate3d(100%, 0, 0);
+  margin-left: 1px;
+  position: relative;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .navbar {
@@ -3658,22 +3713,22 @@ header .header-background-wrapper .slider-arrows-wrapper .arrow-gallery-down i:h
   cursor: pointer;
   position: relative;
 }
-.swiper .header-marquee {
+.swiper .header-background-text {
   width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 200;
+  z-index: 4;
 }
-.swiper .header-marquee .description-title {
+.swiper .header-background-text .description-title {
   transition: all 0.3s ease-in-out;
   text-align: center;
 }
-.swiper .header-marquee .description-title:hover {
+.swiper .header-background-text .description-title:hover {
   transform: translate3d(10px, 10px, 10px) skewX(10deg) scale(3);
 }
-.swiper .header-marquee .right {
+.swiper .header-background-text .right {
   position: absolute;
   bottom: 30px;
   right: 30px;

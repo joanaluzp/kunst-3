@@ -9,25 +9,12 @@ header {
   user-select: none; /* Standard syntax */
   position: relative;
   background-color: $white;
-
   .header-background-wrapper {
     width: 100%;
     height: 100%;
     position: relative;
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-image: url('./../../images/kunst_3_angela_schanelec.png');
-      border-radius: 50px;
-      width: 700px;
-      height: 700px;
-      @include transition;
-    }
     .header-background {
+      z-index: 4;
       width: 100%;
       position: absolute;
       top: 50%;
@@ -62,19 +49,67 @@ header {
       }
       .arrow-gallery-down {
         position: absolute;
-        z-index: 5;
+        z-index: 10;
         cursor: pointer;
         bottom: 50px;
         right: 50%;
         transform: translateX(50%);
         @include transition;
         animation: floating 3s ease-in-out infinite;
-        i {
-          color: $black;
+        img {
+          transform: scale(1);
           @include transition;
           &:hover {
             transform: scale(3);
           }
+        }
+      }
+    }
+    .header-marquee {
+      background-color: black;
+      display: inline-block;
+      overflow: hidden;
+      border-radius: 100%;
+      .description-title {
+        z-index: 9999;
+        position: relative;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        margin: 0 20px;
+        @include fluid-type(320px, 1199px, 50px, 200px);
+        color: $color05;
+        text-overflow: ellipsis;
+        animation: marquee 2s infinite linear;
+        &::before {
+          border-radius: 100%;
+          transform: scaleY(1.2);
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 0.425rem;
+          bottom: 0.425rem;
+          left: 0;
+          right: 0;
+          border-radius: 1.7rem;
+          transition: border-radius 0.1s cubic-bezier(0.1, 0.6, 0.4, 1),
+            transform 0.1s cubic-bezier(0.1, 0.6, 0.4, 1);
+        }
+        &::after {
+          content: attr(data-title);
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          bottom: 0;
+          color: $white;
+          transform: translate3d(100%, 0, 0);
+          margin-left: 1px;
+          position: relative;
+          display: block;
+          text-overflow: ellipsis;
+          overflow: hidden;
         }
       }
     }
@@ -304,13 +339,13 @@ header {
   height: 80vh;
   cursor: pointer;
   position: relative;
-  .header-marquee {
+  .header-background-text {
     width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 200;
+    z-index: 4;
     .description-title {
       @include transition;
       text-align: center;
