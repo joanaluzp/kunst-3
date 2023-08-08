@@ -119,10 +119,16 @@
           /></NuxtLink>
         </button>
       </div>
-      <div class="header-marquee" data-text="K3">
-        <p class="d-inline-block description-title font-bold-italic">K3</p>
-        <p class="d-inline-block description-title font-bold-italic">K3</p>
-
+      <div class="header-marquee">
+        <div class="marquee">
+          <p class="description-title font-bold-italic">K3 &nbsp;</p>
+          <p class="description-title font-bold-italic">K3 &nbsp;</p>
+          <p class="description-title font-bold-italic">K3 &nbsp;</p>
+          <p class="description-title font-bold-italic">K3 &nbsp;</p>
+          <p class="description-title font-bold-italic">K3 &nbsp;</p>
+          <p class="description-title font-bold-italic">K3 &nbsp;</p>
+          <p class="description-title font-bold-italic">K3 &nbsp;</p>
+        </div>
       </div>
     </div>
   </header>
