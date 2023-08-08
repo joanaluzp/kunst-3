@@ -80,7 +80,7 @@
               :class="{ open: openMenu }"
             >
               <p
-                class="description-text uppercase big text-center color-03 navbar-menu-toggle"
+                class="description-text uppercase big text-center color-03 toggle"
               >
                 {{ openMenu ? "CLOSE" : "MENU" }}
               </p>
@@ -139,26 +139,25 @@
               >
             </li>
             <li>
-              <p class="description-text black uppercase big font-bold icon-help">
+              <p
+                class="description-text black uppercase big font-bold icon-help"
+              >
                 <span>
                   <i class="fa-regular fa-circle-question"></i>
                 </span>
                 help
               </p>
-              <NuxtLink to="/" @click="openMenu = false"
-              class="icon-help"
+              <NuxtLink to="/" @click="openMenu = false" class="icon-help"
                 ><p class="description-text grey-01 capitalize">
                   how to get here
                 </p></NuxtLink
               >
-              <NuxtLink to="/" @click="openMenu = false"
-              class="icon-help"
+              <NuxtLink to="/" @click="openMenu = false" class="icon-help"
                 ><p class="description-text grey-01 capitalize">
                   FAQ
                 </p></NuxtLink
               >
-              <NuxtLink to="/" @click="openMenu = false"
-              class="icon-help"
+              <NuxtLink to="/" @click="openMenu = false" class="icon-help"
                 ><p class="description-text grey-01 capitalize">
                   support KUNST 3
                 </p></NuxtLink
@@ -219,26 +218,28 @@
 </template>
 <script setup>
 const openMenu = ref(false);
-let prevScrollpos = window.pageYOffset;
+
+if (process.client) {
+  let prevScroll = window.pageYOffset;
+}
 
 const clickOutside = () => {
   document.addEventListener("click", (event) => {
     console.log(event.target.classList);
     if (
       !event.target.classList.contains("navbar-menu") ||
-      !event.target.classList.contains("navbar-menu-toggle")
+      !event.target.classList.contains("toggle")
     ) {
       openMenu.value = false;
     } else {
       openMenu.value = true;
-
     }
   });
 };
 
 const handleScrollNavbar = () => {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  let currentScroll = window.pageYOffset;
+  if (prevScroll > currentScroll) {
     document.querySelector(".navbar-menu-list").style.top = "0";
     document.querySelector(".navbar-menu-list").style.boxShadow =
       "7px 7px 5px -4px rgba(76, 69, 250, 0.37)";
@@ -246,10 +247,12 @@ const handleScrollNavbar = () => {
     document.querySelector(".navbar-menu-list").style.top = "-100px";
     document.querySelector(".navbar-menu-list").style.boxShadow = "none";
   }
-  prevScrollpos = currentScrollPos;
+  prevScroll = currentScroll;
 };
 
 onMounted(() => {
-  window.addEventListener("scroll", handleScrollNavbar);
+  if (process.client){
+    window.addEventListener("scroll", handleScrollNavbar);
+  }
 });
 </script>

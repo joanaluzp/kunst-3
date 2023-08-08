@@ -11,7 +11,6 @@
           :autoplay="{
             delay: 5000,
           }"
-          style="height: 100vh"
           :navigation="{
             nextEl: '.arrow-gallery-next',
             prevEl: '.arrow-gallery-prev',
@@ -20,9 +19,9 @@
           <SwiperSlide>
             <div class="container-fluid">
               <div class="row">
-                <div class="header-background-content col-12">
+                <div class="header-marquee col-12">
                   <h1
-                    class="description-title text-outline white text-header font-black uppercase"
+                    class="description-title red text-header font-black uppercase"
                   >
                     Classic Movies every wednesday
                   </h1>
@@ -40,9 +39,9 @@
           <SwiperSlide>
             <div class="container-fluid">
               <div class="row">
-                <div class="header-background-content col-12">
+                <div class="header-marquee col-12">
                   <h1
-                    class="description-title text-outline white text-header font-black uppercase"
+                    class="description-title red text-header font-black uppercase"
                   >
                     if i fall you lose (performance)
                   </h1>
@@ -60,9 +59,9 @@
           <SwiperSlide>
             <div class="container-fluid">
               <div class="row">
-                <div class="header-background-content col-12">
+                <div class="header-marquee col-12">
                   <h1
-                    class="description-title white text-outline text-header font-black uppercase"
+                    class="description-title red text-header font-black uppercase"
                   >
                     angela schanelec: all the movies
                   </h1>
@@ -86,9 +85,9 @@
           <SwiperSlide>
             <div class="container-fluid">
               <div class="row">
-                <div class="header-background-content col-12">
+                <div class="header-marquee col-12">
                   <h1
-                    class="description-title text-outline white text-header font-black uppercase"
+                    class="description-title red text-header font-black uppercase"
                   >
                     super 8 workshop every sunday
                   </h1>
@@ -122,10 +121,41 @@
         </button>
         <button type="button" class="arrow-prev arrow-gallery-down">
           <NuxtLink to="/programme">
-            <i class="fa-regular fa-hand fa-2x"></i
+            <i class="fa-regular fa-hand fa-4x"></i
           ></NuxtLink>
         </button>
       </div>
     </div>
   </header>
 </template>
+<script setup>
+const hover3dEffect = () => {
+  let elm = document.querySelector(".swiper");
+
+  const height = elm.clientHeight;
+  const width = elm.clientWidth;
+
+  elm.addEventListener("mousemove", handleMove);
+
+  function handleMove(e) {
+    const xVal = e.layerX;
+    const yVal = e.layerY;
+    const yRotation = 10 * ((xVal - width / 2) / width);
+    const xRotation = -10 * ((yVal - height / 2) / height);
+    const cssConvertion =
+      "perspective(500px) scale(1.1) rotateX(" +
+      xRotation +
+      "deg) rotateY(" +
+      yRotation +
+      "deg)";
+    elm.style.transform = cssConvertion;
+  }
+  elm.addEventListener("mouseout", function () {
+    elm.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+  });
+};
+
+onMounted(() => {
+  hover3dEffect();
+});
+</script>

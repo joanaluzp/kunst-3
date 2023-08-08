@@ -27,15 +27,18 @@
 </template>
 <script setup>
 const handleScrollFooter = () => {
-  let prevScrollpos = window.pageYOffset;
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos < currentScrollPos) {
-    document.querySelector(".footer-wrapper").style.display = "flex";
+  const footer = document.querySelector('.footer-wrapper');
+  const windowHeight = window.innerHeight;
+  const scrollableHeight = document.documentElement.scrollHeight - windowHeight;
+  const currentScroll = window.scrollY;
+
+  if (currentScroll >= scrollableHeight) {
+    footer.style.bottom = '0';
   } else {
-    document.querySelector(".footer-wrapper").style.display = "none";
+    footer.style.bottom = '-100px';
   }
-  prevScrollpos = currentScrollPos;
 };
+
 onMounted(() => {
   window.addEventListener("scroll", handleScrollFooter);
 });

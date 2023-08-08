@@ -8,7 +8,7 @@
     padding: 2px 10px;
     border: 1px solid $black;
     border-radius: 15px;
-    cursor:pointer;
+    cursor: pointer;
     &:hover {
       animation: strobe 0.3s infinite;
     }
@@ -36,11 +36,19 @@
         }
       }
     }
+    &.right {
+      margin-top: 20px;
+    }
   }
 }
 .item-description-wrapper {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  .left {
+    .description-title {
+      margin-bottom: 20px;
+    }
+  }
   .right {
     .item-description-item {
       margin-bottom: 10px;
@@ -86,9 +94,16 @@
   }
   .item-description-wrapper {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
   }
 }
 
 @media (min-width: 992px) {
+  .item-content-wrapper {
+    .item-content {
+      &.right {
+        margin-top: 0;
+      }
+    }
+  }
 }

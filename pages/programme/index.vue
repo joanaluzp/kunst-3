@@ -1,6 +1,4 @@
 <template>
   <LazyHomeGrid />
-  <client-only>
-    <AppFooter />
-  </client-only>
+  <AppFooter />
 </template>

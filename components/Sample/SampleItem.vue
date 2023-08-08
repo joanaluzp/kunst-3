@@ -32,7 +32,7 @@
             </div>
           </div>
         </div>
-        <div class="item-content right col-12 col-lg-3 d-flex">
+        <div class="item-content right col-7 offset-5 col-lg-3 d-flex">
           <p class="description-text small black uppercase grey-01 text-right">
             entry
             <span
@@ -51,7 +51,7 @@
     </div>
     <div class="container item-description-wrapper">
       <div class="row">
-        <div class="col-12 col-lg-8 left">
+        <div class="col-12 col-lg-8 col-xl-7 left">
           <p class="description-title font-fungal capitalize text-right">
             NEW IN TOWN
           </p>
@@ -75,7 +75,7 @@
             hoodie.
           </p>
         </div>
-        <div class="col-12 col-lg-3 offset-lg-1 right">
+        <div class="col-12 col-lg-3 offset-lg-1 offset-xl-2 right">
           <ul class="item-description-list">
             <li class="item-description-item">
               <p class="description-text font-bold black capitalize">

@@ -2,8 +2,8 @@
   <section class="section-home-grid">
     <div class="container-fluid">
       <div class="row">
-        <div class="home-grid-list-wrapper d-none d-lg-block">
-          <ul class="home-grid-list-items d-flex flex-column">
+        <div class="home-grid-list-wrapper col-7 col-lg-12">
+          <ul class="home-grid-list-items col-7 col-lg-12">
             <li
               :class="{ active: searchType === 'default' }"
               class="home-grid-list-item"
@@ -786,7 +786,21 @@ const scrollToTop = () => {
   });
 };
 
+const gridList = () => {
+  const elm = document.querySelector('.home-grid-list-wrapper');
+  const windowHeight = window.innerHeight;
+  const scrollableHeight = document.documentElement.scrollHeight - windowHeight;
+  const currentScroll = window.scrollY;
+
+  if (currentScroll >= scrollableHeight) {
+    elm.style.bottom = '120px';
+  } else {
+    elm.style.bottom = '80px';
+  }
+}
+
 onMounted(() => {
   scrollToTop();
+  window.addEventListener('scroll', gridList);
 });
 </script>

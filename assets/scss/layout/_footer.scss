@@ -1,16 +1,19 @@
 /*======NAV======*/
 footer {
   width: 100%;
-
+  overflow: hidden;
 }
 
 .footer-wrapper {
   width: 100%;
-  @include transition2(all, 2s, ease-in-out);
+  @include transition;
   background-color: $color01;
   border-radius: 100px 100px 0 0;
   padding: 20px 30px;
   justify-content: center;
+  position: relative;
+  bottom: -100px;
+  left: 0;
   p {
     text-align: center;
   }
@@ -19,7 +22,6 @@ footer {
 @media (min-width: 576px) {
 }
 @media (min-width: 768px) {
-
   .footer-wrapper {
     padding: 30px 60px;
     justify-content: center;

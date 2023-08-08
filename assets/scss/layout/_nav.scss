@@ -1,7 +1,9 @@
-/*======NAV======*/
+/*======NAV & HEADER======*/
 header {
   width: 100%;
   height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -11,13 +13,26 @@ header {
   .header-background-wrapper {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url('./../../images/kunst_3_angela_schanelec.png');
+      border-radius: 50px;
+      width: 700px;
+      height: 700px;
+      @include transition;
+    }
     .header-background {
       width: 100%;
-      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       video,
       img {
         display: block;
@@ -36,7 +51,7 @@ header {
         top: 50%;
         @include transition;
         i {
-          color: $white;
+          color: $black;
         }
       }
       .arrow-gallery-prev {
@@ -49,16 +64,17 @@ header {
         position: absolute;
         z-index: 5;
         cursor: pointer;
-        bottom: 30px;
+        bottom: 50px;
         right: 50%;
         transform: translateX(50%);
         @include transition;
+        animation: floating 3s ease-in-out infinite;
         i {
-          color: $white;
-        }
-        &:hover {
-          animation: floating 3s ease-in-out infinite;
-          text-shadow: -1px 3px 0px $color02;
+          color: $black;
+          @include transition;
+          &:hover {
+            transform: scale(3);
+          }
         }
       }
     }
@@ -67,10 +83,10 @@ header {
 
 .navbar {
   position: fixed;
-  width: 100%;
+  width: fit-content;
   z-index: 100;
   top: 0;
-  left: 0;
+  right: 0;
   .container {
     &:first-child {
       .row {
@@ -283,21 +299,25 @@ header {
 }
 
 .swiper {
+  width: 80%;
+  overflow: hidden;
+  height: 80vh;
+  cursor: pointer;
   position: relative;
-  .header-background-content {
+  .header-marquee {
     width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 200;
     .description-title {
       @include transition;
       text-align: center;
       &:hover {
-        transform: translate3d(10px, 10px, 10px) skewX(10deg);
+        transform: translate3d(10px, 10px, 10px) skewX(10deg) scale(3);
       }
     }
-
     .right {
       position: absolute;
       bottom: 30px;
@@ -309,6 +329,9 @@ header {
 @media (min-width: 576px) {
 }
 @media (min-width: 768px) {
+  .navbar {
+    right: 30px;
+  }
   .navbar-menu {
     box-shadow: -85px 56px 4px -80px $color02;
     width: 30%;
@@ -348,6 +371,8 @@ header {
     }
   }
   .swiper {
+    width: 60%;
+    height: 60vh;
     .header-background-text {
       .left {
         left: 80px;
@@ -363,6 +388,9 @@ header {
 }
 
 @media (min-width: 1200px) {
+  .navbar {
+    right: 100px;
+  }
   .navbar-menu {
     .menu-list-options {
       li {
@@ -375,10 +403,14 @@ header {
 }
 
 @media (min-width: 1400px) {
+  .navbar {
+    right: 150px;
+  }
   .navbar-menu {
     width: 20%;
   }
   .swiper {
+    width: 50%;
     .header-background-text {
       .left {
         left: 150px;
