@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <AppNavbar />
+    <client-only> <AppNavbar /></client-only>
     <NuxtPage />
   </div>
 </template>

@@ -60,12 +60,16 @@ body {
   }
 }
 
+.icon-help {
+  cursor: help;
+}
+
 .pt-70 {
   padding-top: 70px;
 }
 
-.pt-90 {
-  padding-top: 90px;
+.pt-100 {
+  padding-top: 100px;
 }
 
 input[type="search"]::-webkit-search-decoration,

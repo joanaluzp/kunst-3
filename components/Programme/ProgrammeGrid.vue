@@ -51,7 +51,7 @@
         <!--<Transition>-->
         <div class="home-grid-items-wrapper pt-70 col-12 offset-lg-3 col-lg-9">
           <NuxtLink
-            to="/programme/sample"
+            to="/programme/detail"
             class="home-grid-item"
             v-if="searchType === 'default' || searchType === 'concerts'"
           >
@@ -125,6 +125,40 @@
                 class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
               >
                 21:00
+              </div>
+            </div>
+          </NuxtLink>
+          <NuxtLink
+            to="/programme/sample"
+            class="home-grid-item"
+            v-if="searchType === 'default' || searchType === 'performance'"
+          >
+            <div class="grid-item-image">
+              <img
+                src="../../assets/images/performance/pexels-cottonbro-studio-7816141.jpg"
+              />
+            </div>
+            <div class="grid-item-title">
+              <h3 class="description-text font-bold big black capitalize">
+                If i fall you lose
+              </h3>
+              <h4 class="description-text big black capitalize">
+                Mlkshk put a bird on it vexillologist Brooklyn retro coloring
+                book
+              </h4>
+            </div>
+            <div
+              class="grid-item-wrapper d-flex justify-content-start align-items-center"
+            >
+              <p
+                class="grid-item-info description-text lowercase small black font-bold-italic d-inline-flex"
+              >
+                5/10 sunday
+              </p>
+              <div
+                class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
+              >
+                19:00
               </div>
             </div>
           </NuxtLink>
@@ -787,20 +821,20 @@ const scrollToTop = () => {
 };
 
 const gridList = () => {
-  const elm = document.querySelector('.home-grid-list-wrapper');
+  const elm = document.querySelector(".home-grid-list-wrapper");
   const windowHeight = window.innerHeight;
   const scrollableHeight = document.documentElement.scrollHeight - windowHeight;
   const currentScroll = window.scrollY;
 
   if (currentScroll >= scrollableHeight) {
-    elm.style.bottom = '120px';
+    elm.style.bottom = "120px";
   } else {
-    elm.style.bottom = '80px';
+    elm.style.bottom = "80px";
   }
-}
+};
 
 onMounted(() => {
   scrollToTop();
-  window.addEventListener('scroll', gridList);
+  window.addEventListener("scroll", gridList);
 });
 </script>

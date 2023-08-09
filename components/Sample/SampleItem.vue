@@ -1,20 +1,32 @@
 <template>
-  <section class="section-programme-item pt-90">
+  <section class="section-programme-item pt-100">
     <div class="container item-content-wrapper">
       <div class="row justify-content-between align-items-end">
-        <div class="item-content left col-12 col-lg-9 d-flex flex-wrap">
-          <div class="d-flex align-items-start justify-content-center">
-            <p class="description-title text-center small black capitalize">
-              Nov
-              <span
-                class="description-title text-center black text-header font-black"
-                >15</span
-              >
-            </p>
-          </div>
-          <div class="d-flex flex-column">
-            <div class="d-flex flex-column top">
+        <div
+          class="item-content left col-12 col-lg-9 d-flex flex-wrap order-2 order-lg-1"
+        >
+          <div class="d-flex">
+            <div>
+              <p class="description-title small black capitalize">
+                Nov
+                <span class="description-title black text-header font-black"
+                  >15</span
+                >
+              </p>
               <p class="description-text black capitalize">Sunday at 19:00</p>
+            </div>
+            <div>
+              <p class="description-title small black capitalize">
+                Nov
+                <span class="description-title black text-header font-black"
+                  >15</span
+                >
+              </p>
+              <p class="description-text black capitalize">Sunday at 19:00</p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end flex-column">
+            <div class="d-flex flex-column top">
               <NuxtLink to="/programme">
                 <div
                   class="btn description-text lowercase small black font-bold-italic d-inline-flex align-items-center"
@@ -31,16 +43,6 @@
               </h1>
             </div>
           </div>
-        </div>
-        <div class="item-content right col-7 offset-5 col-lg-3 d-flex">
-          <p class="description-text small black uppercase grey-01 text-right">
-            entry
-            <span
-              class="description-text small black capitalize font-bold text-right"
-              >Presale: 8 € / 5 € discounted (students, seniors) / Door: 10 € /
-              7 € discounted (students, seniors)</span
-            >
-          </p>
         </div>
       </div>
     </div>
@@ -91,6 +93,13 @@
               </p>
               <p class="description-text font-italic black capitalize">
                 all ages are welcomed!
+              </p>
+            </li>
+            <li class="item-description-item">
+              <p class="description-text font-bold black capitalize">entry</p>
+              <p class="description-text font-italic black capitalize">
+                Presale: 8 € / 5 € discounted (students, seniors) / Door: 10 € /
+                7 € discounted (students, seniors)
               </p>
             </li>
             <li class="item-description-item">

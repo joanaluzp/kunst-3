@@ -218,10 +218,7 @@
 </template>
 <script setup>
 const openMenu = ref(false);
-
-if (process.client) {
-  let prevScroll = window.pageYOffset;
-}
+let prevScroll = window.pageYOffset;
 
 const clickOutside = () => {
   document.addEventListener("click", (event) => {
@@ -251,8 +248,6 @@ const handleScrollNavbar = () => {
 };
 
 onMounted(() => {
-  if (process.client){
     window.addEventListener("scroll", handleScrollNavbar);
-  }
 });
 </script>

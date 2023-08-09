@@ -1,4 +1,0 @@
-<template>
-  <LazySampleItem />
-  <AppFooter />
-</template>

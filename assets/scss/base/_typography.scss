@@ -3,9 +3,9 @@
   display: block;
   width: 100%;
   font-family: $Gramatika-Regular;
-  line-height: 100%;
   @include fluid-type(320px, 1199px, 14px, 16px);
   text-align: left;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
   &.small {
@@ -58,6 +58,9 @@
   &.grey-02 {
     color: $grey02;
   }
+  &.color-02 {
+    color: $color02;
+  }
   &.color-03 {
     color: $color03;
   }
@@ -78,7 +81,7 @@
   font-family: $Gramatika-Regular;
   @include fluid-type(320px, 1199px, 20px, 24px);
   text-align: left;
-  line-height: 100%;
+  line-height: 1.2;
   margin: 0;
   padding: 0;
   &.small {
@@ -133,6 +136,9 @@
   }
   &.grey-02 {
     color: $grey02;
+  }
+  &.color-02 {
+    color: $color02;
   }
   &.color-03 {
     color: $color03;

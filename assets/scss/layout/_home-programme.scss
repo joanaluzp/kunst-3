@@ -69,6 +69,8 @@
     h3,
     h4 {
       @include line-clamp(2);
+      margin-top: 7px;
+
     }
   }
   .grid-item-wrapper {

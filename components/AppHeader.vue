@@ -120,15 +120,16 @@
         </button>
       </div>
       <div class="header-marquee">
-        <div class="marquee">
-          <p class="description-title font-bold-italic">K3 &nbsp;</p>
-          <p class="description-title font-bold-italic">K3 &nbsp;</p>
-          <p class="description-title font-bold-italic">K3 &nbsp;</p>
-          <p class="description-title font-bold-italic">K3 &nbsp;</p>
-          <p class="description-title font-bold-italic">K3 &nbsp;</p>
-          <p class="description-title font-bold-italic">K3 &nbsp;</p>
-          <p class="description-title font-bold-italic">K3 &nbsp;</p>
-        </div>
+        <marquee class="d-none"></marquee>
+        <marquee
+          class="marquee"
+          direction="down"
+          behavior="alternate"
+        >
+          <marquee behavior="alternate"
+            ><p class="description-title font-bold-italic">K3</p></marquee
+          >
+        </marquee>
       </div>
     </div>
   </header>

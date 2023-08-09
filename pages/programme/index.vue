@@ -1,4 +1,4 @@
 <template>
-  <LazyHomeGrid />
+  <LazyProgrammeGrid />
   <AppFooter />
 </template>
