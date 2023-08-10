@@ -1,4 +1,5 @@
 <template>
+  <div class="app-page">
   <LazyProgrammeGrid />
-  <AppFooter />
+  </div>
 </template>

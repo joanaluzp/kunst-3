@@ -36,6 +36,22 @@ body {
   &::-webkit-scrollbar-thumb {
     background: transparent;
   }
+  .app-page {
+    min-height: 100vh;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .icon-help {
+    cursor: help;
+  }
+  .pt-70 {
+    padding-top: 70px;
+  }
+  .pt-100 {
+    padding-top: 100px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -60,28 +76,11 @@ body {
   }
 }
 
-.icon-help {
-  cursor: help;
-}
-
-.pt-70 {
-  padding-top: 70px;
-}
-
-.pt-100 {
-  padding-top: 100px;
-}
-
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 @keyframes shake {

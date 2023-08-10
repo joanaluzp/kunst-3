@@ -1,5 +1,6 @@
 <template>
-  <footer>
+  <footer
+  :class="footerVisible ? 'd-block' : 'd-none'">
     <div
       class="d-flex align-items-center justify-content-between footer-wrapper"
     >
@@ -26,6 +27,11 @@
   </footer>
 </template>
 <script setup>
+const props = defineProps({
+  footerVisible: {
+    type: Boolean,
+  },
+});
 const handleScrollFooter = () => {
   const footer = document.querySelector('.footer-wrapper');
   const windowHeight = window.innerHeight;
