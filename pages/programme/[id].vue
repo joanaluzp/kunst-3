@@ -1,51 +1,50 @@
 <template>
   <div class="app-page">
-    <section class="section-programme-item pt-100">
-      <div class="container-fluid item-content-wrapper">
-        <div class="row">
-          <div class="d-flex col">
-            <div v-for="(dateItem, dateIndex) in item.date" :key="dateIndex">
-              <p class="description-title small black capitalize">
-                {{ dateItem.month }}
-                <span class="description-title black bigger font-black">
-                  {{ dateItem.day }}</span
-                >
-              </p>
-              <p class="description-text black capitalize">
-                {{ dateItem.week }} at {{ dateItem.time }}
-              </p>
-            </div>
-          </div>
-          <div class="d-flex col justify-content-end flex-column">
-            <div class="d-flex flex-column top">
+    <section class="section-programme-id">
+      <div class="programme-id-top">
+        <div class="container-fluid id-information-wrapper">
+          <div class="row">
+            <div class="d-flex align-items-center col-12">
               <NuxtLink
-                to="/programme"
-                @click="searchType === `${item.category}`"
+                to="javascript:window.history.back()"
               >
                 <div
-                  class="btn description-text lowercase small black font-bold-italic d-inline-flex align-items-center"
+                  class="description-text uppercase white font-bold d-inline-flex align-items-center"
                 >
-                  {{ item.category }}
+                  GO BACK
                 </div></NuxtLink
               >
             </div>
-          </div>
-          <div class="col-12">
-
+            <div class="d-flex align-items-center col-12 col-lg-8">
+              <marquee Scrollamount="10" class="">
+                <h1
+                  class="description-title bigger font-bold-italic white uppercase"
+                >
+                  {{ item.title.main }}
+                </h1>
+              </marquee>
+            </div>
+            <div class="d-flex align-items-center col-12 col-lg-4">
+                <div
+                  class="btn description-text lowercase small white font-bold-italic d-inline-flex align-items-center"
+                >
+                  {{ item.category }}
+                </div>
+            </div>
           </div>
         </div>
+        <div class="full-width-wrapper">
+          <marquee Scrollamount="10" class="">
+            <h1
+              class="description-title bigger font-bold-italic white uppercase"
+            >
+              {{ item.title.main }}
+            </h1>
+          </marquee>
+          <img :src="item.image" />
+        </div>
       </div>
-      <div class="full-width-wrapper">
-        <marquee class="d-flex flex-column bottom" Scrollamount="10">
-              <h1
-                class="description-title bigger font-bold-italic black uppercase"
-              >
-                {{ item.title.main }}
-              </h1>
-            </marquee>
-        <img :src="item.image" />
-      </div>
-      <div class="container-fluid item-description-wrapper">
+      <div class="id-description-wrapper container-fluid">
         <div class="row">
           <div class="col-12 col-lg-8 col-xxl-7 left">
             <p class="description-title font-fungal capitalize text-right">
@@ -55,9 +54,22 @@
               {{ item.description.secondary }}
             </p>
           </div>
-          <div class="col-12 col-lg-3 offset-lg-1 offset-xxl-2 right">
-            <ul class="item-description-list">
-              <li class="item-description-item">
+          <div class="col-12 col-lg-4 offset-xxl-1 right">
+            <ul class="id-description-list">
+              <li class="id-description-item">
+                <p class="description-text font-bold black capitalize">
+                  Day and hour
+                </p>
+                <p
+                  class="description-text font-italic black capitalize"
+                  v-for="(dateItem, dateIndex) in item.date"
+                  :key="dateIndex"
+                >
+                  <span class="description-text font-bold-italic d-inline">{{ dateItem.day }} {{ dateItem.month }}</span>
+                  {{ dateItem.week }} at {{ dateItem.time }}
+                </p>
+              </li>
+              <li class="id-description-item">
                 <p class="description-text font-bold black capitalize">
                   duration
                 </p>
@@ -65,7 +77,7 @@
                   {{ item.duration }}
                 </p>
               </li>
-              <li class="item-description-item">
+              <li class="id-description-item">
                 <p class="description-text font-bold black capitalize">
                   age rating
                 </p>
@@ -73,7 +85,7 @@
                   {{ item.age_rating }}
                 </p>
               </li>
-              <li class="item-description-item">
+              <li class="id-description-item">
                 <p class="description-text font-bold black capitalize">entry</p>
                 <p class="description-text font-italic black capitalize">
                   Presale: {{ item.price.presale }} discounted (students,
@@ -81,7 +93,7 @@
                   seniors)
                 </p>
               </li>
-              <li class="item-description-item">
+              <li class="id-description-item">
                 <p class="description-text font-bold black capitalize">
                   with the support of
                 </p>
@@ -89,50 +101,50 @@
                   {{ item.support }}
                 </p>
               </li>
-              <li class="item-description-item" @click="shareOpen = !shareOpen">
+              <li class="id-description-item" @click="shareOpen = !shareOpen">
                 <div
                   class="btn description-text uppercase small black font-bold-italic d-inline-flex align-items-center"
                 >
                   SHARE
                 </div>
-              </li>
-            </ul>
-            <ul class="share-list-wrapper" :class="shareOpen ? 'open' : ''">
-              <li class="item-description-item">
-                <NuxtLink to=""
-                  ><p
-                    class="description-text lowercase font-bold-italic text-right black"
-                  >
-                    instagram
-                  </p></NuxtLink
-                >
-              </li>
-              <li class="item-description-item">
-                <NuxtLink to=""
-                  ><p
-                    class="description-text lowercase font-bold-italic text-right black"
-                  >
-                    facebook
-                  </p></NuxtLink
-                >
-              </li>
-              <li class="item-description-item">
-                <NuxtLink to=""
-                  ><p
-                    class="description-text lowercase font-bold-italic text-right black"
-                  >
-                    twitter
-                  </p></NuxtLink
-                >
-              </li>
-              <li class="item-description-item">
-                <NuxtLink to=""
-                  ><p
-                    class="description-text lowercase font-bold-italic text-right black"
-                  >
-                    whatsapp
-                  </p></NuxtLink
-                >
+                <ul class="share-list-wrapper" :class="shareOpen ? 'open' : ''">
+                  <li class="share-item">
+                    <NuxtLink to=""
+                      ><p
+                        class="description-text lowercase font-bold-italic text-right black"
+                      >
+                        instagram
+                      </p></NuxtLink
+                    >
+                  </li>
+                  <li class="share-item">
+                    <NuxtLink to=""
+                      ><p
+                        class="description-text lowercase font-bold-italic text-right black"
+                      >
+                        facebook
+                      </p></NuxtLink
+                    >
+                  </li>
+                  <li class="share-item">
+                    <NuxtLink to=""
+                      ><p
+                        class="description-text lowercase font-bold-italic text-right black"
+                      >
+                        twitter
+                      </p></NuxtLink
+                    >
+                  </li>
+                  <li class="share-item">
+                    <NuxtLink to=""
+                      ><p
+                        class="description-text lowercase font-bold-italic text-right black"
+                      >
+                        whatsapp
+                      </p></NuxtLink
+                    >
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>

@@ -9,7 +9,8 @@ footer {
   @include transition;
   background-color: $color01;
   border-radius: 100px 100px 0 0;
-  padding: 20px 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   justify-content: center;
   position: relative;
   bottom: -100px;
@@ -23,7 +24,8 @@ footer {
 }
 @media (min-width: 768px) {
   .footer-wrapper {
-    padding: 30px 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     justify-content: center;
     p {
       text-align: center;

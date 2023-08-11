@@ -1,10 +1,10 @@
 <template>
   <NuxtLink
     :to="'/programme/' + item.id"
-    class="home-grid-item-wrapper"
-    v-if="searchType === 'default' || searchType === `${item.category}`"
+    class="programme-grid-item-link"
+    v-if="searchType === 'all of it! enjoy :-)' || searchType === `${item.category}`"
   >
-    <div class="home-grid-item"
+    <div class="programme-grid-item"
 >
       <div class="grid-item-image">
         <img :src="item.image" />

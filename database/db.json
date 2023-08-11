@@ -163,9 +163,9 @@
       "date": [
         {
           "full": "sunday(s)",
-          "month": "every",
-          "day": "sundays",
-          "week": "sunday",
+          "month": "",
+          "day": "",
+          "week": "sundays",
           "time": "10:00"
         }
       ],
