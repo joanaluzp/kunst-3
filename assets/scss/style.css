@@ -3375,7 +3375,8 @@ input[type=search]::-webkit-search-results-decoration {
     transform: translate(50%, 0px);
   }
 }
-/*======BUTTONS======*/ /*======NAV & HEADER======*/
+/*======BUTTONS======*/
+/*======NAV & HEADER======*/
 header {
   width: 100%;
   height: 100vh;
@@ -3548,6 +3549,7 @@ header .header-background-wrapper .header-marquee .marquee .description-title {
   border-radius: 10px;
   padding: 10px;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .navbar-menu .menu-list-options li:hover {
   background-color: #4c45fa;
@@ -3822,8 +3824,33 @@ footer {
   bottom: -100px;
   left: 0;
 }
-.footer-wrapper p {
+.footer-wrapper .description-text {
   text-align: center;
+}
+.footer-wrapper .left {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-wrapper .left a {
+  margin: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer-wrapper .left a .description-text {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #e6e6e6;
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+  text-overflow: ellipsis;
+}
+.footer-wrapper .left a .description-text:hover {
+  animation: strobe 0.3s infinite;
+  color: #000;
+  background-color: #5eff00;
+}
+.footer-wrapper .right {
+  margin-top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -3832,8 +3859,18 @@ footer {
     padding-bottom: 30px;
     justify-content: center;
   }
-  .footer-wrapper p {
-    text-align: center;
+  .footer-wrapper .left {
+    justify-content: start;
+    flex-direction: row;
+  }
+  .footer-wrapper .left a .description-text {
+    text-align: left;
+  }
+  .footer-wrapper .right {
+    margin-top: 0;
+  }
+  .footer-wrapper .right .description-text {
+    text-align: right;
   }
 }
 /*=== PROGRAMME GRID ===*/
@@ -3966,7 +4003,7 @@ footer {
 }
 .programme-grid-item-link .programme-grid-item:hover {
   animation: shake 0.3s ease-in-out infinite;
-  background-color: #aaaaaa;
+  background-color: #e6e6e6;
 }
 
 @media (min-width: 576px) {
@@ -4022,12 +4059,12 @@ footer {
   margin: 50px 10px 20px 5px;
 }
 .programme-id-top .id-information-wrapper .row > div:first-child .description-text {
-  border-bottom: 2px solid transparent;
+  border-bottom: 7px solid transparent;
   transition: all 0.3s ease-in-out;
 }
 .programme-id-top .id-information-wrapper .row > div:first-child .description-text:hover {
-  border-bottom: 2px solid #fff;
-  transform: translateX(-20px);
+  border-bottom: 7px solid #fff;
+  transform: translateX(-20px) skewX(-20deg);
 }
 .programme-id-top .id-information-wrapper .row > div:last-child {
   margin-bottom: 20px;

@@ -6,7 +6,7 @@
           class="navbar-menu-list col-12 d-flex align-items-center justify-content-end"
         >
           <div class="d-flex align-items-center">
-            <NuxtLink to="/">
+            <NuxtLink to="">
               <div
                 class="menu-list-logo d-none d-md-flex justify-content-center align-items-center"
               >
@@ -104,7 +104,7 @@
               /></NuxtLink>
             </div>
             <li>
-              <NuxtLink to="/" @click="openMenu = false"
+              <NuxtLink to="" @click="openMenu = false"
                 ><p class="description-text black uppercase big font-bold">
                   about us
                 </p></NuxtLink
@@ -118,21 +118,21 @@
               >
             </li>
             <li>
-              <NuxtLink to="/" @click="openMenu = false"
+              <NuxtLink to="" @click="openMenu = false"
                 ><p class="description-text black uppercase big font-bold">
                   Information for media
                 </p></NuxtLink
               >
             </li>
             <li>
-              <NuxtLink to="/" @click="openMenu = false"
+              <NuxtLink to="" @click="openMenu = false"
                 ><p class="description-text black uppercase big font-bold">
                   people
                 </p></NuxtLink
               >
             </li>
             <li>
-              <NuxtLink to="/" @click="openMenu = false"
+              <NuxtLink to="" @click="openMenu = false"
                 ><p class="description-text black uppercase big font-bold">
                   partners
                 </p></NuxtLink
@@ -147,17 +147,17 @@
                 </span>
                 help
               </p>
-              <NuxtLink to="/" @click="openMenu = false" class="icon-help"
+              <NuxtLink to="" @click="openMenu = false" class="icon-help"
                 ><p class="description-text grey-01 capitalize">
                   how to get here
                 </p></NuxtLink
               >
-              <NuxtLink to="/" @click="openMenu = false" class="icon-help"
+              <NuxtLink to="" @click="openMenu = false" class="icon-help"
                 ><p class="description-text grey-01 capitalize">
                   FAQ
                 </p></NuxtLink
               >
-              <NuxtLink to="/" @click="openMenu = false" class="icon-help"
+              <NuxtLink to="" @click="openMenu = false" class="icon-help"
                 ><p class="description-text grey-01 capitalize">
                   support KUNST 3
                 </p></NuxtLink

@@ -15,8 +15,32 @@ footer {
   position: relative;
   bottom: -100px;
   left: 0;
-  p {
+  .description-text {
     text-align: center;
+  }
+  .left {
+    justify-content: center;
+    flex-wrap: wrap;
+    a {
+      margin: 5px;
+      width: fit-content;
+      .description-text {
+        cursor: pointer;
+        padding: 5px 10px;
+        background-color: $grey03;
+        @include transition;
+        border-radius: 30px;
+        text-overflow: ellipsis;
+          &:hover {
+          animation: strobe 0.3s infinite;
+          color: $black;
+          background-color: $color05;
+        }
+      }
+    }
+  }
+  .right {
+    margin-top: 10px;
   }
 }
 
@@ -27,11 +51,22 @@ footer {
     padding-top: 30px;
     padding-bottom: 30px;
     justify-content: center;
-    p {
-      text-align: center;
+    .left {
+      justify-content: start;
+      flex-direction: row;
+      a {
+        .description-text {
+          text-align: left;
+        }
+      }
+    }
+    .right {
+      margin-top: 0;
+      .description-text {
+        text-align: right;
+      }
     }
   }
-  
 }
 
 @media (min-width: 1200px) {

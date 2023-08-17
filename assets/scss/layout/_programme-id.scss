@@ -21,11 +21,11 @@
         &:first-child {
           margin: 50px 10px 20px 5px;
           .description-text {
-            border-bottom: 2px solid transparent;
+            border-bottom: 7px solid transparent;
             @include transition;
             &:hover {
-              border-bottom: 2px solid $white;
-              transform:translateX(-20px);
+              border-bottom: 7px solid $white;
+              transform:translateX(-20px) skewX(-20deg);
             }
           }
         }
