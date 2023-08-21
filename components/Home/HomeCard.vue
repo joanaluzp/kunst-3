@@ -34,7 +34,7 @@
 import data from "../../database/db.json";
 const headerData = ref([]);
 
-const hover3dEffect = () => {
+const hoverEffect = () => {
   let elm = document.querySelector(".swiper");
   const height = elm.clientHeight;
   const width = elm.clientWidth;
@@ -59,7 +59,7 @@ const hover3dEffect = () => {
 };
 
 onMounted(() => {
-  hover3dEffect();
   headerData.value = data.header;
+  hoverEffect();
 });
 </script>

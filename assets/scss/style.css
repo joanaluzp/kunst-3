@@ -3887,9 +3887,12 @@ footer {
   width: 100%;
   height: 100%;
   background-color: #4c45fa;
-  box-shadow: inset 0 0 60px #fff;
+  box-shadow: inset 0px -28px 13px -11px #fff;
   right: 0;
   top: 0;
+}
+.section-programme-grid .programme-grid-background.white {
+  background-color: #fff;
 }
 
 .programme-grid-title-wrapper {
@@ -3934,6 +3937,9 @@ footer {
 }
 .programme-grid-list-wrapper li.active p {
   color: #ff0000;
+}
+.programme-grid-list-wrapper.bottom {
+  bottom: 160px;
 }
 
 .programme-grid-items-wrapper {

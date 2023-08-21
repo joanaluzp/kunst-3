@@ -2,7 +2,7 @@
   <header>
     <div class="header-background-wrapper">
       <div class="header-background">
-        <HomeCard />
+        <LazyHomeCard/>
       </div>
       <div
         class="slider-arrows-wrapper justify-content-between align-items-center"
@@ -37,5 +37,5 @@
   </header>
 </template>
 <script setup>
-
+const swiper = ref(null)
 </script>

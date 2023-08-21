@@ -6,7 +6,7 @@
           class="navbar-menu-list col-12 d-flex align-items-center justify-content-end"
         >
           <div class="d-flex align-items-center">
-            <NuxtLink to="">
+            <NuxtLink to="/">
               <div
                 class="menu-list-logo d-none d-md-flex justify-content-center align-items-center"
               >
@@ -218,7 +218,7 @@
 </template>
 <script setup>
 const openMenu = ref(false);
-let prevScroll = window.pageYOffset;
+const prevScroll = ref(0);
 
 const clickOutside = () => {
   document.addEventListener("click", (event) => {
@@ -235,19 +235,25 @@ const clickOutside = () => {
 };
 
 const handleScrollNavbar = () => {
-  let currentScroll = window.pageYOffset;
-  if (prevScroll > currentScroll) {
-    document.querySelector(".navbar-menu-list").style.top = "0";
-    document.querySelector(".navbar-menu-list").style.boxShadow =
-      "7px 7px 5px -4px rgba(76, 69, 250, 0.37)";
+  let scroll = window.pageYOffset;
+  let elmNavbar = document.querySelector(".navbar");
+  let elmNavbarList = document.querySelector(".navbar-menu-list");
+  let heightNavbar = elmNavbar ? elmNavbar.offsetHeight : 0;
+  if (scroll > heightNavbar) {
+    elmNavbarList.style.top = "-100px";
+    elmNavbarList.style.boxShadow = "none";
+    if (scroll < prevScroll.value) {
+      elmNavbarList.style.top = "0";
+    elmNavbarList.style.boxShadow = "7px 7px 5px -4px rgba(76, 69, 250, 0.37)";
+    }
   } else {
-    document.querySelector(".navbar-menu-list").style.top = "-100px";
-    document.querySelector(".navbar-menu-list").style.boxShadow = "none";
+    elmNavbarList.style.top = "0";
+    elmNavbarList.style.boxShadow = "7px 7px 5px -4px rgba(76, 69, 250, 0.37)";
   }
-  prevScroll = currentScroll;
+  prevScroll.value = scroll;
 };
 
 onMounted(() => {
-    window.addEventListener("scroll", handleScrollNavbar);
+  window.addEventListener("scroll", handleScrollNavbar);
 });
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <client-only> <AppNavbar /></client-only>
+    <AppNavbar />
     <NuxtPage />
     <AppFooter :footerVisible="footerVisible" />
   </div>

@@ -7,10 +7,15 @@
         >
           <h1 class="description-title white font-bold-italic bigger uppercase">
             programme
-            <span class="description-title white lowercase"> {{ searchType }}</span>
+            <span class="description-title white lowercase">
+              {{ searchType }}</span
+            >
           </h1>
         </div>
-        <div class="programme-grid-list-wrapper">
+        <div
+          class="programme-grid-list-wrapper"
+          :class="gridListHeight ? 'bottom' : ''"
+        >
           <ul class="programme-grid-list-items">
             <li
               :class="{ active: searchType === 'all of it! enjoy :-)' }"
@@ -68,13 +73,16 @@
         <!--</Transition>-->
       </div>
     </div>
-    <div class="programme-grid-background"></div>
+    <div class="programme-grid-background"
+    :class="gridBackground ? 'white' : ''"></div>
   </section>
 </template>
 <script setup>
 import data from "../../database/db.json";
 import ProgrammeCard from "./ProgrammeCard.vue";
 const programmeData = ref([]);
+const gridListHeight = ref(false);
+const gridBackground = ref(false);
 const searchType = ref("all of it! enjoy :-)");
 const components = defineComponent({
   ProgrammeCard,
@@ -90,36 +98,31 @@ const scrollToTop = () => {
 };
 
 const gridList = () => {
-  const elm = document.querySelector(".programme-grid-list-wrapper");
   const windowHeight = window.innerHeight;
   const scrollableHeight = document.documentElement.scrollHeight - windowHeight;
   const currentScroll = window.scrollY;
-
   if (currentScroll >= scrollableHeight) {
-    elm.style.bottom = "120px";
+    gridListHeight.value = true;
   } else {
-    elm.style.bottom = "80px";
+    gridListHeight.value = false;
   }
 };
 
 const changeBackground = () => {
-  const gridBackground = document.querySelector(".programme-grid-background");
-  window.onscroll = () => {
-    const scroll = window.pageYOffset;
-    console.log(scroll)
-    if (scroll < 300) {
-      gridBackground.style.backgroundColor = "#4c45fa";
-    }
-    if (scroll > 300) {
-      gridBackground.style.backgroundColor = "#FFFFFF";
-    }
-  };
+  const scroll = window.pageYOffset;
+  //console.log(scroll)
+  if (scroll < 300) {
+    gridBackground.value = false;
+  }
+  if (scroll > 300) {
+    gridBackground.value = true;
+  }
 };
 
 onMounted(() => {
   programmeData.value = data.programme;
-  scrollToTop();
-  changeBackground();
+  window.addEventListener("scroll", changeBackground);
   window.addEventListener("scroll", gridList);
+  window.addEventListener("scroll", scrollToTop);
 });
 </script>
