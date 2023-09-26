@@ -11,9 +11,12 @@
     width: 100%;
     height: 100%;
     background-color: $color03;
-    box-shadow: inset 0 0 60px $white;
+    box-shadow: inset 0px -28px 13px -11px $white;
     right: 0;
     top: 0;
+    &.white {
+      background-color: $white;
+    }
   }
 }
 .programme-grid-title-wrapper {
@@ -55,6 +58,9 @@
         color: $color04;
       }
     }
+  }
+  &.bottom {
+    bottom: 160px;
   }
 }
 .programme-grid-items-wrapper {
