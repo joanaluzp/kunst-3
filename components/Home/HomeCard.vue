@@ -36,26 +36,28 @@ const headerData = ref([]);
 
 const hoverEffect = () => {
   let elm = document.querySelector(".swiper");
-  const height = elm.clientHeight;
-  const width = elm.clientWidth;
+  if (elm) {
+    const height = elm.clientHeight;
+    const width = elm.clientWidth;
 
-  elm.addEventListener("mousemove", handleMove);
-  function handleMove(e) {
-    const xVal = e.layerX;
-    const yVal = e.layerY;
-    const yRotation = 10 * ((xVal - width / 2) / width);
-    const xRotation = -10 * ((yVal - height / 2) / height);
-    const cssConvertion =
-      "perspective(500px) scale(1.1) rotateX(" +
-      xRotation +
-      "deg) rotateY(" +
-      yRotation +
-      "deg)";
-    elm.style.transform = cssConvertion;
+    elm.addEventListener("mousemove", handleMove);
+    function handleMove(e) {
+      const xVal = e.layerX;
+      const yVal = e.layerY;
+      const yRotation = 10 * ((xVal - width / 2) / width);
+      const xRotation = -10 * ((yVal - height / 2) / height);
+      const cssConvertion =
+        "perspective(500px) scale(1.1) rotateX(" +
+        xRotation +
+        "deg) rotateY(" +
+        yRotation +
+        "deg)";
+      elm.style.transform = cssConvertion;
+    }
+    elm.addEventListener("mouseout", function () {
+      elm.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+    });
   }
-  elm.addEventListener("mouseout", function () {
-    elm.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)";
-  });
 };
 
 onMounted(() => {

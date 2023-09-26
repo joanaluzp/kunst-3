@@ -1,7 +1,9 @@
 <template>
-  <div class="main">
+  <div class="app-page">
     <AppNavbar />
-    <NuxtPage />
+    <div class="main">
+      <NuxtPage />
+    </div>
     <AppFooter :footerVisible="footerVisible" />
   </div>
 </template>
@@ -13,19 +15,15 @@ const page = computed({
 });
 
 const hideFooter = () => {
+
+};
+
+watch(() => {
   if (page.value[0] === "programme" || page.value[0] === "programme-id") {
     footerVisible.value = true;
   } else {
     footerVisible.value = false;
   }
-};
-
-watch(route, () => {
-  hideFooter();
 });
 
-
-onMounted(() => {
-  hideFooter();
-});
 </script>
