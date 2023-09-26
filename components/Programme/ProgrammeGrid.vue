@@ -1,6 +1,6 @@
 <template>
   <section class="section-programme-grid">
-    <div class="container-fluic">
+    <div class="container-fluid">
       <div class="row">
         <div
           class="programme-grid-title-wrapper pt-100 col-12 offset-lg-3 col-lg-9"

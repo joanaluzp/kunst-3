@@ -6,7 +6,7 @@
           class="navbar-menu-list col-12 d-flex align-items-center justify-content-end"
         >
           <div class="d-flex align-items-center">
-            <NuxtLink to="">
+            <NuxtLink to="/">
               <div
                 class="menu-list-logo d-none d-md-flex justify-content-center align-items-center"
               >
