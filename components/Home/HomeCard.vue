@@ -1,6 +1,7 @@
 <template>
   <div class="header-background">
     <Swiper
+      v-if="headerData.length > 0"
       :modules="[SwiperAutoplay, SwiperNavigation]"
       :slides-per-view="1"
       :pagination="{ clickable: true }"
@@ -34,18 +35,18 @@
     </Swiper>
   </div>
   <div class="slider-arrows-wrapper">
-    <button
-      type="button"
-      class="d-none d-md-block arrow-prev arrow-gallery-prev"
-    >
-      <i class="fa-solid fa-caret-left fa-lg"></i>
-    </button>
-    <button
-      type="button"
-      class="d-none d-md-block arrow-prev arrow-gallery-next"
-    >
-      <i class="fa-solid fa-caret-right fa-lg"></i>
-    </button>
+<!--     <button
+          type="button"
+          class="d-none d-md-block arrow-prev arrow-gallery-prev"
+        >
+          <i class="fa-solid fa-caret-left fa-lg"></i>
+        </button>
+        <button
+          type="button"
+          class="d-none d-md-block arrow-prev arrow-gallery-next"
+        >
+          <i class="fa-solid fa-caret-right fa-lg"></i>
+        </button> -->
     <button type="button" class="arrow-prev arrow-gallery-down">
       <NuxtLink to="/programme"> <img src="/images/sign-next.svg" /></NuxtLink>
     </button>
@@ -55,8 +56,9 @@
 import data from "../../database/db.json";
 const headerData = ref([]);
 
-const hoverEffect = () => {
+/* const hoverEffect = () => {
   let elm = document.querySelector(".swiper");
+  console.log(elm);
   if (elm) {
     const height = elm.clientHeight;
     const width = elm.clientWidth;
@@ -79,10 +81,10 @@ const hoverEffect = () => {
       elm.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)";
     });
   }
-};
+}; */
 
 onMounted(() => {
   headerData.value = data.header;
-  hoverEffect();
+  /* hoverEffect(); */
 });
 </script>

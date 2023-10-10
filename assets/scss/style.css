@@ -3710,6 +3710,7 @@ header .header-background-wrapper .header-marquee .marquee .description-title {
   height: 80vh;
   cursor: pointer;
   position: relative;
+  transition: all 1s ease-in-out;
 }
 .swiper .header-background-text {
   width: 100%;
@@ -3720,11 +3721,9 @@ header .header-background-wrapper .header-marquee .marquee .description-title {
   z-index: 4;
 }
 .swiper .header-background-text .description-title {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  transition-delay: 0.3s;
   text-align: center;
-}
-.swiper .header-background-text .description-title:hover {
-  transform: translate3d(10px, 10px, 10px) skewX(10deg) scale(3);
 }
 .swiper .header-background-text .right {
   position: absolute;
@@ -3772,14 +3771,21 @@ header .header-background-wrapper .header-marquee .marquee .description-title {
     margin-right: 10px;
   }
   .swiper {
-    width: 60%;
+    width: 100%;
     height: 60vh;
+    transform: scale(0.2);
+  }
+  .swiper:hover {
+    transform: scale(3);
   }
   .swiper .header-background-text .left {
     left: 80px;
   }
   .swiper .header-background-text .right {
     right: 80px;
+  }
+  .swiper .header-background-text .description-title:hover {
+    transform: skewX(10deg) scale(0.2);
   }
 }
 @media (min-width: 1200px) {
@@ -4062,6 +4068,7 @@ footer {
 .programme-id-top {
   background-color: #a9b9ff;
   box-shadow: inset 0 0 40px #fff;
+  transition: all 0.3s ease-in-out;
 }
 .programme-id-top .id-information-wrapper .row > div:first-child {
   margin: 50px 10px 20px 5px;
@@ -4091,6 +4098,10 @@ footer {
   height: 60vh;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.programme-id-top:hover {
+  background-color: #4c45fa;
 }
 
 .id-description-wrapper {
