@@ -25,7 +25,6 @@ footer {
       margin: 5px;
       width: fit-content;
       .description-text {
-        cursor: pointer;
         padding: 5px 10px;
         background-color: $grey03;
         @include transition;

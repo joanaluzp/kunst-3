@@ -26,7 +26,7 @@
             @include transition;
             &:hover {
               border-bottom: 7px solid $white;
-              transform:translateX(-20px) skewX(-20deg);
+              transform: translateX(-20px) skewX(-20deg);
             }
           }
         }
@@ -38,7 +38,6 @@
           height: 0;
           width: 0;
         }
-
       }
     }
   }
@@ -56,6 +55,11 @@
   }
   &:hover {
     background-color: $color03;
+    .full-width-wrapper {
+      img {
+        filter: invert(1);
+      }
+    }
   }
 }
 .id-description-wrapper {
@@ -80,7 +84,6 @@
         }
         .btn {
           border: 1px solid $black;
-          cursor: pointer;
         }
         .share-list-wrapper {
           @include transition;
@@ -92,7 +95,6 @@
             }
           }
           .share-item {
-            cursor: pointer;
             @include transition;
             display: none;
             &:hover {

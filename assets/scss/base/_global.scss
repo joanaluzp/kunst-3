@@ -1,6 +1,10 @@
 /*======GLOBAL======*/
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 
+* {
+  cursor: none !important;
+}
+
 html,
 body {
   background-color: $white;
@@ -25,6 +29,7 @@ body {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+
   &::-webkit-scrollbar {
     width: 0;
   }
@@ -42,9 +47,6 @@ body {
   a {
     text-decoration: none;
     color: inherit;
-  }
-  .icon-help {
-    cursor: help;
   }
   .pt-70 {
     padding-top: 70px;
@@ -81,6 +83,18 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
+}
+
+.custom-cursor {
+  width: 100px;
+  height: 100px;
+  background-color: $white;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9999;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes shake {
