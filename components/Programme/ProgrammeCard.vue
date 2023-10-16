@@ -1,4 +1,5 @@
 <template>
+  <Pixelate/>
   <NuxtLink
     :to="'/programme/' + item.id"
     class="programme-grid-item-link"
@@ -37,6 +38,8 @@
   </NuxtLink>
 </template>
 <script setup>
+import Pixelate from '../Fx/Pixelate.vue';
+
 const props = defineProps({
   searchType: {
     type: String,

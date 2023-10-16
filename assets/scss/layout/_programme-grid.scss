@@ -81,6 +81,7 @@
     border: 1px solid $black;
     border-radius: 15px;
     padding: 15px;
+    filter: none;
     @include transition;
     img {
       object-fit: cover;
@@ -116,8 +117,8 @@
       }
     }
     &:hover {
-      animation: shake 0.3s ease-in-out infinite;
-      background-color: $grey03;
+      filter: url("#pixelate");
+      transform: translate(10px, 10px);
     }
   }
 }

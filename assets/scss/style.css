@@ -3241,9 +3241,6 @@ body {
   scroll-behavior: smooth;
   scrollbar-color: #000;
   scrollbar-width: thin;
-  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
-  -moz-user-select: none;
-       user-select: none; /* Standard syntax */
   /* Track */
   /* Handle */
 }
@@ -3278,8 +3275,8 @@ html::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb {
   background: transparent;
 }
-html .app-page,
-body .app-page {
+html .main,
+body .main {
   min-height: 100vh;
 }
 html a,
@@ -3328,16 +3325,36 @@ input[type=search]::-webkit-search-results-decoration {
   -webkit-appearance: none;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #5eff00;
+  background: #000;
+}
+
+::selection {
+  color: #5eff00;
+  background: #000;
+}
+
 .custom-cursor {
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  mix-blend-mode: difference;
-  border-radius: 50%;
-  position: absolute;
+  position: fixed;
   z-index: 9999;
+  width: 2px;
+  height: 2px;
   pointer-events: none;
-  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  top: -8px;
+  left: -8px;
+  transition: transform 500ms;
+}
+.custom-cursor::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -15px;
+  left: -10px;
 }
 
 @keyframes shake {
@@ -3974,6 +3991,7 @@ footer {
   border: 1px solid #000;
   border-radius: 15px;
   padding: 15px;
+  filter: none;
   transition: all 0.3s ease-in-out;
 }
 .programme-grid-item-link .programme-grid-item img {
@@ -4020,8 +4038,8 @@ footer {
   border-radius: 15px;
 }
 .programme-grid-item-link .programme-grid-item:hover {
-  animation: shake 0.3s ease-in-out infinite;
-  background-color: #e6e6e6;
+  filter: url("#pixelate");
+  transform: translate(10px, 10px);
 }
 
 @media (min-width: 576px) {
@@ -4106,9 +4124,6 @@ footer {
 }
 .programme-id-top:hover {
   background-color: #4c45fa;
-}
-.programme-id-top:hover .full-width-wrapper img {
-  filter: invert(1);
 }
 
 .id-description-wrapper {

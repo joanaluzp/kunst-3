@@ -49,10 +49,30 @@ export default defineNuxtConfig({
         },
       ],
     },
-    pageTransition: { name: 'page', mode: 'out-in' },
-    layoutTransition: { name: 'slide', mode: 'out-in' },
+    pageTransition: { name: "page", mode: "out-in" },
+    layoutTransition: { name: "slide", mode: "out-in" },
   },
-  modules: ["nuxt-swiper"],
+  modules: ["nuxt-swiper", "@nuxtjs/i18n"],
+  i18n: {
+    lazy: true,
+    langDir: "locales",
+    strategy: "prefix_except_default",
+    locales: [
+      {
+        code: "en",
+        iso: "en",
+        name: "English",
+        file: "en.json",
+      },
+      {
+        code: "de",
+        iso: "de",
+        name: "Deutsch",
+        file: "de.json",
+      }
+    ],
+    defaultLocale: "en",
+  },
   css: ["@/assets/scss/style.css"],
   vite: {
     server: {

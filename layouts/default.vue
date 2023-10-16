@@ -19,18 +19,18 @@ const mouseEffect = () => {
   const cursor = document.querySelector(".custom-cursor");
   const links = document.querySelectorAll("a");
 
-  window.addEventListener("mousemove", (e) => {
-    cursor.style.left = (e.pageX - 2) + "px";
-    cursor.style.top = (e.pageY - 2) + "px";
+  window.addEventListener("mousemove", (event) => {
+    cursor.style.left = `${event.clientX}px`;
+    cursor.style.top = `${event.clientY}px`;
   });
 
   links.forEach((link) => {
     link.addEventListener("mouseenter", () => {
-      cursor.style.transform = "scale(1.5) translate(-50%, -50%)";
+      cursor.style.transform = "scale(0.8)";
     });
 
     link.addEventListener("mouseleave", () => {
-      cursor.style.transform = "scale(1) translate(-50%, -50%)";
+      cursor.style.transform = "scale(1)";
     });
   });
 };
