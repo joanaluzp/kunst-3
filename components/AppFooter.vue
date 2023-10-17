@@ -8,33 +8,33 @@
           <div class="col-12 col-md-8 left d-flex">
             <NuxtLink to=""
               ><p class="description-text lowercase font-bold-italic grey-01">
-                support K3
+                {{ $t('global.footer.info_1') }}
               </p></NuxtLink
             >
             <NuxtLink to=""
               ><p class="description-text lowercase font-bold-italic grey-01">
-                partners
+                {{ $t('global.footer.info_2') }}
               </p></NuxtLink
             >
             <NuxtLink to=""
               ><p class="description-text lowercase font-bold-italic grey-01">
-                faq
+                {{ $t('global.footer.info_3') }}
               </p></NuxtLink
             >
             <NuxtLink to=""
               ><p class="description-text lowercase font-bold-italic grey-01">
-                privacy & cookies
+                {{ $t('global.footer.info_4') }}
               </p></NuxtLink
             >
             <NuxtLink to=""
               ><p class="description-text lowercase font-bold-italic grey-01">
-                contacts
+                {{ $t('global.footer.info_5') }}
               </p></NuxtLink
             >
           </div>
           <div class="col-12 col-md-4 right">
             <p class="description-text small black">
-              © 2023–2023 Kunst 3. All rights reserved
+              © 2023–2023 Kunst 3.  {{ $t('global.footer.info_6') }}
             </p>
           </div>
         </div>

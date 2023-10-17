@@ -1,4 +1,83 @@
 {
+  "global": {
+    "nav": {
+      "lang": {
+        "title": "A⇆ü",
+        "sub_title": "Language",
+        "en": "English",
+        "de": "German"
+      },
+      "help": {
+        "title": "help",
+        "sub_title": "help",
+        "info_1": "How To Get Here",
+        "info_2": "FAQ",
+        "info_3": "Support KUNST 3"
+      },
+      "search": {
+        "title": "search"
+      },
+      "menu": {
+        "title": "menu",
+        "title_closed": "close",
+        "info_1": "About us",
+        "info_2": "programme",
+        "info_3": "information for media",
+        "info_4": "people",
+        "info_5": "partners",
+        "info_6": "follow us"
+      }
+    },
+    "footer": {
+      "info_1": "support 3",
+      "info_2": "partners",
+      "info_3": "faq",
+      "info_4": "privacy & cookies",
+      "info_5": "contacts",
+      "info_6": "All rights reserved"
+    },
+    "programme": {
+      "top": {
+        "title": "programme",
+        "option": "all of it! enjoy :-)"
+      },
+      "category": {
+        "category_1": "view all",
+        "category_2": "cinema",
+        "category_3": "concerts",
+        "category_4": "performance",
+        "category_5": "exhibitions",
+        "category_6": "workshops"
+      }
+    }
+  },
+  "dynamic": {
+    "homepage": [
+      {
+        "id": 1,
+        "video": "/videos/kunst_3_video_cinema.mp4",
+        "alt": "video background",
+        "description": "Classic Movies every wednesday"
+      },
+      {
+        "id": 2,
+        "video": "/videos/kunst_3_video_performance.mp4",
+        "alt": "video background",
+        "description": "if i fall you lose (performance)"
+      },
+      {
+        "id": 3,
+        "video": "/videos/kunst_3_video_angela_schanelec.mp4",
+        "alt": "video background",
+        "description": "angela schanelec: all the movies"
+      },
+      {
+        "id": 4,
+        "video": "/videos/kunst_3_video_super8mm.mp4",
+        "alt": "video background",
+        "description": "super 8 workshop every sunday"
+      }
+    ],
     "programme": [
       {
         "id": 1,
@@ -629,32 +708,6 @@
           "secondary": "I'm baby messenger bag kickstarter microdosing hashtag letterpress craft beer poke listicle. Enamel pin drinking vinegar brunch jean shorts. Chambray butcher occupy, deep v gorpcore cupping listicle plaid skateboard banh mi. Umami lyft fanny pack gatekeep, echo park cupping neutral milk hotel offal. Williamsburg before they sold out gastropub hashtag. Tilde palo santo bushwick gluten-free pabst trust fund. Skateboard fingerstache listicle shaman pok pok cliche occupy banh mi direct trade tumeric bushwick. Pinterest cloud bread mixtape gastropub, Franzen migas etsy. Live-edge gatekeep distillery pug sartorial tumeric. Copper mug vape artisan schlitz tattooed pabst bicycle rights, flannel meh gorpcore big mood pickled shabby chic irony. Cornhole gatekeep vice, cliche sriracha typewriter twee heirloom venmo praxis pug neutra offal roof party seitan. Sriracha street art activated charcoal quinoa, direct trade 90's knausgaard gastropub affogato enamel pin butcher shoreditch. Bodega boys kale chips unicorn poke, crucifix pinterest hoodie."
         }
       }
-    ],
-    "header": [
-      {
-        "id": 1,
-        "video": "/videos/kunst_3_video_cinema.mp4",
-        "alt": "video background",
-        "description": "Classic Movies every wednesday"
-      },
-      {
-        "id": 2,
-        "video": "/videos/kunst_3_video_performance.mp4",
-        "alt": "video background",
-        "description": "if i fall you lose (performance)"
-      },
-      {
-        "id": 3,
-        "video": "/videos/kunst_3_video_angela_schanelec.mp4",
-        "alt": "video background",
-        "description": "angela schanelec: all the movies"
-      },
-      {
-        "id": 4,
-        "video": "/videos/kunst_3_video_super8mm.mp4",
-        "alt": "video background",
-        "description": "super 8 workshop every sunday"
-      }
     ]
+  }
 }
-  

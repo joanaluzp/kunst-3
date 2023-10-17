@@ -18,17 +18,17 @@
               class="menu-list-icon icon-lang d-none d-md-flex justify-content-center align-items-center"
             >
               <p class="description-text uppercase big text-center color-03">
-                A⇆ü
+                {{ $t("global.nav.lang.title") }}
               </p>
               <ul class="menu-list-options">
                 <li class="description-text grey-01 capitalize">
-                  <a href="">Language</a>
+                  <a href="">{{ $t("global.nav.lang.sub_title") }}</a>
                 </li>
                 <li class="description-text black option capitalize small">
-                  <a href="">English</a>
+                  <a href="">{{ $t("global.nav.lang.en") }}</a>
                 </li>
                 <li class="description-text black option capitalize small">
-                  <a href="">Deutsch</a>
+                  <a href="">{{ $t("global.nav.lang.de") }}</a>
                 </li>
               </ul>
             </div>
@@ -38,18 +38,20 @@
               class="menu-list-icon icon-help d-none d-md-flex justify-content-center align-items-center"
             >
               <p class="description-text uppercase big text-center color-03">
-                HELP
+                {{ $t("global.nav.help.title") }}
               </p>
               <ul class="menu-list-options">
-                <li class="description-text grey-01 capitalize">Help</li>
-                <li class="description-text black option capitalize small">
-                  <a href="">how to get here</a>
+                <li class="description-text grey-01 capitalize">
+                  {{ $t("global.nav.help.sub_title") }}
                 </li>
                 <li class="description-text black option capitalize small">
-                  <a href="">FAQ</a>
+                  <a href="">{{ $t("global.nav.help.info_1") }}</a>
                 </li>
                 <li class="description-text black option capitalize small">
-                  <a href="">support KUNST 3</a>
+                  <a href="">{{ $t("global.nav.help.info_2") }}</a>
+                </li>
+                <li class="description-text black option capitalize small">
+                  <a href="">{{ $t("global.nav.help.info_3") }}</a>
                 </li>
               </ul>
             </div>
@@ -59,7 +61,7 @@
               class="menu-list-icon icon-search d-none d-md-flex justify-content-center align-items-center"
             >
               <p class="description-text uppercase big text-center color-03">
-                SEARCH
+                {{ $t("global.nav.search.title") }}
               </p>
               <div class="menu-list-options search">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -68,7 +70,7 @@
                   id="site-search"
                   class="search"
                   name="search"
-                  placeholder="search"
+                  :placeholder="$t('global.nav.search.title')"
                 />
               </div>
             </div>
@@ -81,7 +83,7 @@
               <p
                 class="description-text uppercase big text-center color-03 toggle"
               >
-                MENU
+                {{ $t("global.nav.menu.title") }}
               </p>
             </div>
           </div>
@@ -102,35 +104,35 @@
             <li>
               <NuxtLink to=""
                 ><p class="description-text black uppercase big font-bold">
-                  about us
+                  {{ $t("global.nav.menu.info_1") }}
                 </p></NuxtLink
               >
             </li>
             <li>
               <NuxtLink to="/programme"
                 ><p class="description-text black uppercase big font-bold">
-                  programme
+                  {{ $t("global.nav.menu.info_2") }}
                 </p></NuxtLink
               >
             </li>
             <li>
               <NuxtLink to=""
                 ><p class="description-text black uppercase big font-bold">
-                  Information for media
+                  {{ $t("global.nav.menu.info_3") }}
                 </p></NuxtLink
               >
             </li>
             <li>
               <NuxtLink to=""
                 ><p class="description-text black uppercase big font-bold">
-                  people
+                  {{ $t("global.nav.menu.info_4") }}
                 </p></NuxtLink
               >
             </li>
             <li>
               <NuxtLink to=""
                 ><p class="description-text black uppercase big font-bold">
-                  partners
+                  {{ $t("global.nav.menu.info_5") }}
                 </p></NuxtLink
               >
             </li>
@@ -141,21 +143,21 @@
                 <span>
                   <i class="fa-regular fa-circle-question"></i>
                 </span>
-                help
+                {{ $t("global.nav.help.title") }}
               </p>
               <NuxtLink to="" class="icon-help"
                 ><p class="description-text grey-01 capitalize">
-                  how to get here
+                  {{ $t("global.nav.help.info_1") }}
                 </p></NuxtLink
               >
               <NuxtLink to="" class="icon-help"
                 ><p class="description-text grey-01 capitalize">
-                  FAQ
+                  {{ $t("global.nav.help.info_2") }}
                 </p></NuxtLink
               >
               <NuxtLink to="" class="icon-help"
                 ><p class="description-text grey-01 capitalize">
-                  support KUNST 3
+                  {{ $t("global.nav.help.info_3") }}
                 </p></NuxtLink
               >
             </li>
@@ -169,18 +171,17 @@
                   id="site-search"
                   class="search"
                   name="search"
-                  placeholder="search"
+                  :placeholder="$t('global.nav.search.title')"
                 />
               </p>
             </li>
             <li>
               <div class="d-flex justify-content-end">
                 <p class="description-text grey-01 big font-fungal">
-                  Follow us
+                  {{ $t("global.nav.menu.info_6") }}
                 </p>
               </div>
               <div class="d-flex justify-content-end">
-                <div></div>
                 <div
                   class="navbar-menu-social d-inline-flex align-items-center"
                 >
@@ -188,19 +189,19 @@
                     href=""
                     class="d-flex align-items-center justify-content-center"
                   >
-                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook fa-xl"></i>
                   </a>
                   <a
                     href=""
                     class="d-flex align-items-center justify-content-center"
                   >
-                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
                   </a>
                   <a
                     href=""
                     class="d-flex align-items-center justify-content-center"
                   >
-                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-youtube fa-xl"></i>
                   </a>
                 </div>
               </div>
@@ -228,9 +229,8 @@ const openMenu = () => {
 
 const clickOutside = (event) => {
   const navbarMenu = document.querySelector(".navbar-menu");
-  const navbarMenuLi = document.querySelector(".navbar-menu li");
   const navbarBtn = document.querySelector(".menu-list-icon.icon-menu p");
-  if (!navbarMenu.contains(event.target) || navbarMenuLi) {
+  if (!navbarMenu.contains(event.target)) {
     navbarMenu.classList.remove("open");
     navbarBtn.innerHTML = "MENU";
   }

@@ -1,8 +1,8 @@
 <template>
-  <header>
-    <div class="header-background-wrapper">
+  <header class="header">
+    <section class="homepage-background-wrapper">
       <LazyHomeCard />
-      <div class="header-marquee">
+      <div class="homepage-marquee">
         <marquee class="d-none"></marquee>
         <marquee class="marquee" direction="down" behavior="alternate">
           <marquee behavior="alternate"
@@ -10,7 +10,7 @@
           >
         </marquee>
       </div>
-    </div>
-  </header>
+    </section>
+    </header>
 </template>
 <script setup></script>

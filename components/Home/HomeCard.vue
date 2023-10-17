@@ -1,7 +1,7 @@
 <template>
-  <div class="header-background">
+  <div class="homepage-background">
     <Swiper
-      v-if="headerData.length > 0"
+      v-if="homepageData.length > 0"
       :modules="[SwiperAutoplay, SwiperNavigation]"
       :slides-per-view="1"
       :pagination="{ clickable: true }"
@@ -15,10 +15,10 @@
         prevEl: '.arrow-gallery-prev',
       }"
     >
-      <SwiperSlide v-for="(item, index) in headerData" :key="item.id">
+      <SwiperSlide v-for="(item, index) in homepageData" :key="item.id">
         <div class="container-fluid">
           <div class="row">
-            <div class="header-background-text col-12">
+            <div class="homepage-background-text col-12">
               <h1
                 class="description-title red font-bold-italic bigger uppercase"
               >
@@ -54,37 +54,10 @@
 </template>
 <script setup>
 import data from "../../database/db.json";
-const headerData = ref([]);
-
-/* const hoverEffect = () => {
-  let elm = document.querySelector(".swiper");
-  console.log(elm);
-  if (elm) {
-    const height = elm.clientHeight;
-    const width = elm.clientWidth;
-
-    elm.addEventListener("mousemove", handleMove);
-    function handleMove(e) {
-      const xVal = e.layerX;
-      const yVal = e.layerY;
-      const yRotation = 10 * ((xVal - width / 2) / width);
-      const xRotation = -10 * ((yVal - height / 2) / height);
-      const cssConvertion =
-        "perspective(500px) scale(1.1) rotateX(" +
-        xRotation +
-        "deg) rotateY(" +
-        yRotation +
-        "deg)";
-      elm.style.transform = cssConvertion;
-    }
-    elm.addEventListener("mouseout", function () {
-      elm.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)";
-    });
-  }
-}; */
+const homepageData = ref([]);
 
 onMounted(() => {
-  headerData.value = data.header;
+  homepageData.value = data.homepage;
   /* hoverEffect(); */
 });
 </script>

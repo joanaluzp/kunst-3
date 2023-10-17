@@ -1,12 +1,13 @@
 <template>
-  <Pixelate/>
+  <Pixelate />
   <NuxtLink
     :to="'/programme/' + item.id"
     class="programme-grid-item-link"
-    v-if="searchType === 'all of it! enjoy :-)' || searchType === `${item.category}`"
+    v-if="
+      searchType === 'all of it! enjoy :-)' || searchType === `${item.category}`
+    "
   >
-    <div class="programme-grid-item"
->
+    <div class="programme-grid-item">
       <div class="grid-item-image">
         <img :src="item.image" />
       </div>
@@ -38,7 +39,7 @@
   </NuxtLink>
 </template>
 <script setup>
-import Pixelate from '../Fx/Pixelate.vue';
+import Pixelate from "../Fx/Pixelate.vue";
 
 const props = defineProps({
   searchType: {
@@ -46,6 +47,6 @@ const props = defineProps({
   },
   item: {
     type: Object,
-  }
+  },
 });
 </script>

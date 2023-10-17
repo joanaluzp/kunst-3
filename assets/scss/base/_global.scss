@@ -81,7 +81,8 @@ input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: $color05;
   background: $black;
 }
@@ -91,6 +92,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .custom-cursor {
+  display: none;
   position: fixed;
   z-index: 9999;
   width: 2px;
@@ -106,9 +108,13 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: $white;
     position: absolute;
     width: 25px;
+    border-radius: 50%;
     height: 25px;
     top: -15px;
-    left: -10px;
+    left: -12px;
+  }
+  @media (min-width: 992px) {
+    display: block;
   }
 }
 

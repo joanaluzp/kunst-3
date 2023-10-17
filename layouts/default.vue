@@ -1,11 +1,11 @@
 <template>
   <div class="app-page">
     <div class="custom-cursor"></div>
-    <AppNavbar />
-    <div class="main">
+    <LazyAppNavbar />
+    <main class="main">
       <NuxtPage />
-    </div>
-    <AppFooter :footerVisible="footerVisible" />
+    </main>
+    <LazyAppFooter :footerVisible="footerVisible" />
   </div>
 </template>
 <script setup>

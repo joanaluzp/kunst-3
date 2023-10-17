@@ -1,3 +1,3 @@
 <template>
-    <AppHeader />
+    <LazyAppHomepage />
 </template>
