@@ -6,7 +6,7 @@
           class="programme-grid-title-wrapper pt-100 col-12 offset-lg-3 col-lg-9"
         >
           <h1 class="description-title white font-bold-italic bigger uppercase">
-            programme
+            {{ $t("global.programme.top.title") }}
             <span class="description-title white lowercase">
               {{ searchType }}</span
             >
@@ -18,46 +18,77 @@
         >
           <ul class="programme-grid-list-items">
             <li
-              :class="{ active: searchType === 'all of it! enjoy :-)' }"
+              :class="{
+                active:
+                  searchType ===
+                  $t('global.programme.category.category_default'),
+              }"
               class="programme-grid-list-item"
-              @click="searchType = 'all of it! enjoy :-)'"
+              @click="updateCategory('default')"
             >
-              <p class="description-text black capitalize big">View all</p>
+              <p class="description-text black capitalize big">
+                {{ $t("global.programme.category.category_1") }}
+              </p>
             </li>
             <li
-              :class="{ active: searchType === 'cinema' }"
+              :class="{
+                active:
+                  searchType === $t('global.programme.category.category_2'),
+              }"
               class="programme-grid-list-item"
-              @click="searchType = 'cinema'"
+              @click="updateCategory('2')"
             >
-              <p class="description-text black capitalize big">cinema</p>
+              <p class="description-text black capitalize big">
+                {{ $t("global.programme.category.category_2") }}
+              </p>
             </li>
             <li
-              :class="{ active: searchType === 'concerts' }"
+              :class="{
+                active:
+                  searchType === $t('global.programme.category.category_3'),
+              }"
               class="programme-grid-list-item"
-              @click="searchType = 'concerts'"
+              @click="updateCategory('3')"
             >
-              <p class="description-text black capitalize big">concerts</p>
+              <p class="description-text black capitalize big">
+                {{ $t("global.programme.category.category_3") }}
+              </p>
             </li>
             <li
-              :class="{ active: searchType === 'performance' }"
+              :class="{
+                active:
+                  searchType === $t('global.programme.category.category_4'),
+              }"
               class="programme-grid-list-item"
-              @click="searchType = 'performance'"
+              @click="updateCategory('4')"
             >
-              <p class="description-text black capitalize big">performance</p>
+              <p class="description-text black capitalize big">
+                {{ $t("global.programme.category.category_4") }}
+              </p>
             </li>
             <li
-              :class="{ active: searchType === 'exhibitions' }"
+              :class="{
+                active:
+                  searchType === $t('global.programme.category.category_5'),
+              }"
               class="programme-grid-list-item"
-              @click="searchType = 'exhibitions'"
+              @click="updateCategory('5')"
             >
-              <p class="description-text black capitalize big">exhibitions</p>
+              <p class="description-text black capitalize big">
+                {{ $t("global.programme.category.category_5") }}
+              </p>
             </li>
             <li
-              :class="{ active: searchType === 'workshops' }"
+              :class="{
+                active:
+                  searchType === $t('global.programme.category.category_6'),
+              }"
               class="programme-grid-list-item"
-              @click="searchType = 'workshops'"
+              @click="updateCategory('6')"
             >
-              <p class="description-text black capitalize big">workshops</p>
+              <p class="description-text black capitalize big">
+                {{ $t("global.programme.category.category_6") }}
+              </p>
             </li>
           </ul>
         </div>
@@ -65,28 +96,33 @@
         <div class="programme-grid-items-wrapper col-12 offset-lg-3 col-lg-9">
           <ProgrammeCard
             :searchType="searchType"
-            v-for="(item, index) in programmeData"
+            v-for="item in $t('events.programme')"
             :key="item.id"
-            :item="item"
           />
         </div>
         <!--</Transition>-->
       </div>
     </div>
-    <div class="programme-grid-background"
-    :class="gridBackground ? 'white' : ''"></div>
+    <div
+      class="programme-grid-background"
+      :class="gridBackground ? 'white' : ''"
+    ></div>
   </section>
 </template>
 <script setup>
-import data from "../../database/db.json";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 import ProgrammeCard from "./ProgrammeCard.vue";
-const programmeData = ref([]);
 const gridListHeight = ref(false);
 const gridBackground = ref(false);
-const searchType = ref("all of it! enjoy :-)");
+const searchType = ref(t("global.programme.category.category_default"));
 const components = defineComponent({
   ProgrammeCard,
 });
+
+function updateCategory(el) {
+  searchType.value = t(`global.programme.category.category_${el}`);
+}
 
 const scrollToTop = () => {
   let elmGridList = document.querySelectorAll(".programme-grid-list-item");
@@ -120,7 +156,8 @@ const changeBackground = () => {
 };
 
 onMounted(() => {
-  programmeData.value = data.programme;
+  /*   programmeData.value = jsonData.event.programme; 
+  console.log(programmeData.value) */
   window.addEventListener("scroll", changeBackground);
   window.addEventListener("scroll", gridList);
   window.addEventListener("scroll", scrollToTop);

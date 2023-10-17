@@ -38,10 +38,10 @@
     },
     "programme": {
       "top": {
-        "title": "programme",
-        "option": "all of it! enjoy :-)"
+        "title": "programme"
       },
       "category": {
+        "category_default": "all of it! enjoy :-)",
         "category_1": "view all",
         "category_2": "cinema",
         "category_3": "concerts",
@@ -49,9 +49,33 @@
         "category_5": "exhibitions",
         "category_6": "workshops"
       }
+    },
+    "programme_id": {
+      "top": {
+        "btn_go_back": "go back",
+        "btn_ticket": "buy tickets"
+      },
+      "bottom": {
+        "info_1": "Day and hour",
+        "info_2": "duration",
+        "info_3": "age rating",
+        "info_4": {
+          "title": "entry",
+          "info_1": "Presale",
+          "info_2": "Door",
+          "info_3": "discounted (students, seniors)"
+        },
+        "info_5": "with the support of",
+        "info_6": {
+          "title": "share",
+          "social_media_1": "instagram",
+          "social_media_2": "youtube",
+          "social_media_3": "facebook"
+        }
+      }
     }
   },
-  "dynamic": {
+  "events": {
     "homepage": [
       {
         "id": 1,

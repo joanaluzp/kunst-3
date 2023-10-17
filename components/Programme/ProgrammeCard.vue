@@ -4,7 +4,8 @@
     :to="'/programme/' + item.id"
     class="programme-grid-item-link"
     v-if="
-      searchType === 'all of it! enjoy :-)' || searchType === `${item.category}`
+      searchType === $t('global.programme.category.category_default') ||
+      searchType === `${item.category}`
     "
   >
     <div class="programme-grid-item">
@@ -13,10 +14,10 @@
       </div>
       <div class="grid-item-title">
         <h3 class="description-text font-bold big black capitalize">
-          {{ item.title.main }}
+          {{ item.title.main ? item.title.main : " " }}
         </h3>
         <h4 class="description-text big black capitalize">
-          {{ item.title.secondary }}
+          {{ item.title.secondary ? item.title.secondary : " " }}
         </h4>
       </div>
       <div

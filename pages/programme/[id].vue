@@ -8,7 +8,7 @@
               <div
                 class="description-text uppercase white font-bold d-inline-flex align-items-center"
               >
-                GO BACK
+                {{ $t("global.programme_id.top.btn_go_back") }}
               </div></NuxtLink
             >
           </div>
@@ -31,6 +31,16 @@
         </div>
       </div>
       <div class="full-width-wrapper">
+        <div class="btn-ticket-wrapper">
+          <NuxtLink to="">
+            <div class="btn-ticket">
+              <p class="description-title font-italic white uppercase">
+                {{ $t("global.programme_id.top.btn_ticket") }}
+              </p>
+            </div>
+          </NuxtLink>
+        </div>
+
         <marquee Scrollamount="10" class="">
           <h1 class="description-title bigger font-bold-italic white uppercase">
             {{ item.title.main }}
@@ -53,7 +63,7 @@
           <ul class="id-description-list">
             <li class="id-description-item">
               <p class="description-text font-bold black capitalize">
-                Day and hour
+                {{ $t("global.programme_id.bottom.info_1") }}
               </p>
               <p
                 class="description-text font-italic black capitalize"
@@ -68,7 +78,7 @@
             </li>
             <li class="id-description-item">
               <p class="description-text font-bold black capitalize">
-                duration
+                {{ $t("global.programme_id.bottom.info_2") }}
               </p>
               <p class="description-text font-italic black capitalize">
                 {{ item.duration }}
@@ -76,22 +86,22 @@
             </li>
             <li class="id-description-item">
               <p class="description-text font-bold black capitalize">
-                age rating
+                {{ $t("global.programme_id.bottom.info_3") }}
               </p>
               <p class="description-text font-italic black capitalize">
                 {{ item.age_rating }}
               </p>
             </li>
             <li class="id-description-item">
-              <p class="description-text font-bold black capitalize">entry</p>
+              <p class="description-text font-bold black capitalize">{{ $t("global.programme_id.bottom.info_4.title") }}</p>
               <p class="description-text font-italic black capitalize">
-                Presale: {{ item.price.presale }} discounted (students, seniors)
-                / Door: {{ item.price.door }} discounted (students, seniors)
+                {{ $t("global.programme_id.bottom.info_4.info_1") }}: {{ item.price.presale }} {{ $t("global.programme_id.bottom.info_4.info_3") }}
+                / {{ $t("global.programme_id.bottom.info_4.info_2") }}: {{ item.price.door }} {{ $t("global.programme_id.bottom.info_4.info_3") }}
               </p>
             </li>
             <li class="id-description-item">
               <p class="description-text font-bold black capitalize">
-                with the support of
+                {{ $t("global.programme_id.bottom.info_5") }}
               </p>
               <p class="description-text font-italic black capitalize">
                 {{ item.support }}
@@ -101,7 +111,7 @@
               <div
                 class="btn description-text uppercase small black font-bold-italic d-inline-flex align-items-center"
               >
-                SHARE
+              {{ $t("global.programme_id.bottom.info_6.title") }}
               </div>
               <ul class="share-list-wrapper" :class="shareOpen ? 'open' : ''">
                 <li class="share-item">
@@ -109,7 +119,7 @@
                     ><p
                       class="description-text lowercase font-bold-italic text-right black"
                     >
-                      instagram
+                    {{ $t("global.programme_id.bottom.info_6.social_media_1") }}
                     </p></NuxtLink
                   >
                 </li>
@@ -118,7 +128,7 @@
                     ><p
                       class="description-text lowercase font-bold-italic text-right black"
                     >
-                      facebook
+                    {{ $t("global.programme_id.bottom.info_6.social_media_2") }}
                     </p></NuxtLink
                   >
                 </li>
@@ -127,16 +137,7 @@
                     ><p
                       class="description-text lowercase font-bold-italic text-right black"
                     >
-                      twitter
-                    </p></NuxtLink
-                  >
-                </li>
-                <li class="share-item">
-                  <NuxtLink to=""
-                    ><p
-                      class="description-text lowercase font-bold-italic text-right black"
-                    >
-                      whatsapp
+                    {{ $t("global.programme_id.bottom.info_6.social_media_3") }}
                     </p></NuxtLink
                   >
                 </li>
@@ -150,7 +151,6 @@
 </template>
 <script setup>
 import { ref } from "vue";
-import data from "../../database/db.json";
 const route = useRoute();
 const shareOpen = ref(false);
 const props = defineProps({
@@ -158,7 +158,7 @@ const props = defineProps({
     type: String,
   },
 });
-
+/* 
 const id = parseInt(route.params.id);
-const item = ref(data.programme.find((item) => item.id === id));
+const item = ref(data.programme.find((item) => item.id === id)); */
 </script>

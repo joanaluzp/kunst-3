@@ -161,7 +161,7 @@
                 </p></NuxtLink
               >
             </li>
-            <li>
+            <li class="search">
               <p class="description-text black uppercase big font-bold">
                 <span>
                   <i class="fa-solid fa-magnifying-glass"></i>
@@ -214,6 +214,8 @@
 </template>
 <script setup>
 const prevScroll = ref(0);
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
 const openMenu = () => {
   const navbarMenu = document.querySelector(".navbar-menu");
@@ -221,18 +223,27 @@ const openMenu = () => {
   event.stopPropagation();
   navbarMenu.classList.toggle("open");
   if (navbarMenu.classList.contains("open")) {
-    navbarBtn.innerHTML = "CLOSE";
+    navbarBtn.innerHTML = t("global.nav.menu.title_closed");
   } else {
-    navbarBtn.innerHTML = "MENU";
+    navbarBtn.innerHTML = t("global.nav.menu.title");
   }
 };
 
 const clickOutside = (event) => {
   const navbarMenu = document.querySelector(".navbar-menu");
+  const navbarLi = document.querySelectorAll(
+    ".navbar-menu .menu-list-options li"
+  );
+  const navbarLiSearch = document.querySelector(
+    ".navbar-menu .menu-list-options .search"
+  );
   const navbarBtn = document.querySelector(".menu-list-icon.icon-menu p");
-  if (!navbarMenu.contains(event.target)) {
+  if (
+    !navbarMenu.contains(event.target) ||
+    (navbarLi && !navbarLiSearch.contains(event.target))
+  ) {
     navbarMenu.classList.remove("open");
-    navbarBtn.innerHTML = "MENU";
+    navbarBtn.innerHTML = t("global.nav.menu.title");
   }
 };
 

@@ -1,6 +1,6 @@
 <template>
   <div class="homepage-background">
-    <Swiper
+    <!--     <Swiper
       v-if="homepageData.length > 0"
       :modules="[SwiperAutoplay, SwiperNavigation]"
       :slides-per-view="1"
@@ -32,10 +32,10 @@
           {{ item.alt }}
         </video>
       </SwiperSlide>
-    </Swiper>
+    </Swiper> -->
   </div>
   <div class="slider-arrows-wrapper">
-<!--     <button
+    <!--     <button
           type="button"
           class="d-none d-md-block arrow-prev arrow-gallery-prev"
         >
@@ -53,11 +53,12 @@
   </div>
 </template>
 <script setup>
-import data from "../../database/db.json";
+/* import data from "../../database/db.json";
 const homepageData = ref([]);
-
+ */
 onMounted(() => {
-  homepageData.value = data.homepage;
+  /*   homepageData.value = data.homepage;
+   */
   /* hoverEffect(); */
 });
 </script>
