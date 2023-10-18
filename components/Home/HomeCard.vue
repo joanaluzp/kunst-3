@@ -48,11 +48,12 @@
           <i class="fa-solid fa-caret-right fa-lg"></i>
         </button> -->
     <button type="button" class="arrow-prev arrow-gallery-down">
-      <NuxtLink to="/programme"> <img src="/images/sign-next.svg" /></NuxtLink>
+      <NuxtLink :to="localePath({ name: 'programme' })"> <img src="/images/sign-next.svg" /></NuxtLink>
     </button>
   </div>
 </template>
 <script setup>
+const localePath = useLocalePath();
 /* import data from "../../database/db.json";
 const homepageData = ref([]);
  */

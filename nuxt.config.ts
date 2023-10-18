@@ -60,13 +60,13 @@ export default defineNuxtConfig({
     locales: [
       {
         code: "en",
-        iso: "en",
+        iso: "en-US",
         name: "English",
         file: "en.json",
       },
       {
         code: "de",
-        iso: "de",
+        iso: "de-DE",
         name: "Deutsch",
         file: "de.json",
       }

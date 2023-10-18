@@ -259,6 +259,14 @@
             transform: skew(5deg, 5deg);
           }
         }
+        &.lang {
+          padding: 0;
+          a {
+            display: block;
+            padding: 5px 10px 5px 10px;
+            width: 100%;
+          }
+        }
       }
       i {
         color: $grey01;

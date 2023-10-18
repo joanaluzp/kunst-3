@@ -22,13 +22,14 @@
               </p>
               <ul class="menu-list-options">
                 <li class="description-text grey-01 capitalize">
-                  <a href="">{{ $t("global.nav.lang.sub_title") }}</a>
+                  {{ $t("global.nav.lang.sub_title") }}
                 </li>
-                <li class="description-text black option capitalize small">
-                  <a href="">{{ $t("global.nav.lang.en") }}</a>
-                </li>
-                <li class="description-text black option capitalize small">
-                  <a href="">{{ $t("global.nav.lang.de") }}</a>
+                <li
+                  class="description-text black option capitalize small lang"
+                  v-for="{ code, name } in locales"
+                  :key="code"
+                >
+                  <NuxtLink :to="switchLocalePath(code)">{{ name }}</NuxtLink>
                 </li>
               </ul>
             </div>
@@ -215,7 +216,8 @@
 <script setup>
 const prevScroll = ref(0);
 import { useI18n } from "vue-i18n";
-const { t } = useI18n();
+const { t, locale, locales } = useI18n();
+const switchLocalePath = useSwitchLocalePath();
 
 const openMenu = () => {
   const navbarMenu = document.querySelector(".navbar-menu");

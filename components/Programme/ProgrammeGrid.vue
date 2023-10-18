@@ -96,7 +96,8 @@
         <div class="programme-grid-items-wrapper col-12 offset-lg-3 col-lg-9">
           <ProgrammeCard
             :searchType="searchType"
-            v-for="item in $t('events.programme')"
+            v-for="item in jsonData"
+            :item="item"
             :key="item.id"
           />
         </div>
@@ -112,7 +113,9 @@
 <script setup>
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
+import data from "../../locales/en.json";
 import ProgrammeCard from "./ProgrammeCard.vue";
+const jsonData = ref([]);
 const gridListHeight = ref(false);
 const gridBackground = ref(false);
 const searchType = ref(t("global.programme.category.category_default"));
@@ -158,6 +161,8 @@ const changeBackground = () => {
 onMounted(() => {
   /*   programmeData.value = jsonData.event.programme; 
   console.log(programmeData.value) */
+  jsonData.value = data.events.programme;
+  console.log(jsonData.value);
   window.addEventListener("scroll", changeBackground);
   window.addEventListener("scroll", gridList);
   window.addEventListener("scroll", scrollToTop);

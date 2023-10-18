@@ -3694,6 +3694,14 @@ input[type=search]::-webkit-search-results-decoration {
 .navbar-menu-list .menu-list-icon .menu-list-options li:not(:first-child):hover {
   transform: skew(5deg, 5deg);
 }
+.navbar-menu-list .menu-list-icon .menu-list-options li.lang {
+  padding: 0;
+}
+.navbar-menu-list .menu-list-icon .menu-list-options li.lang a {
+  display: block;
+  padding: 5px 10px 5px 10px;
+  width: 100%;
+}
 .navbar-menu-list .menu-list-icon .menu-list-options i {
   color: #5e5e5e;
 }
