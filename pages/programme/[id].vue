@@ -17,7 +17,7 @@
               <h1
                 class="description-title bigger font-bold-italic white uppercase"
               >
-                {{ item.title.main }}
+                {{ item.title.main.loc.source }}
               </h1>
             </marquee>
           </div>
@@ -25,7 +25,7 @@
             <div
               class="btn description-text lowercase small white font-bold-italic d-inline-flex align-items-center"
             >
-              {{ item.category }}
+              {{ item.category.loc.source }}
             </div>
           </div>
         </div>
@@ -43,20 +43,20 @@
 
         <marquee Scrollamount="10" class="">
           <h1 class="description-title bigger font-bold-italic white uppercase">
-            {{ item.title.main }}
+            {{ item.title.main.loc.source }}
           </h1>
         </marquee>
-        <img :src="item.image" />
+        <img :src="item.image.loc.source" />
       </div>
     </div>
     <div class="id-description-wrapper container-fluid">
       <div class="row">
         <div class="col-12 col-lg-8 col-xxl-7 left">
           <p class="description-title font-fungal capitalize text-right">
-            {{ item.description.main }}
+            {{ item.description.main.loc.source }}
           </p>
           <p class="description-text black text-justify">
-            {{ item.description.secondary }}
+            {{ item.description.secondary.loc.source }}
           </p>
         </div>
         <div class="col-12 col-lg-4 offset-xxl-1 right">
@@ -71,9 +71,9 @@
                 :key="dateIndex"
               >
                 <span class="description-text font-bold-italic d-inline"
-                  >{{ dateItem.day }} {{ dateItem.month }}</span
+                  >{{ dateItem.day.loc.source }} {{ dateItem.month.loc.source }}</span
                 >
-                {{ dateItem.week }} at {{ dateItem.time }}
+                {{ dateItem.week.loc.source }} at {{ dateItem.time.loc.source }}
               </p>
             </li>
             <li class="id-description-item">
@@ -81,7 +81,7 @@
                 {{ $t("global.programme_id.bottom.info_2") }}
               </p>
               <p class="description-text font-italic black capitalize">
-                {{ item.duration }}
+                {{ item.duration.loc.source }}
               </p>
             </li>
             <li class="id-description-item">
@@ -89,14 +89,14 @@
                 {{ $t("global.programme_id.bottom.info_3") }}
               </p>
               <p class="description-text font-italic black capitalize">
-                {{ item.age_rating }}
+                {{ item.age_rating.loc.source }}
               </p>
             </li>
             <li class="id-description-item">
               <p class="description-text font-bold black capitalize">{{ $t("global.programme_id.bottom.info_4.title") }}</p>
               <p class="description-text font-italic black capitalize">
-                {{ $t("global.programme_id.bottom.info_4.info_1") }}: {{ item.price.presale }} {{ $t("global.programme_id.bottom.info_4.info_3") }}
-                / {{ $t("global.programme_id.bottom.info_4.info_2") }}: {{ item.price.door }} {{ $t("global.programme_id.bottom.info_4.info_3") }}
+                {{ $t("global.programme_id.bottom.info_4.info_1") }}: {{ item.price.presale.loc.source }} {{ $t("global.programme_id.bottom.info_4.info_3") }}
+                / {{ $t("global.programme_id.bottom.info_4.info_2") }}: {{ item.price.door.loc.source }} {{ $t("global.programme_id.bottom.info_4.info_3") }}
               </p>
             </li>
             <li class="id-description-item">
@@ -104,7 +104,7 @@
                 {{ $t("global.programme_id.bottom.info_5") }}
               </p>
               <p class="description-text font-italic black capitalize">
-                {{ item.support }}
+                {{ item.support.loc.source }}
               </p>
             </li>
             <li class="id-description-item" @click="shareOpen = !shareOpen">
@@ -151,6 +151,8 @@
 </template>
 <script setup>
 import { ref } from "vue";
+import { useI18n } from "vue-i18n";
+const { tm } = useI18n();
 const route = useRoute();
 const shareOpen = ref(false);
 const props = defineProps({
@@ -158,7 +160,13 @@ const props = defineProps({
     type: String,
   },
 });
-/* 
+
 const id = parseInt(route.params.id);
-const item = ref(data.programme.find((item) => item.id === id)); */
+const item = ref(tm('events.programme').find((item) => item.id === id)); 
+defineI18nRoute({
+  paths: {
+    en: '/programme/:slug',
+    de: '/programm/:slug'
+  }
+})
 </script>

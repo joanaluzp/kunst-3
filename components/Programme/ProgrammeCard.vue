@@ -6,8 +6,7 @@
     v-if="
       searchType === $t('global.programme.category.category_default') ||
       searchType === `${item.category.loc.source}`
-    "
-  >
+    " >
     <div class="programme-grid-item">
       <div class="grid-item-image">
         <img :src="item.image.loc.source" />
@@ -29,7 +28,6 @@
           class="grid-item-info description-text lowercase small black font-bold-italic d-inline-flex"
         >
           {{ dateItem.full.loc.source }}
-          {{ $t(`${dateItem}.full.loc.source`) }}
         </p>
         <div
           class="btn description-text small lowercase black font-bold-italic d-inline-flex align-items-center"
@@ -42,7 +40,10 @@
 </template>
 <script setup>
 import Pixelate from "../Fx/Pixelate.vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 const localePath = useLocalePath();
+
 
 const props = defineProps({
   searchType: {
