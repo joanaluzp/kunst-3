@@ -1,7 +1,7 @@
 <template>
   <Pixelate />
   <NuxtLink
-    :to="'/programme/' + item.id"
+    :to="localePath({ path: '/programme/' + item.id })"
     class="programme-grid-item-link"
     v-if="
       searchType === $t('global.programme.category.category_default') ||
@@ -43,8 +43,6 @@ import Pixelate from "../Fx/Pixelate.vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 const localePath = useLocalePath();
-
-
 const props = defineProps({
   searchType: {
     type: String,

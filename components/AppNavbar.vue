@@ -177,6 +177,21 @@
               </p>
             </li>
             <li>
+              <p
+                class="description-text black uppercase big font-bold icon-help"
+              >
+                {{ $t("global.nav.lang.title") }}
+                {{ $t("global.nav.lang.sub_title") }}
+              </p>
+              <div v-for="{ code, name } in locales" :key="code">
+                <NuxtLink :to="switchLocalePath(code)"
+                  ><p class="description-text grey-01 capitalize">
+                    {{ name }}
+                  </p></NuxtLink
+                >
+              </div>
+            </li>
+            <li>
               <div class="d-flex justify-content-end">
                 <p class="description-text grey-01 big font-fungal">
                   {{ $t("global.nav.menu.info_6") }}

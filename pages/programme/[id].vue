@@ -31,16 +31,13 @@
         </div>
       </div>
       <div class="full-width-wrapper">
-        <div class="btn-ticket-wrapper">
-          <NuxtLink to="">
-            <div class="btn-ticket">
-              <p class="description-title font-italic white uppercase">
-                {{ $t("global.programme_id.top.btn_ticket") }}
-              </p>
-            </div>
-          </NuxtLink>
-        </div>
-
+        <NuxtLink to="" class="btn-ticket-wrapper">
+          <div class="btn-ticket d-inline-block">
+            <p class="description-title font-italic white uppercase">
+              {{ $t("global.programme_id.top.btn_ticket") }}
+            </p>
+          </div>
+        </NuxtLink>
         <marquee Scrollamount="10" class="">
           <h1 class="description-title bigger font-bold-italic white uppercase">
             {{ item.title.main.loc.source }}
@@ -71,7 +68,8 @@
                 :key="dateIndex"
               >
                 <span class="description-text font-bold-italic d-inline"
-                  >{{ dateItem.day.loc.source }} {{ dateItem.month.loc.source }}</span
+                  >{{ dateItem.day.loc.source }}
+                  {{ dateItem.month.loc.source }}</span
                 >
                 {{ dateItem.week.loc.source }} at {{ dateItem.time.loc.source }}
               </p>
@@ -93,10 +91,16 @@
               </p>
             </li>
             <li class="id-description-item">
-              <p class="description-text font-bold black capitalize">{{ $t("global.programme_id.bottom.info_4.title") }}</p>
+              <p class="description-text font-bold black capitalize">
+                {{ $t("global.programme_id.bottom.info_4.title") }}
+              </p>
               <p class="description-text font-italic black capitalize">
-                {{ $t("global.programme_id.bottom.info_4.info_1") }}: {{ item.price.presale.loc.source }} {{ $t("global.programme_id.bottom.info_4.info_3") }}
-                / {{ $t("global.programme_id.bottom.info_4.info_2") }}: {{ item.price.door.loc.source }} {{ $t("global.programme_id.bottom.info_4.info_3") }}
+                {{ $t("global.programme_id.bottom.info_4.info_1") }}:
+                {{ item.price.presale.loc.source }}
+                {{ $t("global.programme_id.bottom.info_4.info_3") }} /
+                {{ $t("global.programme_id.bottom.info_4.info_2") }}:
+                {{ item.price.door.loc.source }}
+                {{ $t("global.programme_id.bottom.info_4.info_3") }}
               </p>
             </li>
             <li class="id-description-item">
@@ -111,7 +115,7 @@
               <div
                 class="btn description-text uppercase small black font-bold-italic d-inline-flex align-items-center"
               >
-              {{ $t("global.programme_id.bottom.info_6.title") }}
+                {{ $t("global.programme_id.bottom.info_6.title") }}
               </div>
               <ul class="share-list-wrapper" :class="shareOpen ? 'open' : ''">
                 <li class="share-item">
@@ -119,7 +123,9 @@
                     ><p
                       class="description-text lowercase font-bold-italic text-right black"
                     >
-                    {{ $t("global.programme_id.bottom.info_6.social_media_1") }}
+                      {{
+                        $t("global.programme_id.bottom.info_6.social_media_1")
+                      }}
                     </p></NuxtLink
                   >
                 </li>
@@ -128,7 +134,9 @@
                     ><p
                       class="description-text lowercase font-bold-italic text-right black"
                     >
-                    {{ $t("global.programme_id.bottom.info_6.social_media_2") }}
+                      {{
+                        $t("global.programme_id.bottom.info_6.social_media_2")
+                      }}
                     </p></NuxtLink
                   >
                 </li>
@@ -137,7 +145,9 @@
                     ><p
                       class="description-text lowercase font-bold-italic text-right black"
                     >
-                    {{ $t("global.programme_id.bottom.info_6.social_media_3") }}
+                      {{
+                        $t("global.programme_id.bottom.info_6.social_media_3")
+                      }}
                     </p></NuxtLink
                   >
                 </li>
@@ -155,18 +165,17 @@ import { useI18n } from "vue-i18n";
 const { tm } = useI18n();
 const route = useRoute();
 const shareOpen = ref(false);
+const id = parseInt(route.params.id);
+const item = ref(tm("events.programme").find((item) => item.id === id));
 const props = defineProps({
   searchType: {
     type: String,
   },
 });
-
-const id = parseInt(route.params.id);
-const item = ref(tm('events.programme').find((item) => item.id === id)); 
 defineI18nRoute({
   paths: {
-    en: '/programme/:slug',
-    de: '/programm/:slug'
+    en: '/programme/[id]',
+    de: '/programm/[id]'
   }
 })
 </script>

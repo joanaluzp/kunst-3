@@ -42,6 +42,7 @@
     }
   }
   .full-width-wrapper {
+    position: relative;
     marquee {
       visibility: visible;
     }
@@ -51,6 +52,13 @@
       height: 60vh;
       object-fit: cover;
       @include transition;
+    }
+    .btn-ticket-wrapper {
+      position: absolute;
+      z-index: 2;
+      bottom: 30px;
+      right: 50px;
+      animation: shake 0.3s ease-in-out infinite;
     }
   }
   &:hover {

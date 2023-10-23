@@ -123,8 +123,6 @@ const components = defineComponent({
   ProgrammeCard,
 });
 
-computed;
-
 function updateCategory(el) {
   searchType.value = t(`global.programme.category.category_${el}`);
 }
@@ -165,7 +163,6 @@ onMounted(() => {
   console.log(programmeData.value) */
   /*   jsonData.value = data.events.programme;
   console.log(jsonData.value); */
-  console.log(Object.keys(t('events.programme')));
   window.addEventListener("scroll", changeBackground);
   window.addEventListener("scroll", gridList);
   window.addEventListener("scroll", scrollToTop);

@@ -3,71 +3,71 @@
       "nav": {
         "lang": {
           "title": "A⇆ü",
-          "sub_title": "Language",
+          "sub_title": "Sprache",
           "en": "English",
           "de": "German"
         },
         "help": {
-          "title": "YOOOOOOOOOOOOOOOOO",
-          "sub_title": "help",
-          "info_1": "How To Get Here",
+          "title": "hilfe",
+          "sub_title": "hilfe",
+          "info_1": "Wie komme ich hier hin",
           "info_2": "FAQ",
-          "info_3": "Support KUNST 3"
+          "info_3": "Unterstützung KUNST 3"
         },
         "search": {
-          "title": "WIE GEHTSSSS"
+          "title": "finden"
         },
         "menu": {
           "title": "menu",
-          "title_closed": "close",
-          "info_1": "About us",
-          "info_2": "programme",
-          "info_3": "information for media",
-          "info_4": "people",
-          "info_5": "partners",
-          "info_6": "follow us"
+          "title_closed": "schließen",
+          "info_1": "Über uns",
+          "info_2": "programm",
+          "info_3": "Informationen für Medien",
+          "info_4": "die leute",
+          "info_5": "Partner",
+          "info_6": "Folgt uns"
         }
       },
       "footer": {
-        "info_1": "support 3",
-        "info_2": "partners",
+        "info_1": "Unterstützung K3",
+        "info_2": "Partner",
         "info_3": "faq",
-        "info_4": "privacy & cookies",
-        "info_5": "contacts",
-        "info_6": "All rights reserved"
+        "info_4": "Datenschutz & cookies",
+        "info_5": "Kontakte",
+        "info_6": "Alle Rechte vorbehalten"
       },
       "programme": {
         "top": {
-          "title": "programme"
+          "title": "programm"
         },
         "category": {
-          "category_default": "all of it! enjoy :-)",
-          "category_1": "view all",
-          "category_2": "cinema",
-          "category_3": "concerts",
+          "category_default": "alles! genießen :-)",
+          "category_1": "Alle ansehen",
+          "category_2": "Kino",
+          "category_3": "Konzerte",
           "category_4": "performance",
-          "category_5": "exhibitions",
-          "category_6": "workshops"
+          "category_5": "Ausstellungen",
+          "category_6": "Werkstätten"
         }
       },
       "programme_id": {
         "top": {
-          "btn_go_back": "go back",
-          "btn_ticket": "buy tickets"
+          "btn_go_back": "geh zurück",
+          "btn_ticket": "Tickets kaufen"
         },
         "bottom": {
-          "info_1": "Day and hour",
-          "info_2": "duration",
-          "info_3": "age rating",
+          "info_1": "Tag und Stunde",
+          "info_2": "Dauer",
+          "info_3": "Altersfreigabe",
           "info_4": {
-            "title": "entry",
-            "info_1": "Presale",
-            "info_2": "Door",
-            "info_3": "discounted (students, seniors)"
+            "title": "Eintritt",
+            "info_1": "Vorverkauf",
+            "info_2": "Abendkasse",
+            "info_3": "ermäßigt (Studenten, Senioren)"
           },
-          "info_5": "with the support of",
+          "info_5": "mit der Unterstützung von",
           "info_6": {
-            "title": "share",
+            "title": "Teile",
             "social_media_1": "instagram",
             "social_media_2": "youtube",
             "social_media_3": "facebook"
@@ -107,7 +107,7 @@
           "id": 1,
           "image": "/images/concerts/amin-hasani-6MtgrhSeil4-unsplash.jpg",
           "title": {
-            "main": "Palo Santo Kinfolk JOMOhhh",
+            "main": "Palo Santo Kinfolk JOMO",
             "secondary": "Kitsch Disrupt Edison Bulb"
           },
           "category": "concerts",

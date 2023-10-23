@@ -4132,6 +4132,9 @@ footer {
   height: 0;
   width: 0;
 }
+.programme-id-top .full-width-wrapper {
+  position: relative;
+}
 .programme-id-top .full-width-wrapper marquee {
   visibility: visible;
 }
@@ -4142,6 +4145,13 @@ footer {
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.3s ease-in-out;
+}
+.programme-id-top .full-width-wrapper .btn-ticket-wrapper {
+  position: absolute;
+  z-index: 2;
+  bottom: 30px;
+  right: 50px;
+  animation: shake 0.3s ease-in-out infinite;
 }
 .programme-id-top:hover {
   background-color: #4c45fa;
