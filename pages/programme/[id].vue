@@ -15,7 +15,7 @@
           <div class="d-flex align-items-center col-12 col-lg-8">
             <marquee Scrollamount="10" class="">
               <h1
-                class="description-title bigger font-bold-italic white uppercase"
+                class="description-title text-decoration bigger font-italic white uppercase"
               >
                 {{ item.title.main.loc.source }}
               </h1>
@@ -39,11 +39,15 @@
           </div>
         </NuxtLink>
         <marquee Scrollamount="10" class="">
-          <h1 class="description-title bigger font-bold-italic white uppercase">
+          <h1
+            class="description-title bigger text-decoration font-bold-italic white uppercase"
+          >
             {{ item.title.main.loc.source }}
           </h1>
         </marquee>
-        <img :src="item.image.loc.source" />
+        <div class="id-img-wrapper">
+          <img :src="item.image.loc.source" />
+        </div>
       </div>
     </div>
     <div class="id-description-wrapper container-fluid">
@@ -59,11 +63,11 @@
         <div class="col-12 col-lg-4 offset-xxl-1 right">
           <ul class="id-description-list">
             <li class="id-description-item">
-              <p class="description-text font-bold black capitalize">
+              <p class="description-text font-bold white capitalize">
                 {{ $t("global.programme_id.bottom.info_1") }}
               </p>
               <p
-                class="description-text font-italic black capitalize"
+                class="description-text font-italic white capitalize"
                 v-for="(dateItem, dateIndex) in item.date"
                 :key="dateIndex"
               >
@@ -75,26 +79,26 @@
               </p>
             </li>
             <li class="id-description-item">
-              <p class="description-text font-bold black capitalize">
+              <p class="description-text font-bold white capitalize">
                 {{ $t("global.programme_id.bottom.info_2") }}
               </p>
-              <p class="description-text font-italic black capitalize">
+              <p class="description-text font-italic white capitalize">
                 {{ item.duration.loc.source }}
               </p>
             </li>
             <li class="id-description-item">
-              <p class="description-text font-bold black capitalize">
+              <p class="description-text font-bold white capitalize">
                 {{ $t("global.programme_id.bottom.info_3") }}
               </p>
-              <p class="description-text font-italic black capitalize">
+              <p class="description-text font-italic white capitalize">
                 {{ item.age_rating.loc.source }}
               </p>
             </li>
             <li class="id-description-item">
-              <p class="description-text font-bold black capitalize">
+              <p class="description-text font-bold white capitalize">
                 {{ $t("global.programme_id.bottom.info_4.title") }}
               </p>
-              <p class="description-text font-italic black capitalize">
+              <p class="description-text font-italic white capitalize">
                 {{ $t("global.programme_id.bottom.info_4.info_1") }}:
                 {{ item.price.presale.loc.source }}
                 {{ $t("global.programme_id.bottom.info_4.info_3") }} /
@@ -104,16 +108,16 @@
               </p>
             </li>
             <li class="id-description-item">
-              <p class="description-text font-bold black capitalize">
+              <p class="description-text font-bold white capitalize">
                 {{ $t("global.programme_id.bottom.info_5") }}
               </p>
-              <p class="description-text font-italic black capitalize">
+              <p class="description-text font-italic white capitalize">
                 {{ item.support.loc.source }}
               </p>
             </li>
             <li class="id-description-item" @click="shareOpen = !shareOpen">
               <div
-                class="btn description-text uppercase small black font-bold-italic d-inline-flex align-items-center"
+                class="btn description-text uppercase small white font-bold-italic d-inline-flex align-items-center"
               >
                 {{ $t("global.programme_id.bottom.info_6.title") }}
               </div>
@@ -121,7 +125,7 @@
                 <li class="share-item">
                   <NuxtLink to=""
                     ><p
-                      class="description-text lowercase font-bold-italic text-right black"
+                      class="description-text lowercase font-bold-italic text-right white"
                     >
                       {{
                         $t("global.programme_id.bottom.info_6.social_media_1")
@@ -132,7 +136,7 @@
                 <li class="share-item">
                   <NuxtLink to=""
                     ><p
-                      class="description-text lowercase font-bold-italic text-right black"
+                      class="description-text lowercase font-bold-italic text-right white"
                     >
                       {{
                         $t("global.programme_id.bottom.info_6.social_media_2")
@@ -143,7 +147,7 @@
                 <li class="share-item">
                   <NuxtLink to=""
                     ><p
-                      class="description-text lowercase font-bold-italic text-right black"
+                      class="description-text lowercase font-bold-italic text-right white"
                     >
                       {{
                         $t("global.programme_id.bottom.info_6.social_media_3")
@@ -174,8 +178,8 @@ const props = defineProps({
 });
 defineI18nRoute({
   paths: {
-    en: '/programme/[id]',
-    de: '/programm/[id]'
-  }
-})
+    en: "/programme/[id]",
+    de: "/programm/[id]",
+  },
+});
 </script>

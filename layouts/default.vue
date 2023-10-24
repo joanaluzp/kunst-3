@@ -1,6 +1,9 @@
 <template>
+  <div v-if="loading" id="loader">
+  <p>ola</p>
+  </div>
   <div class="app-page">
-    <div class="custom-cursor"></div>
+    <div v-if="!loading" class="custom-cursor"></div>
     <LazyAppNavbar />
     <main class="main">
       <NuxtPage />
@@ -11,6 +14,7 @@
 <script setup>
 const route = useRoute();
 const footerVisible = ref(false);
+const loading = ref(true);
 const page = computed({
   get: () => route.name.split("_"),
 });
@@ -41,6 +45,10 @@ watch(() => {
   } else {
     footerVisible.value = false;
   }
+});
+
+onBeforeMount(() => {
+  loading.value = false;
 });
 
 onMounted(() => {

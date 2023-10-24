@@ -10,7 +10,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: $color03;
+    background-color: $grey03;
     box-shadow: inset 0px -28px 13px -11px $white;
     right: 0;
     top: 0;
@@ -73,21 +73,22 @@
 
 .programme-grid-item-link {
   width: 100%;
-  margin: 4px;
+  margin: 10px;
   .programme-grid-item {
     height: 100%;
     width: 100%;
     background-color: $white;
-    border: 1px solid $black;
-    border-radius: 15px;
+    border-radius: 50px;
     padding: 15px;
+    border: 1px solid transparent;
     @include transition;
     img {
       object-fit: cover;
       height: 250px;
       width: 100%;
-      border-radius: 10px;
-      border: 1px solid $black;
+      border-radius: 15px;
+      border: 1px solid transparent;
+      @include transition;
     }
     .grid-item-title {
       height: 130px;
@@ -115,16 +116,27 @@
         border-radius: 15px;
       }
     }
+    &.border {
+      border: 1px solid $black;
+      img {
+        border: 1px solid $black;
+      }
+    }
     &:hover {
-      transform: translate(10px, 10px);
-      background-color: $color06;
-
+      transform: scale(1.05);
+      border-radius: 70px;
+      -webkit-box-shadow: 0 0 5px 20px $white;
+      box-shadow: 0 0 5px 20px $white;
+      border: 1px solid $white;
+      img {
+        border: 1px solid $white;
+      }
     }
   }
 }
 @media (min-width: 576px) {
   .programme-grid-item-link {
-    width: 48%;
+    width: 47%;
   }
 }
 
@@ -146,7 +158,7 @@
     }
   }
   .programme-grid-item-link {
-    width: 31%;
+    width: 28%;
   }
   .programme-grid-title-wrapper {
     h1 {

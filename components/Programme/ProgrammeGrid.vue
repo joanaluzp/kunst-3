@@ -5,9 +5,9 @@
         <div
           class="programme-grid-title-wrapper pt-100 col-12 offset-lg-3 col-lg-9"
         >
-          <h1 class="description-title white font-bold-italic bigger uppercase">
+          <h1 class="description-title color-02 font-bold-italic bigger uppercase">
             {{ $t("global.programme.top.title") }}
-            <span class="description-title white lowercase">
+            <span class="description-title black text-decoration lowercase">
               {{ searchType }}</span
             >
           </h1>
@@ -96,6 +96,7 @@
         <div class="programme-grid-items-wrapper col-12 offset-lg-3 col-lg-9">
           <ProgrammeCard
             :searchType="searchType"
+            :gridBackground="gridBackground"
             v-for="item in $tm('events.programme')"
             :item="item"
             :key="item.id"

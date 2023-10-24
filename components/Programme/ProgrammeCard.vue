@@ -5,17 +5,24 @@
     v-if="
       searchType === $t('global.programme.category.category_default') ||
       searchType === `${item.category.loc.source}`
-    " >
-    <div class="programme-grid-item">
+    "
+  >
+    <div class="programme-grid-item" :class="gridBackground ? 'border' : ''">
       <div class="grid-item-image">
-        <img :src="item.image.loc.source" />
+        <img
+          :src="item.image.loc.source"
+        />
       </div>
       <div class="grid-item-title">
         <h3 class="description-text font-bold big black capitalize">
           {{ item.title.main.loc.source ? item.title.main.loc.source : " " }}
         </h3>
         <h4 class="description-text big black capitalize">
-          {{ item.title.secondary.loc.source ? item.title.secondary.loc.source : " " }}
+          {{
+            item.title.secondary.loc.source
+              ? item.title.secondary.loc.source
+              : " "
+          }}
         </h4>
       </div>
       <div
@@ -38,12 +45,13 @@
   </NuxtLink>
 </template>
 <script setup>
-import { useI18n } from "vue-i18n";
-const { t } = useI18n();
 const localePath = useLocalePath();
 const props = defineProps({
   searchType: {
     type: String,
+  },
+  gridBackground: {
+    type: Boolean,
   },
   item: {
     type: Object,

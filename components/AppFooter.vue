@@ -33,7 +33,7 @@
             >
           </div>
           <div class="col-12 col-md-4 right">
-            <p class="description-text small black">
+            <p class="description-text font-italic small black">
               © 2023–2023 Kunst 3.  {{ $t('global.footer.info_6') }}
             </p>
           </div>

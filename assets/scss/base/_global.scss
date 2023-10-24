@@ -91,6 +91,21 @@ input[type="search"]::-webkit-search-results-decoration {
   background: $black;
 }
 
+#loader {
+  background-color: $color05;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position: fixed;
+  p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .custom-cursor {
   display: none;
   position: fixed;
@@ -105,13 +120,14 @@ input[type="search"]::-webkit-search-results-decoration {
   &::after {
     content: "";
     display: block;
-    background-color: $white;
+    border: 3px dotted $white;
     position: absolute;
     width: 25px;
     border-radius: 50%;
     height: 25px;
     top: -15px;
     left: -12px;
+    animation: spin 4s linear infinite;
   }
   @media (min-width: 992px) {
     display: block;
@@ -166,5 +182,24 @@ input[type="search"]::-webkit-search-results-decoration {
   }
   100% {
     transform: translate(50%, 0px);
+  }
+}
+
+@keyframes translating {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(20px, 20px);
+  }
+  60%,
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
   }
 }

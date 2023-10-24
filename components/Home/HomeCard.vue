@@ -24,7 +24,7 @@
           <div class="row">
             <div class="homepage-background-text col-12">
               <h1
-                class="description-title red font-bold-italic bigger uppercase"
+                class="description-title red font-italic bigger uppercase"
               >
                 {{ item.description.loc.source }}
               </h1>

@@ -54,6 +54,9 @@
   &.grey-01 {
     color: $grey01;
   }
+  &.text-decoration {
+    text-decoration: underline;
+  }
   &.grey-02 {
     color: $grey02;
   }
@@ -94,6 +97,9 @@
   }
   &.text-right {
     text-align: right;
+  }
+  &.text-decoration {
+    text-decoration: underline;
   }
   &.text-justify {
     text-align: justify;
