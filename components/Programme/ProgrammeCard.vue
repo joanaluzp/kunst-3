@@ -1,5 +1,4 @@
 <template>
-  <Pixelate />
   <NuxtLink
     :to="localePath({ path: '/programme/' + item.id })"
     class="programme-grid-item-link"
@@ -39,7 +38,6 @@
   </NuxtLink>
 </template>
 <script setup>
-import Pixelate from "../Fx/Pixelate.vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 const localePath = useLocalePath();

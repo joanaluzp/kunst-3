@@ -4012,7 +4012,6 @@ footer {
   border: 1px solid #000;
   border-radius: 15px;
   padding: 15px;
-  filter: none;
   transition: all 0.3s ease-in-out;
 }
 .programme-grid-item-link .programme-grid-item img {
@@ -4059,8 +4058,8 @@ footer {
   border-radius: 15px;
 }
 .programme-grid-item-link .programme-grid-item:hover {
-  filter: url("#pixelate");
   transform: translate(10px, 10px);
+  background-color: #ffc2fc;
 }
 
 @media (min-width: 576px) {
