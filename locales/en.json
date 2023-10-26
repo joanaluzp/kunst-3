@@ -81,25 +81,29 @@
         "id": 1,
         "video": "/videos/kunst_3_video_cinema.mp4",
         "alt": "video background",
-        "description": "Classic Movies every wednesday"
+        "description": "Classic Movies every wednesday",
+        "programme_id": 18
       },
       {
         "id": 2,
         "video": "/videos/kunst_3_video_performance.mp4",
         "alt": "video background",
-        "description": "if i fall you lose (performance)"
+        "description": "if i fall you lose (performance)",
+        "programme_id": 3
       },
       {
         "id": 3,
         "video": "/videos/kunst_3_video_angela_schanelec.mp4",
         "alt": "video background",
-        "description": "angela schanelec: all the movies"
+        "description": "angela schanelec: all the movies",
+        "programme_id": 2
       },
       {
         "id": 4,
         "video": "/videos/kunst_3_video_super8mm.mp4",
         "alt": "video background",
-        "description": "super 8 workshop every sunday"
+        "description": "super 8 workshop every sunday",
+        "programme_id": 6
       }
     ],
     "programme": [

@@ -22,21 +22,25 @@
             :item="item"
             :key="item.id"
           >
-            <div class="container-fluid">
-              <div class="row">
-                <div class="homepage-background-text col-12">
-                  <h1
-                    class="description-title red font-italic bigger uppercase"
-                  >
-                    {{ item.description.loc.source }}
-                  </h1>
+            <NuxtLink
+              :to="localePath({ path: '/programme/' + item.programme_id })"
+            >
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="homepage-background-text col-12">
+                    <h1
+                      class="description-title red font-italic bigger uppercase"
+                    >
+                      {{ item.description.loc.source }}
+                    </h1>
+                  </div>
                 </div>
               </div>
-            </div>
-            <video autoplay muted loop>
-              <source :src="item.video.loc.source" type="video/mp4" />
-              {{ item.alt.loc.source }}
-            </video>
+              <video autoplay muted loop>
+                <source :src="item.video.loc.source" type="video/mp4" />
+                {{ item.alt.loc.source }}
+              </video></NuxtLink
+            >
           </SwiperSlide>
         </Swiper>
       </div>
