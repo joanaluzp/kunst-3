@@ -65,7 +65,7 @@
 .programme-grid-items-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   z-index: 3;
   padding-bottom: 20px;
@@ -136,7 +136,7 @@
 }
 @media (min-width: 576px) {
   .programme-grid-item-link {
-    width: 47%;
+    width: 45%;
   }
 }
 
@@ -157,6 +157,9 @@
       flex-direction: column;
     }
   }
+}
+
+@media (min-width: 1400px) {
   .programme-grid-item-link {
     width: 28%;
   }

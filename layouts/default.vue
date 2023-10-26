@@ -1,6 +1,8 @@
 <template>
-  <div v-if="loading" id="loader">
-  <p>ola</p>
+  <div id="loader">
+    <div class="loader-img-wrapper">
+      <img src="/images/kunst-3-logo.png" />
+    </div>
   </div>
   <div class="app-page">
     <div v-if="!loading" class="custom-cursor"></div>
@@ -19,7 +21,7 @@ const page = computed({
   get: () => route.name.split("_"),
 });
 
-const mouseEffect = () => {
+const cursor = () => {
   const cursor = document.querySelector(".custom-cursor");
   const links = document.querySelectorAll("a");
 
@@ -39,6 +41,11 @@ const mouseEffect = () => {
   });
 };
 
+const hideLoader = () => {
+  const loader = document.querySelector("#loader");
+  loader.classList.add("hidden");
+};
+
 watch(() => {
   if (page.value[0] === "programme" || page.value[0] === "programme-id") {
     footerVisible.value = true;
@@ -49,9 +56,12 @@ watch(() => {
 
 onBeforeMount(() => {
   loading.value = false;
+  setTimeout(() => {
+    hideLoader();
+  }, 500);
 });
 
 onMounted(() => {
-  mouseEffect();
+  cursor();
 });
 </script>

@@ -6,7 +6,7 @@
           class="programme-grid-title-wrapper pt-100 col-12 offset-lg-3 col-lg-9"
         >
           <h1 class="description-title color-02 font-bold-italic bigger uppercase">
-            {{ $t("global.programme.top.title") }}
+            {{ $t("global.programme.top.title") + '😶‍🌫️' }}
             <span class="description-title black text-decoration lowercase">
               {{ searchType }}</span
             >
@@ -114,10 +114,8 @@
 <script setup>
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
-/* import data from "../../locales/en.json";
- */ import ProgrammeCard from "./ProgrammeCard.vue";
-/* const jsonData = ref([]);
- */ const gridListHeight = ref(false);
+import ProgrammeCard from "./ProgrammeCard.vue";
+const gridListHeight = ref(false);
 const gridBackground = ref(false);
 const searchType = ref(t("global.programme.category.category_default"));
 const components = defineComponent({
@@ -150,7 +148,6 @@ const gridList = () => {
 
 const changeBackground = () => {
   const scroll = window.pageYOffset;
-  //console.log(scroll)
   if (scroll < 300) {
     gridBackground.value = false;
   }
@@ -160,10 +157,6 @@ const changeBackground = () => {
 };
 
 onMounted(() => {
-  /*   programmeData.value = jsonData.event.programme; 
-  console.log(programmeData.value) */
-  /*   jsonData.value = data.events.programme;
-  console.log(jsonData.value); */
   window.addEventListener("scroll", changeBackground);
   window.addEventListener("scroll", gridList);
   window.addEventListener("scroll", scrollToTop);

@@ -2,19 +2,11 @@
 .section-programme-id {
   position: relative;
   padding-bottom: 20px;
-  .btn {
-    width: fit-content;
-    padding: 2px 10px;
-    border: 1px solid $white;
-    border-radius: 15px;
-    &:hover {
-      animation: strobe 0.3s infinite;
-    }
-  }
 }
 .programme-id-top {
-  background-color: $color01;
+  background-color: $white02;
   @include transition;
+  transition-delay: 0.5s;
   .id-information-wrapper {
     .row {
       & > div {
@@ -24,8 +16,8 @@
             border-bottom: 7px solid transparent;
             @include transition;
             &:hover {
-              border-bottom: 7px solid $white;
-              transform: translateX(-20px) skewX(-20deg);
+              border-bottom: 7px solid $black;
+              transform: translateX(-20px);
             }
           }
         }
@@ -36,6 +28,15 @@
           visibility: hidden;
           height: 0;
           width: 0;
+        }
+        .btn {
+          width: fit-content;
+          padding: 2px 10px;
+          border: 1px solid $black;
+          border-radius: 15px;
+          &:hover {
+            animation: strobe 0.3s infinite;
+          }
         }
       }
     }
@@ -75,7 +76,36 @@
     }
   }
   &:hover {
-    background-color: $color03;
+    background-color: #4971e1;
+    .description-text,
+    .description-title {
+      color: $white;
+    }
+    .full-width-wrapper {
+      .btn-ticket-wrapper {
+        .btn-ticket {
+          .description-title {
+            color: $white;
+          }
+        }
+      }
+    }
+    .id-information-wrapper {
+      .row {
+        & > div {
+          &:first-child {
+            .description-text {
+              &:hover {
+                border-bottom: 7px solid $white;
+              }
+            }
+          }
+          .btn {
+            border: 1px solid $white;
+          }
+        }
+      }
+    }
   }
 }
 .id-description-wrapper {
@@ -98,6 +128,9 @@
           margin-bottom: 0;
         }
         .btn {
+          width: fit-content;
+          padding: 2px 10px;
+          border-radius: 15px;
           border: 1px solid $white;
         }
         .share-list-wrapper {
@@ -112,6 +145,7 @@
           .share-item {
             @include transition;
             display: none;
+            border-bottom: 0 solid $white;
             &:hover {
               transform: translateX(-20px);
               border-bottom: 7px solid $white;
@@ -168,9 +202,6 @@
             height: auto;
             width: 100%;
             visibility: visible;
-            .description-title {
-              color: $white;
-            }
           }
         }
       }

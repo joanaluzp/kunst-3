@@ -10,7 +10,7 @@
               <div
                 class="menu-list-logo d-none d-md-flex justify-content-center align-items-center"
               >
-                <img src="/images/kunst_3_logo.png" /></div
+                <img src="/images/kunst-3-logo.png" /></div
             ></NuxtLink>
           </div>
           <div class="d-flex align-items-center">
@@ -99,7 +99,7 @@
               class="menu-list-logo d-inline-flex d-md-none justify-content-start align-items-center"
             >
               <NuxtLink to="/">
-                <img src="/images/kunst_3_logo.png"
+                <img src="/images/kunst-3-logo.png"
               /></NuxtLink>
             </div>
             <li>

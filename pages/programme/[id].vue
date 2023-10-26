@@ -6,16 +6,16 @@
           <div class="d-flex align-items-center col-12">
             <NuxtLink to="javascript:window.history.back()">
               <div
-                class="description-text uppercase white font-bold d-inline-flex align-items-center"
+                class="description-text uppercase black font-bold d-inline-flex align-items-center"
               >
-                {{ $t("global.programme_id.top.btn_go_back") }}
+                {{ "🫢 " + $t("global.programme_id.top.btn_go_back") }}
               </div></NuxtLink
             >
           </div>
           <div class="d-flex align-items-center col-12 col-lg-8">
             <marquee Scrollamount="10" class="">
               <h1
-                class="description-title text-decoration bigger font-italic white uppercase"
+                class="description-title text-decoration bigger font-italic black uppercase"
               >
                 {{ item.title.main.loc.source }}
               </h1>
@@ -23,7 +23,7 @@
           </div>
           <div class="d-flex align-items-center col-12 col-lg-4">
             <div
-              class="btn description-text lowercase small white font-bold-italic d-inline-flex align-items-center"
+              class="btn description-text lowercase small black font-bold-italic d-inline-flex align-items-center"
             >
               {{ item.category.loc.source }}
             </div>
@@ -34,13 +34,13 @@
         <NuxtLink to="" class="btn-ticket-wrapper">
           <div class="btn-ticket d-inline-block">
             <p class="description-title font-italic white uppercase">
-              {{ $t("global.programme_id.top.btn_ticket") }}
+              {{ '😨 ' + $t("global.programme_id.top.btn_ticket") + ' 🍰' }}
             </p>
           </div>
         </NuxtLink>
         <marquee Scrollamount="10" class="">
           <h1
-            class="description-title bigger text-decoration font-bold-italic white uppercase"
+            class="description-title bigger text-decoration font-bold-italic black uppercase"
           >
             {{ item.title.main.loc.source }}
           </h1>
@@ -53,7 +53,9 @@
     <div class="id-description-wrapper container-fluid">
       <div class="row">
         <div class="col-12 col-lg-8 col-xxl-7 left">
-          <p class="description-title font-fungal capitalize text-right">
+          <p
+            class="description-title font-fungal big grey-01 capitalize text-right"
+          >
             {{ item.description.main.loc.source }}
           </p>
           <p class="description-text black text-justify">
