@@ -17,7 +17,7 @@
               <h1
                 class="description-title text-decoration bigger font-italic black uppercase"
               >
-                {{ item.title.main.loc }}
+                {{ item.title.main.loc.source }}
               </h1>
             </marquee>
           </div>
@@ -25,7 +25,7 @@
             <div
               class="btn description-text lowercase small black font-bold-italic d-inline-flex align-items-center"
             >
-              {{ item.category.loc }}
+              {{ item.category.loc.source }}
             </div>
           </div>
         </div>
@@ -42,11 +42,11 @@
           <h1
             class="description-title bigger text-decoration font-bold-italic black uppercase"
           >
-            {{ item.title.main.loc }}
+            {{ item.title.main.loc.source }}
           </h1>
         </marquee>
         <div class="id-img-wrapper">
-          <img :src="item.image.loc" />
+          <img :src="item.image.loc.source" />
         </div>
       </div>
     </div>
@@ -56,10 +56,10 @@
           <p
             class="description-title font-fungal big grey-01 capitalize text-right"
           >
-            {{ item.description.main.loc }}
+            {{ item.description.main.loc.source }}
           </p>
           <p class="description-text black text-justify">
-            {{ item.description.secondary.loc }}
+            {{ item.description.secondary.loc.source }}
           </p>
         </div>
         <div class="col-12 col-lg-4 offset-xxl-1 right">
@@ -74,10 +74,10 @@
                 :key="dateIndex"
               >
                 <span class="description-text font-bold-italic d-inline"
-                  >{{ dateItem.day.loc }}
-                  {{ dateItem.month.loc }}</span
+                  >{{ dateItem.day.loc.source }}
+                  {{ dateItem.month.loc.source }}</span
                 >
-                {{ dateItem.week.loc }} at {{ dateItem.time.loc }}
+                {{ dateItem.week.loc.source }} at {{ dateItem.time.loc.source }}
               </p>
             </li>
             <li class="id-description-item">
@@ -85,7 +85,7 @@
                 {{ $t("global.programme_id.bottom.info_2") }}
               </p>
               <p class="description-text font-italic white capitalize">
-                {{ item.duration.loc }}
+                {{ item.duration.loc.source }}
               </p>
             </li>
             <li class="id-description-item">
@@ -93,7 +93,7 @@
                 {{ $t("global.programme_id.bottom.info_3") }}
               </p>
               <p class="description-text font-italic white capitalize">
-                {{ item.age_rating.loc }}
+                {{ item.age_rating.loc.source }}
               </p>
             </li>
             <li class="id-description-item">
@@ -102,10 +102,10 @@
               </p>
               <p class="description-text font-italic white capitalize">
                 {{ $t("global.programme_id.bottom.info_4.info_1") }}:
-                {{ item.price.presale.loc }}
+                {{ item.price.presale.loc.source }}
                 {{ $t("global.programme_id.bottom.info_4.info_3") }} /
                 {{ $t("global.programme_id.bottom.info_4.info_2") }}:
-                {{ item.price.door.loc }}
+                {{ item.price.door.loc.source }}
                 {{ $t("global.programme_id.bottom.info_4.info_3") }}
               </p>
             </li>
@@ -114,7 +114,7 @@
                 {{ $t("global.programme_id.bottom.info_5") }}
               </p>
               <p class="description-text font-italic white capitalize">
-                {{ item.support.loc }}
+                {{ item.support.loc.source }}
               </p>
             </li>
             <li class="id-description-item" @click="shareOpen = !shareOpen">

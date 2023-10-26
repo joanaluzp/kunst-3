@@ -31,14 +31,14 @@
                     <h1
                       class="description-title red font-italic bigger uppercase"
                     >
-                      {{ item.description.loc }}
+                      {{ item.description.loc.source }}
                     </h1>
                   </div>
                 </div>
               </div>
               <video autoplay muted loop>
-                <source :src="item.video.loc" type="video/mp4" />
-                {{ item.alt.loc }}
+                <source :src="item.video.loc.source" type="video/mp4" />
+                {{ item.alt.loc.source }}
               </video></NuxtLink
             >
           </SwiperSlide>
