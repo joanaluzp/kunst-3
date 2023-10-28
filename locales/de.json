@@ -1,741 +1,644 @@
 {
-    "global": {
-      "nav": {
-        "lang": {
-          "title": "A⇆ü",
-          "sub_title": "Sprache",
-          "en": "English",
-          "de": "German"
+  "global": {
+    "nav": {
+      "lang": {
+        "title": "A⇆ü",
+        "sub_title": "Sprache",
+        "en": "English",
+        "de": "German"
+      },
+      "help": {
+        "title": "hilfe",
+        "sub_title": "hilfe",
+        "info_1": "Wie komme ich hier hin",
+        "info_2": "FAQ",
+        "info_3": "Unterstützung KUNST 3"
+      },
+      "search": {
+        "title": "finden"
+      },
+      "menu": {
+        "title": "menu",
+        "title_closed": "schließen",
+        "info_1": "Über uns",
+        "info_2": "programm",
+        "info_3": "Informationen für Medien",
+        "info_4": "die leute",
+        "info_5": "Partner",
+        "info_6": "Folgt uns"
+      }
+    },
+    "footer": {
+      "info_1": "Unterstützung K3",
+      "info_2": "Partner",
+      "info_3": "faq",
+      "info_4": "Datenschutz & cookies",
+      "info_5": "Kontakte",
+      "info_6": "Alle Rechte vorbehalten"
+    },
+    "programme": {
+      "top": {
+        "title": "programm"
+      },
+      "category": {
+        "category_default": "alles! genießen :-)",
+        "category_1": "Alle ansehen",
+        "category_2": "Kino",
+        "category_3": "Konzerte",
+        "category_4": "performance",
+        "category_5": "Ausstellungen",
+        "category_6": "Werkstätten"
+      }
+    },
+    "programme_id": {
+      "top": {
+        "btn_go_back": "geh zurück",
+        "btn_ticket": "Tickets kaufen"
+      },
+      "bottom": {
+        "info_1": "Tag und Stunde",
+        "info_2": "Dauer",
+        "info_3": "Altersfreigabe",
+        "info_4": {
+          "title": "Eintritt",
+          "info_1": "Vorverkauf",
+          "info_2": "Abendkasse",
+          "info_3": "ermäßigt (Studenten, Senioren)"
         },
-        "help": {
-          "title": "hilfe",
-          "sub_title": "hilfe",
-          "info_1": "Wie komme ich hier hin",
-          "info_2": "FAQ",
-          "info_3": "Unterstützung KUNST 3"
+        "info_5": "mit der Unterstützung von",
+        "info_6": {
+          "title": "Teile",
+          "social_media_1": "instagram",
+          "social_media_2": "youtube",
+          "social_media_3": "facebook"
+        }
+      }
+    }
+  },
+  "events": {
+    "homepage": {
+      "1": {
+        "video": "/videos/kunst_3_video_cinema.mp4",
+        "alt": "video",
+        "description": "Jeden Mittwoch klassische Filme",
+        "programme_id": 18
+      },
+      "2": {
+        "video": "/videos/kunst_3_video_performance.mp4",
+        "alt": "video",
+        "description": "if i fall you lose (performance)",
+        "programme_id": 3
+      },
+      "3": {
+        "video": "/videos/kunst_3_video_angela_schanelec.mp4",
+        "alt": "video",
+        "description": "angela schanelec: alle Filme",
+        "programme_id": 2
+      },
+      "4": {
+        "id": 4,
+        "video": "/videos/kunst_3_video_super8mm.mp4",
+        "alt": "video",
+        "description": "Super 8 Werkstätten jeden Sonntag",
+        "programme_id": 6
+      }
+    },
+    "programme": {
+      "1": {
+        "image": "/images/concerts/amin-hasani-6MtgrhSeil4-unsplash.jpg",
+        "title": {
+          "main": "Palo Santo Kinfolk JOMO",
+          "secondary": "Kitsch Disrupt Edison Glühbirne"
         },
-        "search": {
-          "title": "finden"
+        "category": "Konzerte",
+        "date": {
+          "full": "28/11 Mittwoch",
+          "month": "Nov",
+          "day": "28",
+          "week": "Mittwoch",
+          "time": "22:00"
         },
-        "menu": {
-          "title": "menu",
-          "title_closed": "schließen",
-          "info_1": "Über uns",
-          "info_2": "programm",
-          "info_3": "Informationen für Medien",
-          "info_4": "die leute",
-          "info_5": "Partner",
-          "info_6": "Folgt uns"
+        "duration": "1 Stunde",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
         }
       },
-      "footer": {
-        "info_1": "Unterstützung K3",
-        "info_2": "Partner",
-        "info_3": "faq",
-        "info_4": "Datenschutz & cookies",
-        "info_5": "Kontakte",
-        "info_6": "Alle Rechte vorbehalten"
-      },
-      "programme": {
-        "top": {
-          "title": "programm"
+      "2": {
+        "image": "/images/cinema/angela1028.png",
+        "title": {
+          "main": "Music (2023)",
+          "secondary": "Angela Schanelec"
         },
-        "category": {
-          "category_default": "alles! genießen :-)",
-          "category_1": "Alle ansehen",
-          "category_2": "Kino",
-          "category_3": "Konzerte",
-          "category_4": "performance",
-          "category_5": "Ausstellungen",
-          "category_6": "Werkstätten"
+        "category": "Kino",
+        "date": {
+          "full": "12/11 Sonntag",
+          "month": "Nov",
+          "day": "12",
+          "week": "Sonntag",
+          "time": "19:00"
+        },
+        "duration": "1 Stunde 48 Minuten",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
         }
       },
-      "programme_id": {
-        "top": {
-          "btn_go_back": "geh zurück",
-          "btn_ticket": "Tickets kaufen"
+      "3": {
+        "image": "/images/performance/pexels-cottonbro-studio-7816141.jpg",
+        "title": {
+          "main": "If i fall you lose",
+          "secondary": "Mlkshk legte einen Vogel darauf Vexillologe Brooklyn Retro-Malbuch"
         },
-        "bottom": {
-          "info_1": "Tag und Stunde",
-          "info_2": "Dauer",
-          "info_3": "Altersfreigabe",
-          "info_4": {
-            "title": "Eintritt",
-            "info_1": "Vorverkauf",
-            "info_2": "Abendkasse",
-            "info_3": "ermäßigt (Studenten, Senioren)"
-          },
-          "info_5": "mit der Unterstützung von",
-          "info_6": {
-            "title": "Teile",
-            "social_media_1": "instagram",
-            "social_media_2": "youtube",
-            "social_media_3": "facebook"
-          }
+        "category": "performance",
+        "date": {
+          "full": "5/10 Sonntag",
+          "month": "Okt",
+          "day": "5",
+          "week": "Sonntag",
+          "time": "19:00"
+        },
+        "duration": "1 Stunde",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "4": {
+        "image": "/images/concerts/australian_experimental_vocalist_kusum_normoyle_wh_4d81b10590.jpeg",
+        "title": {
+          "main": "banjo ramps",
+          "secondary": "Sartorial Vegan hat es mit Ironie zu tun. Hoodie Sechseck nächstes Level, zerzauster Tildeschlitz 90er Cronut"
+        },
+        "category": "Konzerte",
+        "date": {
+          "full": "20/11 Freitag",
+          "month": "Nov",
+          "day": "20",
+          "week": "Freitag",
+          "time": "20:00"
+        },
+        "duration": "1 Stunde",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "5": {
+        "image": "/images/concerts/krisjanis-kazaks-9P4rglAiMwM-unsplash.jpg",
+        "title": {
+          "main": "shaman la croix",
+          "secondary": "8-Bit-Mixtape-Szenester-Liste"
+        },
+        "category": "Konzerte",
+        "date": {
+          "full": "15/11 Sonntag",
+          "month": "Nov",
+          "day": "15",
+          "week": "Sonntag",
+          "time": "19:00"
+        },
+        "duration": "1 Stunde",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "6": {
+        "image": "/images/workshops/Super-8-wedding-film-02.jpg",
+        "title": {
+          "main": "Super 8 Werkstatt",
+          "secondary": "Fashion axe small batch bitters keffiyeh bodega boys, solarpunk raclette farm-to-table selvage man braid"
+        },
+        "category": "Werkstätten",
+        "date": {
+          "full": "Sonntag(s)",
+          "month": "",
+          "day": "",
+          "week": "Sonntag",
+          "time": "10:00"
+        },
+        "duration": "8 Stunden",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "7": {
+        "image": "/images/concerts/qamarul-azman-Sz-VrzkfrI4-unsplash.jpg",
+        "title": {
+          "main": "Cronut vexillologist meggings fashion axe",
+          "secondary": "Zöliakie-Traumfänger-Meditation"
+        },
+        "category": "Konzerte",
+        "date": {
+          "full": "5/1 Samstag",
+          "month": "Jan",
+          "day": "5",
+          "week": "Samstag",
+          "time": "22:00"
+        },
+        "duration": "1 Stunde",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "8": {
+        "image": "/images/cinema/images-288.png",
+        "title": {
+          "main": "The Bitter Tears of Petra von Kant (1972)",
+          "secondary": "Rainer Werner Fassbinder"
+        },
+        "category": "Kino",
+        "date": {
+          "full": "9/10 Mittwoch",
+          "month": "Okt",
+          "day": "9",
+          "week": "Mittwoch",
+          "time": "21:00"
+        },
+        "duration": "2 Stunden 4 Minuten",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "9": {
+        "image": "/images/concerts/maksim-zhashkevych-WKPFLcrkcKA-unsplash.jpg",
+        "title": {
+          "main": "raw denim ugh",
+          "secondary": "Ja, bitte XOXO-Fotokabine"
+        },
+        "category": "Konzerte",
+        "date": {
+          "full": "1/11 Freitag",
+          "month": "Nov",
+          "day": "1",
+          "week": "Freitag",
+          "time": "21:00"
+        },
+        "duration": "1 Stunde",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "10": {
+        "image": "/images/performance/unnamed.png",
+        "title": {
+          "main": "Hexagon raw denim +1",
+          "secondary": "Störe die Rampen von Island, Yuccie"
+        },
+        "category": "performance",
+        "date": {
+          "full": "28/10 Mittwoch",
+          "month": "Okt",
+          "day": "28",
+          "week": "Mittwoch",
+          "time": "18:00"
+        },
+        "duration": "1 Stunde",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "11": {
+        "image": "/images/performance/romain-virtuel-2nftXhfdN_o-unsplash.jpg",
+        "title": {
+          "main": "chillwave fingerstache blog skateboard blue bottle",
+          "secondary": "Craft-Bier-Buchdruck"
+        },
+        "category": "performance",
+        "date": {
+          "full": "20/11 Freitag",
+          "month": "Nov",
+          "day": "20",
+          "week": "Freitag",
+          "time": "19:00"
+        },
+        "duration": "1 Stunde",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "12": {
+        "image": "/images/cinema/nachmittag5.jpg",
+        "title": {
+          "main": "Nachmittag (2007)",
+          "secondary": "Angela Schanelec"
+        },
+        "category": "Kino",
+        "date": {
+          "full": "21/10 Donnerstag",
+          "month": "Okt",
+          "day": "21",
+          "week": "Donnerstag",
+          "time": "19:00"
+        },
+        "duration": "1 Stunde 37 Minuten",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "13": {
+        "image": "/images/concerts/glenn-van-de-wiel-8CnFAXypYdw-unsplash.jpg",
+        "title": {
+          "main": "shaman la croix",
+          "secondary": "8-Bit-Mixtape-Szenester-Liste"
+        },
+        "category": "Konzerte",
+        "date": {
+          "full": "10/11 Samstag",
+          "month": "Nov",
+          "day": "10",
+          "week": "Samstag",
+          "time": "22:00"
+        },
+        "duration": "1 Stunde",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "14": {
+        "image": "/images/performance/andrea-puglisi-BI4hAEE3cdw-unsplash.jpg",
+        "title": {
+          "main": "farm-to-table selvage man braid",
+          "secondary": "Bauchkupferbecher"
+        },
+        "category": "performance",
+        "date": {
+          "full": "26/11 Freitag",
+          "month": "Nov",
+          "day": "26",
+          "week": "Freitag",
+          "time": "20:00"
+        },
+        "duration": "1 Stunde",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "15": {
+        "image": "/images/cinema/a67233.jpg",
+        "title": {
+          "main": "mein langsames leben (2001)",
+          "secondary": "Angela Schanelec"
+        },
+        "category": "Kino",
+        "date": {
+          "full": "12/11 Donnerstag",
+          "month": "Nov",
+          "day": "12",
+          "week": "Donnerstag",
+          "time": "21:00"
+        },
+        "duration": "1 Stunde 25 Minuten",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "16": {
+        "image": "/images/exhibitions/0j2228282.jpg",
+        "title": {
+          "main": "Cred flannel hashtag seitan shabby chic",
+          "secondary": "Truffaut-Marxismus-Traumfänger, Knausgaard-Amsel-Spionageflugzeug-Hella-Weste"
+        },
+        "category": "Ausstellungen",
+        "date": {
+          "full": "19/10 Freitag",
+          "month": "Okt",
+          "day": "19",
+          "week": "Freitag",
+          "time": "18:00"
+        },
+        "duration": "1 Stunde",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "17": {
+        "image": "/images/cinema/18181.jpg",
+        "title": {
+          "main": "Aelita: the Queen of Mars (1924)",
+          "secondary": "Yakov Protazanov"
+        },
+        "category": "Kino",
+        "date": {
+          "full": "17/11 Mittwoch",
+          "month": "Nov",
+          "day": "17",
+          "week": "Mittwoch",
+          "time": "21:00"
+        },
+        "duration": "1 Stunde 51 Minuten",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "18": {
+        "image": "/images/cinema/images-original.png",
+        "title": {
+          "main": "Possession (1981)",
+          "secondary": "Andrzej Żuławski"
+        },
+        "category": "Kino",
+        "date": {
+          "full": "1/10 Mittwoch",
+          "month": "Okt",
+          "day": "1",
+          "week": "Mittwoch",
+          "time": "21:00"
+        },
+        "duration": "2 Stunden 4 Minuten",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "19": {
+        "image": "/images/concerts/nguy-n-hi-p-_tj3yDueIck-unsplash.jpg",
+        "title": {
+          "main": "Pickled praxis lumbersexual aesthetic big mood meggings knausgaard",
+          "secondary": "Gochujang Cornhole Bio Ja, bitte. Lo-Fi-Humblebrag-Bart-Cornhole, Fingerstich, der tatsächlich Essig trinkt, Etsy-Sukkulenten, Biodiesel, Raw-Denim, ähm, fit"
+        },
+        "category": "Konzerte",
+        "date": {
+          "full": "8/12 Samstag",
+          "month": "Dez",
+          "day": "8",
+          "week": "Samstag",
+          "time": "21:30"
+        },
+        "duration": "1 Stunde",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
+        }
+      },
+      "20": {
+        "image": "/images/cinema/91817.png",
+        "title": {
+          "main": "Marseille (2004)",
+          "secondary": "Angela Schanelec"
+        },
+        "category": "Kino",
+        "date": {
+          "full": "22/10 Montag",
+          "month": "Okt",
+          "day": "22",
+          "week": "Montag",
+          "time": "21:00"
+        },
+        "duration": "1 Stunde 35 Minuten",
+        "age_rating": "Alle Altersgruppen sind willkommen!",
+        "support": "PRAHA KULTURE SPACE 4EVERY1",
+        "price": {
+          "presale": "8 € / 5 €",
+          "door": "10 € / 7 €"
+        },
+        "description": {
+          "main": "NEU IN DER STADT",
+          "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
         }
       }
     },
-    "events": {
-      "homepage": [
-        {
-          "id": 1,
-          "video": "/videos/kunst_3_video_cinema.mp4",
-          "alt": "video",
-          "description": "Jeden Mittwoch klassische Filme",
-          "programme_id": 18
-        },
-        {
-          "id": 2,
-          "video": "/videos/kunst_3_video_performance.mp4",
-          "alt": "video",
-          "description": "if i fall you lose (performance)",
-          "programme_id": 3
-        },
-        {
-          "id": 3,
-          "video": "/videos/kunst_3_video_angela_schanelec.mp4",
-          "alt": "video",
-          "description": "angela schanelec: alle Filme",
-          "programme_id": 2
-        },
-        {
-          "id": 4,
-          "video": "/videos/kunst_3_video_super8mm.mp4",
-          "alt": "video",
-          "description": "Super 8 Werkstätten jeden Sonntag",
-          "programme_id": 6
-        }
-      ],
-      "programme": [
-        {
-          "id": 1,
-          "image": "/images/concerts/amin-hasani-6MtgrhSeil4-unsplash.jpg",
-          "title": {
-            "main": "Palo Santo Kinfolk JOMO",
-            "secondary": "Kitsch Disrupt Edison Glühbirne"
-          },
-          "category": "Konzerte",
-          "date": [
-            {
-              "full": "28/11 Mittwoch",
-              "month": "Nov",
-              "day": "28",
-              "week": "Mittwoch",
-              "time": "22:00"
-            }
-          ],
-          "duration": "1 Stunde",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 2,
-          "image": "/images/cinema/angela1028.png",
-          "title": {
-            "main": "Music (2023)",
-            "secondary": "Angela Schanelec"
-          },
-          "category": "Kino",
-          "date": [
-            {
-              "full": "12/11 Sonntag",
-              "month": "Nov",
-              "day": "12",
-              "week": "Sonntag",
-              "time": "19:00"
-            },
-            {
-              "full": "30/11 Montag",
-              "month": "Nov",
-              "day": "30",
-              "week": "Montag",
-              "time": "21:00"
-            }
-          ],
-          "duration": "1 Stunde 48 Minuten",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 3,
-          "image": "/images/performance/pexels-cottonbro-studio-7816141.jpg",
-          "title": {
-            "main": "If i fall you lose",
-            "secondary": "Mlkshk legte einen Vogel darauf Vexillologe Brooklyn Retro-Malbuch"
-          },
-          "category": "performance",
-          "date": [
-            {
-              "full": "5/10 Sonntag",
-              "month": "Okt",
-              "day": "5",
-              "week": "Sonntag",
-              "time": "19:00"
-            }
-          ],
-          "duration": "1 Stunde",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 4,
-          "image": "/images/concerts/australian_experimental_vocalist_kusum_normoyle_wh_4d81b10590.jpeg",
-          "title": {
-            "main": "banjo ramps",
-            "secondary": "Sartorial Vegan hat es mit Ironie zu tun. Hoodie Sechseck nächstes Level, zerzauster Tildeschlitz 90er Cronut"
-          },
-          "category": "Konzerte",
-          "date": [
-            {
-              "full": "20/11 Freitag",
-              "month": "Nov",
-              "day": "20",
-              "week": "Freitag",
-              "time": "20:00"
-            }
-          ],
-          "duration": "1 Stunde",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 5,
-          "image": "/images/concerts/krisjanis-kazaks-9P4rglAiMwM-unsplash.jpg",
-          "title": {
-            "main": "shaman la croix",
-            "secondary": "8-Bit-Mixtape-Szenester-Liste"
-          },
-          "category": "Konzerte",
-          "date": [
-            {
-              "full": "15/11 Sonntag",
-              "month": "Nov",
-              "day": "15",
-              "week": "Sonntag",
-              "time": "19:00"
-            }
-          ],
-          "duration": "1 Stunde",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 6,
-          "image": "/images/workshops/Super-8-wedding-film-02.jpg",
-          "title": {
-            "main": "Super 8 Werkstatt",
-            "secondary": "Fashion axe small batch bitters keffiyeh bodega boys, solarpunk raclette farm-to-table selvage man braid"
-          },
-          "category": "Werkstätten",
-          "date": [
-            {
-              "full": "Sonntag(s)",
-              "month": "",
-              "day": "",
-              "week": "Sonntag",
-              "time": "10:00"
-            }
-          ],
-          "duration": "8 Stunden",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 7,
-          "image": "/images/concerts/qamarul-azman-Sz-VrzkfrI4-unsplash.jpg",
-          "title": {
-            "main": "Cronut vexillologist meggings fashion axe",
-            "secondary": "Zöliakie-Traumfänger-Meditation"
-          },
-          "category": "Konzerte",
-          "date": [
-            {
-              "full": "5/1 Samstag",
-              "month": "Jan",
-              "day": "5",
-              "week": "Samstag",
-              "time": "22:00"
-            }
-          ],
-          "duration": "1 Stunde",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 8,
-          "image": "/images/cinema/images-288.png",
-          "title": {
-            "main": "The Bitter Tears of Petra von Kant (1972)",
-            "secondary": "Rainer Werner Fassbinder"
-          },
-          "category": "Kino",
-          "date": [
-            {
-              "full": "9/10 Mittwoch",
-              "month": "Okt",
-              "day": "9",
-              "week": "Mittwoch",
-              "time": "21:00"
-            }
-          ],
-          "duration": "2 Stunden 4 Minuten",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 9,
-          "image": "/images/concerts/maksim-zhashkevych-WKPFLcrkcKA-unsplash.jpg",
-          "title": {
-            "main": "raw denim ugh",
-            "secondary": "Ja, bitte XOXO-Fotokabine"
-          },
-          "category": "Konzerte",
-          "date": [
-            {
-              "full": "1/11 Freitag",
-              "month": "Nov",
-              "day": "1",
-              "week": "Freitag",
-              "time": "21:00"
-            }
-          ],
-          "duration": "1 Stunde",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 10,
-          "image": "/images/performance/unnamed.png",
-          "title": {
-            "main": "Hexagon raw denim +1",
-            "secondary": "Störe die Rampen von Island, Yuccie"
-          },
-          "category": "performance",
-          "date": [
-            {
-              "full": "28/10 Mittwoch",
-              "month": "Okt",
-              "day": "28",
-              "week": "Mittwoch",
-              "time": "18:00"
-            },
-            {
-              "full": "10/10 Dienstag",
-              "month": "Okt",
-              "day": "10",
-              "week": "Dienstag",
-              "time": "18:00"
-            }
-          ],
-          "duration": "1 Stunde",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 11,
-          "image": "/images/performance/romain-virtuel-2nftXhfdN_o-unsplash.jpg",
-          "title": {
-            "main": "chillwave fingerstache blog skateboard blue bottle",
-            "secondary": "Craft-Bier-Buchdruck"
-          },
-          "category": "performance",
-          "date": [
-            {
-              "full": "20/11 Freitag",
-              "month": "Nov",
-              "day": "20",
-              "week": "Freitag",
-              "time": "19:00"
-            },
-            {
-              "full": "23/10 Dienstag",
-              "month": "Oct",
-              "day": "23",
-              "week": "Dienstag",
-              "time": "18:00"
-            }
-          ],
-          "duration": "1 Stunde",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 12,
-          "image": "/images/cinema/nachmittag5.jpg",
-          "title": {
-            "main": "Nachmittag (2007)",
-            "secondary": "Angela Schanelec"
-          },
-          "category": "Kino",
-          "date": [
-            {
-              "full": "21/10 Donnerstag",
-              "month": "Okt",
-              "day": "21",
-              "week": "Donnerstag",
-              "time": "19:00"
-            },
-            {
-              "full": "30/11 Dienstag",
-              "month": "Nov",
-              "day": "30",
-              "week": "Dienstag",
-              "time": "21:00"
-            }
-          ],
-          "duration": "1 Stunde 37 Minuten",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 13,
-          "image": "/images/concerts/glenn-van-de-wiel-8CnFAXypYdw-unsplash.jpg",
-          "title": {
-            "main": "shaman la croix",
-            "secondary": "8-Bit-Mixtape-Szenester-Liste"
-          },
-          "category": "Konzerte",
-          "date": [
-            {
-              "full": "10/11 Samstag",
-              "month": "Nov",
-              "day": "10",
-              "week": "Samstag",
-              "time": "22:00"
-            }
-          ],
-          "duration": "1 Stunde",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 14,
-          "image": "/images/performance/andrea-puglisi-BI4hAEE3cdw-unsplash.jpg",
-          "title": {
-            "main": "farm-to-table selvage man braid",
-            "secondary": "Bauchkupferbecher"
-          },
-          "category": "performance",
-          "date": [
-            {
-              "full": "26/11 Freitag",
-              "month": "Nov",
-              "day": "26",
-              "week": "Freitag",
-              "time": "20:00"
-            }
-          ],
-          "duration": "1 Stunde",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 15,
-          "image": "/images/cinema/a67233.jpg",
-          "title": {
-            "main": "mein langsames leben (2001)",
-            "secondary": "Angela Schanelec"
-          },
-          "category": "Kino",
-          "date": [
-            {
-              "full": "12/11 Donnerstag",
-              "month": "Nov",
-              "day": "12",
-              "week": "Donnerstag",
-              "time": "21:00"
-            },
-            {
-              "full": "3/11 Montag",
-              "month": "Nov",
-              "day": "3",
-              "week": "Montag",
-              "time": "19:00"
-            }
-          ],
-          "duration": "1 Stunde 25 Minuten",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 16,
-          "image": "/images/exhibitions/0j2228282.jpg",
-          "title": {
-            "main": "Cred flannel hashtag seitan shabby chic",
-            "secondary": "Truffaut-Marxismus-Traumfänger, Knausgaard-Amsel-Spionageflugzeug-Hella-Weste"
-          },
-          "category": "Ausstellungen",
-          "date": [
-            {
-              "full": "19/10 Freitag",
-              "month": "Okt",
-              "day": "19",
-              "week": "Freitag",
-              "time": "18:00"
-            },
-            {
-              "full": "30/11 Samstag",
-              "month": "Nov",
-              "day": "30",
-              "week": "Samstag",
-              "time": "19:00"
-            }
-          ],
-          "duration": "1 Stunde",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 17,
-          "image": "/images/cinema/18181.jpg",
-          "title": {
-            "main": "Aelita: the Queen of Mars (1924)",
-            "secondary": "Yakov Protazanov"
-          },
-          "category": "Kino",
-          "date": [
-            {
-              "full": "17/11 Mittwoch",
-              "month": "Nov",
-              "day": "17",
-              "week": "Mittwoch",
-              "time": "21:00"
-            }
-          ],
-          "duration": "1 Stunde 51 Minuten",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 18,
-          "image": "/images/cinema/images-original.png",
-          "title": {
-            "main": "Possession (1981)",
-            "secondary": "Andrzej Żuławski"
-          },
-          "category": "Kino",
-          "date": [
-            {
-              "full": "1/10 Mittwoch",
-              "month": "Okt",
-              "day": "1",
-              "week": "Mittwoch",
-              "time": "21:00"
-            }
-          ],
-          "duration": "2 Stunden 4 Minuten",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 19,
-          "image": "/images/concerts/nguy-n-hi-p-_tj3yDueIck-unsplash.jpg",
-          "title": {
-            "main": "Pickled praxis lumbersexual aesthetic big mood meggings knausgaard",
-            "secondary": "Gochujang Cornhole Bio Ja, bitte. Lo-Fi-Humblebrag-Bart-Cornhole, Fingerstich, der tatsächlich Essig trinkt, Etsy-Sukkulenten, Biodiesel, Raw-Denim, ähm, fit"
-          },
-          "category": "Konzerte",
-          "date": [
-            {
-              "full": "8/12 Samstag",
-              "month": "Dez",
-              "day": "8",
-              "week": "Samstag",
-              "time": "21:30"
-            }
-          ],
-          "duration": "1 Stunde",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        },
-        {
-          "id": 20,
-          "image": "/images/cinema/91817.png",
-          "title": {
-            "main": "Marseille (2004)",
-            "secondary": "Angela Schanelec"
-          },
-          "category": "Kino",
-          "date": [
-            {
-              "full": "22/10 Montag",
-              "month": "Okt",
-              "day": "22",
-              "week": "Montag",
-              "time": "21:00"
-            },
-            {
-              "full": "30/10 Dienstag",
-              "month": "Okt",
-              "day": "30",
-              "week": "Dienstag",
-              "time": "19:00"
-            }
-          ],
-          "duration": "1 Stunde 35 Minuten",
-          "age_rating": "Alle Altersgruppen sind willkommen!",
-          "support": "PRAHA KULTURE SPACE 4EVERY1",
-          "price": {
-            "presale": "8 € / 5 €",
-            "door": "10 € / 7 €"
-          },
-          "description": {
-            "main": "NEU IN DER STADT",
-            "secondary": "I'm Baby Messenger Bag Kickstarter Microdosing Hashtag Letterpress Craft Beer Poke Listicle. Emaille-Pin mit Essigtrink-Brunch-Jeansshorts. Chambray-Metzger besetzen, tiefes V-Gorpcore-Schröpfen, Listicle-Plaid-Skateboard-Banh-Mi. Umami Lyft Fanny Pack Gatekeeper, Echo Park Schröpfen neutrale Milchhotelnebenerzeugnisse. Williamsburg, bevor der Gastropub ausverkauft war, Hashtag. Tilde Palo Santo Bushwick glutenfreier Pabst-Treuhandfonds. Skateboard Fingerstache Listicle Schamane Pok Pok Klischee besetzen Banh Mi Direkthandel Kurkuma Bushwick. Pinterest Cloud Bread Mixtape Gastropub, Franzen Migas Etsy. Live-Edge Gatekeep Distillery Mops Sartorial Kurkuma. Kupferbecher Vape Artisan Schlitz tätowiert Pabst Fahrradrechte, Flanell meh Gorpcore große Stimmung eingelegte Shabby-Chic-Ironie. Cornhole Gatekeeper Vice, Klischee Sriracha Schreibmaschine Twee Erbstück Venmo Praxis Mops Neutra Innereien Dach Party Seitan. Sriracha Street Art Aktivkohle Quinoa, Direkthandel 90er Knausgaard Gastropub Affogato Emaille Pin Metzger Shoreditch. Bodega Boys Grünkohl Chips Einhorn Poke, Kruzifix Pinterest Hoodie."
-          }
-        }
-      ]
+    "modal": {
+      "info_1": "ticket preis",
+      "info_2": "reguläres",
+      "info_3": "ermäßigt",
+      "info_4": "wie viel musst du bezahlen",
+      "info_5": "los geht's!",
+      "form": {
+        "name": "name",
+        "email": "e-mail",
+        "card_number": "Kartennummer",
+        "month": "MM",
+        "year": "JJ", 
+        "cvc": "CVC"
+      }
     }
   }
+}

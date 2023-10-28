@@ -6,7 +6,7 @@
           class="navbar-menu-list col-12 d-flex align-items-center justify-content-end"
         >
           <div class="d-flex align-items-center">
-            <NuxtLink to="/">
+            <NuxtLink :to="localePath({ path: '/' })">
               <div
                 class="menu-list-logo d-none d-md-flex justify-content-center align-items-center"
               >
@@ -233,6 +233,7 @@ const prevScroll = ref(0);
 import { useI18n } from "vue-i18n";
 const { t, locale, locales } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
+const localePath = useLocalePath();
 
 const openMenu = () => {
   const navbarMenu = document.querySelector(".navbar-menu");

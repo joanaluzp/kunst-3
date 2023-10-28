@@ -3508,8 +3508,6 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .header .homepage-background-wrapper .slider-arrows-wrapper .arrow-gallery-down {
   position: absolute;
-  width: 50px;
-  height: 50px;
   z-index: 10;
   bottom: 50px;
   right: 50%;
@@ -3894,7 +3892,7 @@ footer {
   text-overflow: ellipsis;
 }
 .footer-wrapper .left a .description-text:hover {
-  animation: shake 0.3s infinite;
+  animation: strobe 0.3s infinite;
   color: #000000;
   background-color: #5eff00;
 }
@@ -4008,7 +4006,7 @@ footer {
   width: 100%;
   background-color: #ffffff;
   border-radius: 50px;
-  padding: 15px;
+  padding: 20px;
   border: 1px solid transparent;
   transition: all 0.3s ease-in-out;
 }
@@ -4108,6 +4106,10 @@ footer {
   position: relative;
   padding-bottom: 20px;
 }
+.section-programme-id .section-wrapper.modal-open {
+  pointer-events: none;
+  opacity: 0.1;
+}
 
 .programme-id-top {
   background-color: #E6EDF2;
@@ -4197,6 +4199,7 @@ footer {
 
 .id-description-wrapper {
   padding-top: 20px;
+  transition: all 0.3s ease-in-out;
 }
 .id-description-wrapper .left .description-title {
   margin-bottom: 20px;
@@ -4241,6 +4244,110 @@ footer {
   border-bottom: 7px solid #ffffff;
 }
 
+.ticket-modal-wrapper {
+  position: absolute;
+  z-index: 3;
+  border-radius: 25px;
+  background-color: #e6e6e6;
+  width: 95vw;
+  max-width: 800px;
+  height: auto;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  padding: 30px 25px;
+  box-shadow: 30px 40px 25px 10px rgba(255, 255, 255, 0.8);
+}
+.ticket-modal-wrapper .ticket-modal-close .description-text {
+  transition: all 0.3s ease-in-out;
+}
+.ticket-modal-wrapper .ticket-modal-close .description-text:hover {
+  font-family: "Fungal", sans-serif;
+  transform: translateX(5px);
+}
+.ticket-modal-wrapper .ticket-modal-info .top {
+  margin: 20px 0 40px 0;
+}
+.ticket-modal-wrapper .ticket-modal-info .bottom .ticket-item-wrapper i {
+  color: #ff0000;
+  margin: 0 10px;
+}
+.ticket-modal-wrapper .ticket-modal-info .bottom .ticket-item-total {
+  margin: 10px 0 30px 0;
+}
+.ticket-modal-wrapper .ticket-modal-info .bottom .input-wrapper {
+  margin-bottom: 15px;
+}
+.ticket-modal-wrapper .ticket-modal-info .bottom .input-wrapper.big {
+  width: 100%;
+}
+.ticket-modal-wrapper .ticket-modal-info .bottom .input-wrapper.small {
+  width: 48%;
+}
+.ticket-modal-wrapper .ticket-modal-info .bottom .input-wrapper input {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  border: 2px solid #ff00f2;
+  padding: 7px 10px;
+  min-height: 50px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-family: "Gramatika-BoldItalic", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+.ticket-modal-wrapper .ticket-modal-info .bottom .input-wrapper input:focus {
+  border-color: #E6EDF2;
+  border-radius: 25px;
+}
+.ticket-modal-wrapper .ticket-modal-info .bottom .input-wrapper input::-moz-placeholder {
+  text-transform: capitalize;
+  color: #000000;
+  font-family: "Gramatika-Italic", sans-serif;
+  font-size: 18px;
+}
+.ticket-modal-wrapper .ticket-modal-info .bottom .input-wrapper input::placeholder {
+  text-transform: capitalize;
+  color: #000000;
+  font-family: "Gramatika-Italic", sans-serif;
+  font-size: 18px;
+}
+.ticket-modal-wrapper .ticket-modal-info .bottom .input-wrapper input::-moz-placeholder {
+  text-transform: capitalize;
+  color: #000000;
+  font-family: "Gramatika-Italic", sans-serif;
+  font-size: 18px;
+}
+.ticket-modal-wrapper .ticket-modal-info .bottom .input-wrapper input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: #000000;
+  font-family: "Gramatika-Italic", sans-serif;
+  font-size: 18px;
+}
+.ticket-modal-wrapper .ticket-modal-info .bottom .ticket-modal-submit {
+  margin: 25px 0 40px 0;
+  color: #000000;
+  background-color: #5eff00;
+  padding: 10px 25px;
+  border-radius: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+.ticket-modal-wrapper .ticket-modal-info .bottom .ticket-modal-submit:hover {
+  animation: shake 0.3s ease-in-out infinite;
+}
+
+@media (min-width: 576px) {
+  .ticket-modal-wrapper {
+    width: 90vw;
+    top: 120px;
+    padding: 20px 60px;
+  }
+  .ticket-modal-wrapper .ticket-modal-info .bottom .input-wrapper.small {
+    width: 32%;
+  }
+}
 @media (min-width: 768px) {
   .section-programme-id {
     padding-bottom: 40px;

@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="app-page">
-    <div v-if="!loading" class="custom-cursor"></div>
+    <div class="custom-cursor" v-if="!loading"></div>
     <LazyAppNavbar />
     <main class="main">
       <NuxtPage />

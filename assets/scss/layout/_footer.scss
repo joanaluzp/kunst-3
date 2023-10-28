@@ -31,7 +31,7 @@ footer {
         border-radius: 30px;
         text-overflow: ellipsis;
           &:hover {
-          animation: shake 0.3s infinite;
+          animation: strobe 0.3s infinite;
           color: $black;
           background-color: $color05;
         }

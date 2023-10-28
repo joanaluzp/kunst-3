@@ -3,7 +3,7 @@
     <section class="homepage-background-wrapper">
       <div class="homepage-background">
         <Swiper
-          v-if="$tm('events.homepage').length > 0"
+          v-if="homepageData.length > 0"
           :modules="[SwiperAutoplay, SwiperNavigation]"
           :slides-per-view="1"
           :pagination="{ clickable: true }"
@@ -18,12 +18,18 @@
           }"
         >
           <SwiperSlide
-            v-for="item in $tm('events.homepage')"
+            v-for="(item, index) in homepageData"
             :item="item"
             :key="item.id"
           >
             <NuxtLink
-              :to="localePath({ path: '/programme/' + item.programme_id })"
+              :to="
+                localePath({
+                  path:
+                    '/programme/' +
+                    $tm(`events.homepage.${item.id}.programme_id`),
+                })
+              "
             >
               <div class="container-fluid">
                 <div class="row">
@@ -31,14 +37,17 @@
                     <h1
                       class="description-title red font-italic bigger uppercase"
                     >
-                      {{ item.description.loc.source }}
+                      {{ $t(`events.homepage.${item.id}.description`) }}
                     </h1>
                   </div>
                 </div>
               </div>
               <video autoplay muted loop>
-                <source :src="item.video.loc.source" type="video/mp4" />
-                {{ item.alt.loc.source }}
+                <source
+                  :src="$t(`events.homepage.${item.id}.video`)"
+                  type="video/mp4"
+                />
+                {{ $t(`events.homepage.${item.id}.alt`) }}
               </video></NuxtLink
             >
           </SwiperSlide>
@@ -55,7 +64,10 @@
   </header>
 </template>
 <script setup>
-import { useI18n } from "vue-i18n";
-const { t } = useI18n();
+import data from "../ids/id.json";
+const homepageData = ref([]);
 const localePath = useLocalePath();
+onMounted(() => {
+  homepageData.value = data.homepage;
+});
 </script>

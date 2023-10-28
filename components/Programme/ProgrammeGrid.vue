@@ -5,8 +5,10 @@
         <div
           class="programme-grid-title-wrapper pt-100 col-12 offset-lg-3 col-lg-9"
         >
-          <h1 class="description-title color-02 font-bold-italic bigger uppercase">
-            {{ $t("global.programme.top.title") + '😶‍🌫️' }}
+          <h1
+            class="description-title color-02 font-bold-italic bigger uppercase"
+          >
+            {{ $t("global.programme.top.title") + "😶‍🌫️" }}
             <span class="description-title black text-decoration lowercase">
               {{ searchType }}</span
             >
@@ -92,17 +94,15 @@
             </li>
           </ul>
         </div>
-        <!--<Transition>-->
         <div class="programme-grid-items-wrapper col-12 offset-lg-3 col-lg-9">
           <ProgrammeCard
             :searchType="searchType"
             :gridBackground="gridBackground"
-            v-for="item in $tm('events.programme')"
-            :item="item"
+            v-for="(item, index) in programmeData"
             :key="item.id"
+            :item="item"
           />
         </div>
-        <!--</Transition>-->
       </div>
     </div>
     <div
@@ -112,9 +112,12 @@
   </section>
 </template>
 <script setup>
+import { ref } from 'vue';
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 import ProgrammeCard from "./ProgrammeCard.vue";
+import data from "../../ids/id.json";
+const programmeData = ref([]);
 const gridListHeight = ref(false);
 const gridBackground = ref(false);
 const searchType = ref(t("global.programme.category.category_default"));
@@ -160,5 +163,6 @@ onMounted(() => {
   window.addEventListener("scroll", changeBackground);
   window.addEventListener("scroll", gridList);
   window.addEventListener("scroll", scrollToTop);
+  programmeData.value = data.programme;
 });
 </script>
