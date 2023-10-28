@@ -112,7 +112,7 @@
   </section>
 </template>
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 import ProgrammeCard from "./ProgrammeCard.vue";
@@ -131,11 +131,13 @@ function updateCategory(el) {
 
 const scrollToTop = () => {
   let elmGridList = document.querySelectorAll(".programme-grid-list-item");
-  elmGridList.forEach((elm) => {
-    elm.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+  if (elmGridList) {
+    elmGridList.forEach((elm) => {
+      elm.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
     });
-  });
+  }
 };
 
 const gridList = () => {
