@@ -30,13 +30,13 @@
           </p>
         </div>
         <div class="ticket-item-wrapper">
-          <p class="uppercase d-inline description-title big black">{{ $t('events.modal.info_2') }}</p>
+          <p class="uppercase d-inline description-text big black">{{ $t('events.modal.info_2') }}</p>
           <div class="d-inline-flex justify-content-start align-items-center">
             <i
               class="fa-solid fa-minus fa-xl"
               @click="decrementTicketRegular"
             ></i>
-            <p class="uppercase d-inline description-text big black">
+            <p class="uppercase d-inline description-title big black">
               {{ ticketRegular }}
             </p>
             <i
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="ticket-item-wrapper">
-          <p class="uppercase d-inline description-title big black">
+          <p class="uppercase d-inline description-text big black">
             {{ $t('events.modal.info_3') }}
           </p>
           <div class="d-inline-flex justify-content-start align-items-center">
@@ -54,7 +54,7 @@
               class="fa-solid fa-minus fa-xl"
               @click="decrementTicketDiscounted"
             ></i>
-            <p class="uppercase d-inline description-text big black">
+            <p class="uppercase d-inline description-title big black">
               {{ ticketDiscounted }}
             </p>
             <i
