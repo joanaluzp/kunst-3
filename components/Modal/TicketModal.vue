@@ -36,7 +36,7 @@
               class="fa-solid fa-minus fa-xl"
               @click="decrementTicketRegular"
             ></i>
-            <p class="uppercase d-inline description-title big black">
+            <p class="uppercase d-inline description-text big black">
               {{ ticketRegular }}
             </p>
             <i
@@ -54,7 +54,7 @@
               class="fa-solid fa-minus fa-xl"
               @click="decrementTicketDiscounted"
             ></i>
-            <p class="uppercase d-inline description-title big black">
+            <p class="uppercase d-inline description-text big black">
               {{ ticketDiscounted }}
             </p>
             <i
@@ -64,7 +64,7 @@
           </div>
         </div>
         <div class="ticket-item-total">
-          <p class="lowercase description-title text-center big black">
+          <p class="lowercase description-text text-center black">
             {{ $t('events.modal.info_4') }}: {{ total }} €
           </p>
         </div>
