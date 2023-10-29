@@ -120,6 +120,8 @@
   .left {
     .description-title {
       margin-bottom: 20px;
+      position: relative;
+      z-index: 2;
     }
   }
   .right {
@@ -281,16 +283,25 @@
   }
 
   .programme-id-top {
-    .full-width-wrapper {
-      .id-img-wrapper {
-        height: 70vh;
-        position: relative;
-        bottom: -10px;
+    .id-information-wrapper {
+      .row {
+        & > div {
+          &:first-child {
+            margin: 100px 10px 20px 5px;
+          }
+        }
+      }
+      .full-width-wrapper {
+        .id-img-wrapper {
+          height: 70vh;
+          position: relative;
+          bottom: -10px;
+        }
       }
     }
-  }
-  .id-description-wrapper {
-    padding-top: 50px;
+    .id-description-wrapper {
+      padding-top: 50px;
+    }
   }
 }
 
@@ -304,6 +315,9 @@
       }
       .id-img-wrapper {
         border-radius: 50px;
+        position: relative;
+        top: 5px;
+        left: 0;
         &:hover {
           animation: translating 0.6s ease-in-out;
           img {
@@ -317,6 +331,9 @@
         & > div {
           &:last-child {
             margin-bottom: 0;
+          }
+          &:first-child {
+            margin: 50px 10px 20px 5px;
           }
           marquee {
             height: auto;

@@ -4203,6 +4203,8 @@ footer {
 }
 .id-description-wrapper .left .description-title {
   margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
 }
 .id-description-wrapper .right .id-description-list {
   transition: all 0.3s ease-in-out;
@@ -4352,12 +4354,15 @@ footer {
   .section-programme-id {
     padding-bottom: 40px;
   }
-  .programme-id-top .full-width-wrapper .id-img-wrapper {
+  .programme-id-top .id-information-wrapper .row > div:first-child {
+    margin: 100px 10px 20px 5px;
+  }
+  .programme-id-top .id-information-wrapper .full-width-wrapper .id-img-wrapper {
     height: 70vh;
     position: relative;
     bottom: -10px;
   }
-  .id-description-wrapper {
+  .programme-id-top .id-description-wrapper {
     padding-top: 50px;
   }
 }
@@ -4369,6 +4374,9 @@ footer {
   }
   .programme-id-top .full-width-wrapper .id-img-wrapper {
     border-radius: 50px;
+    position: relative;
+    top: 5px;
+    left: 0;
   }
   .programme-id-top .full-width-wrapper .id-img-wrapper:hover {
     animation: translating 0.6s ease-in-out;
@@ -4378,6 +4386,9 @@ footer {
   }
   .programme-id-top .id-information-wrapper .row > div:last-child {
     margin-bottom: 0;
+  }
+  .programme-id-top .id-information-wrapper .row > div:first-child {
+    margin: 50px 10px 20px 5px;
   }
   .programme-id-top .id-information-wrapper .row > div marquee {
     height: auto;
