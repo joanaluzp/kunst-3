@@ -144,19 +144,21 @@ const gridList = () => {
   const windowHeight = window.innerHeight;
   const scrollableHeight = document.documentElement.scrollHeight - windowHeight;
   const currentScroll = window.scrollY;
-  if (currentScroll >= scrollableHeight) {
-    gridListHeight.value = true;
-  } else {
-    gridListHeight.value = false;
+  if (gridListHeight) {
+    if (currentScroll >= scrollableHeight) {
+      gridListHeight.value = true;
+    } else {
+      gridListHeight.value = false;
+    }
   }
 };
 
 const changeBackground = () => {
   const scroll = window.pageYOffset;
-  if (scroll < 300) {
+  if (scroll < 300 && gridBackground) {
     gridBackground.value = false;
   }
-  if (scroll > 300) {
+  if (scroll > 300 && gridBackground) {
     gridBackground.value = true;
   }
 };

@@ -196,9 +196,11 @@ const handleCloseModal = () => {
 };
 const scrollToTop = () => {
   const elmModalBtn = document.querySelector(".btn-ticket-wrapper .btn-ticket");
-  elmModalBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+  if (elmModalBtn) {
+    elmModalBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 };
 
 defineI18nRoute({
