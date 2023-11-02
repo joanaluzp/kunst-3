@@ -147,17 +147,17 @@
                 {{ $t("global.nav.help.title") }}
               </p>
               <NuxtLink to="" class="icon-help"
-                ><p class="description-text grey-01 capitalize">
+                ><p class="description-text grey-01 medium capitalize">
                   {{ $t("global.nav.help.info_1") }}
                 </p></NuxtLink
               >
               <NuxtLink to="" class="icon-help"
-                ><p class="description-text grey-01 capitalize">
+                ><p class="description-text grey-01 medium capitalize">
                   {{ $t("global.nav.help.info_2") }}
                 </p></NuxtLink
               >
               <NuxtLink to="" class="icon-help"
-                ><p class="description-text grey-01 capitalize">
+                ><p class="description-text grey-01 medium capitalize">
                   {{ $t("global.nav.help.info_3") }}
                 </p></NuxtLink
               >
@@ -185,7 +185,7 @@
               </p>
               <div v-for="{ code, name } in locales" :key="code">
                 <NuxtLink :to="switchLocalePath(code)"
-                  ><p class="description-text grey-01 capitalize">
+                  ><p class="description-text grey-01 medium capitalize">
                     {{ name }}
                   </p></NuxtLink
                 >
