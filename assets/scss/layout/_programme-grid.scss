@@ -30,7 +30,7 @@
   z-index: 5;
   position: fixed;
   left: 0;
-  width: 40%;
+  width: 20%;
   bottom: 80px;
   height: fit-content;
   @include transition;
@@ -46,9 +46,6 @@
     border: 2px solid $black;
     border-radius: 15px;
     width: fit-content;
-    &:hover {
-      animation: shake 0.3s ease-in-out infinite;
-    }
     &.active {
       border: 2px solid $color04;
       animation: strobe 0.3s infinite;
@@ -70,7 +67,6 @@
   z-index: 3;
   padding-bottom: 20px;
 }
-
 .programme-grid-item-link {
   width: 100%;
   margin: 10px;
@@ -122,16 +118,6 @@
         border: 1px solid $black;
       }
     }
-    &:hover {
-      transform: scale(1.05);
-      border-radius: 70px;
-      -webkit-box-shadow: 0 0 5px 20px $white;
-      box-shadow: 0 0 5px 20px $white;
-      border: 1px solid $white;
-      img {
-        border: 1px solid $white;
-      }
-    }
   }
 }
 @media (min-width: 576px) {
@@ -139,13 +125,11 @@
     width: 45%;
   }
 }
-
 @media (min-width: 768px) {
   .programme-grid-list-wrapper {
     left: 60px;
   }
 }
-
 @media (min-width: 992px) {
   .programme-grid-items-wrapper {
     justify-content: start;
@@ -156,9 +140,27 @@
     .programme-grid-list-items {
       flex-direction: column;
     }
+    li {
+      &:hover {
+        animation: shake 0.3s ease-in-out infinite;
+      }
+    }
+  }
+  .programme-grid-item-link {
+    .programme-grid-item {
+      &:hover {
+        transform: scale(1.05);
+        border-radius: 70px;
+        -webkit-box-shadow: 0 0 5px 20px $white;
+        box-shadow: 0 0 5px 20px $white;
+        border: 1px solid $white;
+        img {
+          border: 1px solid $white;
+        }
+      }
+    }
   }
 }
-
 @media (min-width: 1400px) {
   .programme-grid-item-link {
     width: 28%;

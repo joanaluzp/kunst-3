@@ -52,7 +52,7 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   html,
   body {
     &::-webkit-scrollbar {
@@ -148,7 +148,7 @@ input[type="search"]::-webkit-search-results-decoration {
     left: -12px;
     animation: spin 4s linear infinite;
   }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     display: block;
   }
 }

@@ -42,7 +42,7 @@
               </p>
             </div>
           </div>
-          <marquee Scrollamount="10" class="">
+          <marquee Scrollamount="5" class="">
             <h1
               class="description-title bigger text-decoration font-italic black uppercase"
             >

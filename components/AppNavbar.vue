@@ -8,14 +8,14 @@
           <div class="d-flex align-items-center">
             <NuxtLink :to="localePath({ path: '/' })">
               <div
-                class="menu-list-logo d-none d-md-flex justify-content-center align-items-center"
+                class="menu-list-logo d-none d-lg-flex justify-content-center align-items-center"
               >
                 <img src="/images/kunst-3-logo.png" /></div
             ></NuxtLink>
           </div>
           <div class="d-flex align-items-center">
             <div
-              class="menu-list-icon icon-lang d-none d-md-flex justify-content-center align-items-center"
+              class="menu-list-icon icon-lang d-none d-lg-flex justify-content-center align-items-center"
             >
               <p class="description-text uppercase big text-center color-03">
                 {{ $t("global.nav.lang.title") }}
@@ -36,7 +36,7 @@
           </div>
           <div class="d-flex align-items-center">
             <div
-              class="menu-list-icon icon-help d-none d-md-flex justify-content-center align-items-center"
+              class="menu-list-icon icon-help d-none d-lg-flex justify-content-center align-items-center"
             >
               <p class="description-text uppercase big text-center color-03">
                 {{ $t("global.nav.help.title") }}
@@ -59,7 +59,7 @@
           </div>
           <div class="d-flex align-items-center">
             <div
-              class="menu-list-icon icon-search d-none d-md-flex justify-content-center align-items-center"
+              class="menu-list-icon icon-search d-none d-lg-flex justify-content-center align-items-center"
             >
               <p class="description-text uppercase big text-center color-03">
                 {{ $t("global.nav.search.title") }}
@@ -96,7 +96,7 @@
         <div class="navbar-menu pt-70 col-12">
           <ul class="menu-list-options d-flex flex-column">
             <div
-              class="menu-list-logo d-inline-flex d-md-none justify-content-start align-items-center"
+              class="menu-list-logo d-inline-flex d-lg-none justify-content-start align-items-center"
             >
               <NuxtLink to="/">
                 <img src="/images/kunst-3-logo.png"

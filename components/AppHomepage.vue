@@ -42,7 +42,7 @@
                   </div>
                 </div>
               </div>
-              <video autoplay muted loop>
+              <video autoplay muted playsinline loop>
                 <source
                   :src="$t(`events.homepage.${item.id}.video`)"
                   type="video/mp4"

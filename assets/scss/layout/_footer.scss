@@ -3,7 +3,6 @@ footer {
   width: 100%;
   overflow: hidden;
 }
-
 .footer-wrapper {
   width: 100%;
   @include transition;
@@ -30,20 +29,12 @@ footer {
         @include transition;
         border-radius: 30px;
         text-overflow: ellipsis;
-          &:hover {
-          animation: strobe 0.3s infinite;
-          color: $black;
-          background-color: $color05;
-        }
       }
     }
   }
   .right {
     margin-top: 10px;
   }
-}
-
-@media (min-width: 576px) {
 }
 @media (min-width: 768px) {
   .footer-wrapper {
@@ -67,9 +58,18 @@ footer {
     }
   }
 }
-
-@media (min-width: 1200px) {
-}
-
-@media (min-width: 1400px) {
+@media(min-width: 992px){
+  .footer-wrapper {
+    .left {
+      a {
+        .description-text {
+            &:hover {
+            animation: strobe 0.3s infinite;
+            color: $black;
+            background-color: $color05;
+          }
+        }
+      }
+    }
+  }
 }

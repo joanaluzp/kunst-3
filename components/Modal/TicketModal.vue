@@ -63,9 +63,9 @@
             ></i>
           </div>
         </div>
-        <div class="ticket-item-total">
+        <div class="ticket-item-total d-flex justify-content-center align-items-center">
           <p class="lowercase description-text text-center black">
-            {{ $t('events.modal.info_4') }}: {{ total }} €
+            {{ $t('events.modal.info_4') }}: <span class="description-text font-bold d-inline big">{{ total }} €</span>
           </p>
         </div>
         <form class="form">
