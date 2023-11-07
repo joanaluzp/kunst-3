@@ -290,8 +290,11 @@
     .homepage-background-wrapper {
       .slider-arrows-wrapper {
         .arrow-gallery-down {
-          &:hover {
-            transform: scale(3);
+          img {
+            &:hover {
+              animation: strobe 0.2s ease-in-out infinite;
+              transform: scale(2.5);
+            }
           }
         }
       }

@@ -3775,8 +3775,9 @@ input[type=search]::-webkit-search-results-decoration {
   }
 }
 @media (min-width: 992px) {
-  .header .homepage-background-wrapper .slider-arrows-wrapper .arrow-gallery-down:hover {
-    transform: scale(3);
+  .header .homepage-background-wrapper .slider-arrows-wrapper .arrow-gallery-down img:hover {
+    animation: strobe 0.2s ease-in-out infinite;
+    transform: scale(2.5);
   }
   .navbar {
     right: 30px;
