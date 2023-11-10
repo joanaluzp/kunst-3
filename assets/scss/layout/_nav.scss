@@ -98,6 +98,7 @@
     padding: 20px;
     .menu-list-logo {
       width: 30%;
+      animation: rotate3d 4s linear infinite;
       img {
         width: 100%;
       }
@@ -219,6 +220,7 @@
     }
   }
   .menu-list-logo {
+    animation: rotate3d 4s linear infinite;
     img {
       width: 100px;
       height: auto;
