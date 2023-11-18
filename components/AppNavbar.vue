@@ -178,7 +178,7 @@
             </li>
             <li>
               <p
-                class="description-text black uppercase big font-bold icon-help"
+                class="description-text black uppercase big font-bold"
               >
                 {{ $t("global.nav.lang.title") }}
                 {{ $t("global.nav.lang.sub_title") }}

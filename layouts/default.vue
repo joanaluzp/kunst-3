@@ -5,7 +5,6 @@
     </div>
   </div>
   <div class="app-page">
-    <div class="custom-cursor" v-if="!loading"></div>
     <LazyAppNavbar />
     <main class="main">
       <NuxtPage />
@@ -20,26 +19,6 @@ const loading = ref(true);
 const page = computed({
   get: () => route.name.split("_"),
 });
-
-const cursor = () => {
-  const cursor = document.querySelector(".custom-cursor");
-  const links = document.querySelectorAll("a");
-
-  window.addEventListener("mousemove", (event) => {
-    cursor.style.left = `${event.clientX}px`;
-    cursor.style.top = `${event.clientY}px`;
-  });
-
-  links.forEach((link) => {
-    link.addEventListener("mouseenter", () => {
-      cursor.style.transform = "scale(0.8)";
-    });
-
-    link.addEventListener("mouseleave", () => {
-      cursor.style.transform = "scale(1)";
-    });
-  });
-};
 
 const hideLoader = () => {
   const loader = document.querySelector("#loader");
@@ -59,10 +38,6 @@ onBeforeMount(() => {
   setTimeout(() => {
     hideLoader();
   }, 500);
-});
-
-onMounted(() => {
-  cursor();
 });
 </script>
 

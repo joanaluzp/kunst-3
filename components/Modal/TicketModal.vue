@@ -91,7 +91,7 @@
               <input type="password" maxlength="3" :placeholder="$t('events.modal.form.cvc')" />
             </div>
           </div>
-          <div class="d-flex justify-content-center">
+          <div class="ticket-modal-submit-wrapper d-flex justify-content-center">
             <button
               type="submit"
               class="ticket-modal-submit description-title capitalize font-bold-italic d-inline"
