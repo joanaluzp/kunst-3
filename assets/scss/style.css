@@ -3557,9 +3557,6 @@ input[type=search]::-webkit-search-results-decoration {
 .navbar-menu .menu-list-options li .icon-help:first-child {
   margin-bottom: 7px;
 }
-.navbar-menu .menu-list-options li a p {
-  margin-top: 5px;
-}
 .navbar-menu .menu-list-options li .search {
   background-color: transparent;
   border: none;
