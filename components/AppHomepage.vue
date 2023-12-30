@@ -69,7 +69,9 @@
           :pagination="{ clickable: true }"
           :speed="1000"
           :loop="true"
-
+          :autoplay="{
+            delay: 5000,
+          }"
           :navigation="{
             nextEl: '.arrow-gallery-next',
             prevEl: '.arrow-gallery-prev',
