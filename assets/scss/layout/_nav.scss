@@ -8,7 +8,7 @@
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
   position: relative;
-  background-color: $white02;
+  background-color: $white;
   .homepage-background-wrapper {
     width: 100%;
     height: 100%;
@@ -23,8 +23,10 @@
       &.big {
         z-index: 1;
         .description-title {
-          font-size: 20px;
-          color: $grey01;
+          font-size: 250px;
+          color: transparent;
+          -webkit-text-stroke: 2px $white02;
+          font-style: italic;
         }
       }
       video,
@@ -450,7 +452,7 @@
             transform: scale(1);
             background-color: transparent;
             border: 2px solid transparent;
-            color: $grey01;
+            color: $grey03;
           }
         }
       }

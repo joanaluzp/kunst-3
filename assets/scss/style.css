@@ -2982,10 +2982,7 @@ section {
 }
 @media screen and (min-width: 320px) {
   .description-text {
-    font-size: calc(
-          14px + 2 *
-            ((100vw - 320px) / 879)
-        );
+    font-size: calc(14px + 2 * (100vw - 320px) / 879);
   }
 }
 @media screen and (min-width: 1199px) {
@@ -2998,10 +2995,7 @@ section {
 }
 @media screen and (min-width: 320px) {
   .description-text.small {
-    font-size: calc(
-          12px + 2 *
-            ((100vw - 320px) / 879)
-        );
+    font-size: calc(12px + 2 * (100vw - 320px) / 879);
   }
 }
 @media screen and (min-width: 1199px) {
@@ -3014,10 +3008,7 @@ section {
 }
 @media screen and (min-width: 320px) {
   .description-text.medium {
-    font-size: calc(
-          16px + 2 *
-            ((100vw - 320px) / 879)
-        );
+    font-size: calc(16px + 2 * (100vw - 320px) / 879);
   }
 }
 @media screen and (min-width: 1199px) {
@@ -3030,10 +3021,7 @@ section {
 }
 @media screen and (min-width: 320px) {
   .description-text.big {
-    font-size: calc(
-          18px + 2 *
-            ((100vw - 320px) / 879)
-        );
+    font-size: calc(18px + 2 * (100vw - 320px) / 879);
   }
 }
 @media screen and (min-width: 1199px) {
@@ -3117,10 +3105,7 @@ section {
 }
 @media screen and (min-width: 320px) {
   .description-title {
-    font-size: calc(
-          20px + 4 *
-            ((100vw - 320px) / 879)
-        );
+    font-size: calc(20px + 4 * (100vw - 320px) / 879);
   }
 }
 @media screen and (min-width: 1199px) {
@@ -3133,10 +3118,7 @@ section {
 }
 @media screen and (min-width: 320px) {
   .description-title.small {
-    font-size: calc(
-          18px + 4 *
-            ((100vw - 320px) / 879)
-        );
+    font-size: calc(18px + 4 * (100vw - 320px) / 879);
   }
 }
 @media screen and (min-width: 1199px) {
@@ -3149,10 +3131,7 @@ section {
 }
 @media screen and (min-width: 320px) {
   .description-title.big {
-    font-size: calc(
-          24px + 4 *
-            ((100vw - 320px) / 879)
-        );
+    font-size: calc(24px + 4 * (100vw - 320px) / 879);
   }
 }
 @media screen and (min-width: 1199px) {
@@ -3165,10 +3144,7 @@ section {
 }
 @media screen and (min-width: 320px) {
   .description-title.bigger {
-    font-size: calc(
-          30px + 30 *
-            ((100vw - 320px) / 879)
-        );
+    font-size: calc(30px + 30 * (100vw - 320px) / 879);
   }
 }
 @media screen and (min-width: 1199px) {
@@ -3269,10 +3245,7 @@ body {
 @media screen and (min-width: 320px) {
   html,
   body {
-    font-size: calc(
-          12px + 4 *
-            ((100vw - 320px) / 1360)
-        );
+    font-size: calc(12px + 4 * (100vw - 320px) / 1360);
   }
 }
 @media screen and (min-width: 1680px) {
@@ -3465,7 +3438,7 @@ input[type=search]::-webkit-search-results-decoration {
   -moz-user-select: none;
        user-select: none; /* Standard syntax */
   position: relative;
-  background-color: #E6EDF2;
+  background-color: #ffffff;
 }
 .header .homepage-background-wrapper {
   width: 100%;
@@ -3484,8 +3457,10 @@ input[type=search]::-webkit-search-results-decoration {
   z-index: 1;
 }
 .header .homepage-background-wrapper .homepage-background.big .description-title {
-  font-size: 20px;
-  color: #5e5e5e;
+  font-size: 250px;
+  color: transparent;
+  -webkit-text-stroke: 2px #E6EDF2;
+  font-style: italic;
 }
 .header .homepage-background-wrapper .homepage-background video,
 .header .homepage-background-wrapper .homepage-background img {
@@ -3901,7 +3876,7 @@ input[type=search]::-webkit-search-results-decoration {
     transform: scale(1);
     background-color: transparent;
     border: 2px solid transparent;
-    color: #5e5e5e;
+    color: #e6e6e6;
   }
 }
 @media (min-width: 1200px) {

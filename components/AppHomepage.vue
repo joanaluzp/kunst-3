@@ -69,9 +69,7 @@
           :pagination="{ clickable: true }"
           :speed="1000"
           :loop="true"
-          :autoplay="{
-            delay: 5000,
-          }"
+
           :navigation="{
             nextEl: '.arrow-gallery-next',
             prevEl: '.arrow-gallery-prev',
@@ -86,7 +84,7 @@
               <div class="row">
                 <div class="homepage-background-text col-12">
                   <h1
-                    class="description-title red font-fungal uppercase"
+                    class="description-title font-bold-italic uppercase"
                   >
                     {{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}
                   </h1>
