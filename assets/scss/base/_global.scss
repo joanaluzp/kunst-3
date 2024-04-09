@@ -40,6 +40,13 @@ body {
     text-decoration: none;
     color: inherit;
   }
+  video {
+    pointer-events: none;
+    &::-webkit-media-controls-panel {
+      display: none !important;
+      opacity: 1 !important;
+    }
+  }
   .pt-70 {
     padding-top: 70px;
   }

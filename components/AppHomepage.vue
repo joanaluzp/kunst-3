@@ -42,7 +42,7 @@
                   </div>
                 </div>
               </div>
-              <video autoplay muted playsinline loop>
+              <video autoplay loop muted webkit-playsinline playsinline>
                 <source
                   :src="$t(`events.homepage.${item.id}.video`)"
                   type="video/mp4"
@@ -85,10 +85,17 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="homepage-background-text col-12">
-                  <h1
-                    class="description-title font-bold-italic uppercase"
-                  >
-                    {{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}{{ $t(`events.homepage.${item.id}.description`) }}
+                  <h1 class="description-title font-bold-italic uppercase">
+                    {{ $t(`events.homepage.${item.id}.description`)
+                    }}{{ $t(`events.homepage.${item.id}.description`)
+                    }}{{ $t(`events.homepage.${item.id}.description`)
+                    }}{{ $t(`events.homepage.${item.id}.description`)
+                    }}{{ $t(`events.homepage.${item.id}.description`)
+                    }}{{ $t(`events.homepage.${item.id}.description`)
+                    }}{{ $t(`events.homepage.${item.id}.description`)
+                    }}{{ $t(`events.homepage.${item.id}.description`)
+                    }}{{ $t(`events.homepage.${item.id}.description`)
+                    }}{{ $t(`events.homepage.${item.id}.description`) }}
                   </h1>
                 </div>
               </div>
