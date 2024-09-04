@@ -10,7 +10,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: $grey03;
+    background-color: $white02;
     box-shadow: inset 0px -28px 13px -11px $white;
     right: 0;
     top: 0;
@@ -143,7 +143,7 @@
     }
     li {
       &:hover {
-        animation: shake 0.3s ease-in-out infinite;
+        animation: shake 0.2s ease-in-out infinite;
       }
     }
   }

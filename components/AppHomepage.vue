@@ -54,54 +54,13 @@
         </Swiper>
       </div>
       <div class="slider-arrows-wrapper">
-        <button type="button" class="arrow-prev arrow-gallery-down">
-          <NuxtLink :to="localePath({ name: 'programme' })">
-            <img src="/images/sign-next.svg"
-          /></NuxtLink>
-        </button>
-      </div>
-      <div class="homepage-background big">
-        <Swiper
-          v-if="homepageData.length > 0"
-          class="big"
-          :modules="[SwiperAutoplay, SwiperNavigation]"
-          :slides-per-view="1"
-          :pagination="{ clickable: true }"
-          :speed="1000"
-          :loop="true"
-          :autoplay="{
-            delay: 5000,
-          }"
-          :navigation="{
-            nextEl: '.arrow-gallery-next',
-            prevEl: '.arrow-gallery-prev',
-          }"
-        >
-          <SwiperSlide
-            v-for="(item, index) in homepageData"
-            :item="item"
-            :key="item.id"
-          >
-            <div class="container-fluid">
-              <div class="row">
-                <div class="homepage-background-text col-12">
-                  <h1 class="description-title font-bold-italic uppercase">
-                    {{ $t(`events.homepage.${item.id}.description`)
-                    }}{{ $t(`events.homepage.${item.id}.description`)
-                    }}{{ $t(`events.homepage.${item.id}.description`)
-                    }}{{ $t(`events.homepage.${item.id}.description`)
-                    }}{{ $t(`events.homepage.${item.id}.description`)
-                    }}{{ $t(`events.homepage.${item.id}.description`)
-                    }}{{ $t(`events.homepage.${item.id}.description`)
-                    }}{{ $t(`events.homepage.${item.id}.description`)
-                    }}{{ $t(`events.homepage.${item.id}.description`)
-                    }}{{ $t(`events.homepage.${item.id}.description`) }}
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+        <NuxtLink :to="localePath({ name: 'programme' })">
+          <div class="arrow-prev arrow-gallery-down">
+            <p class="description-text font-italic lowercase">
+              {{ $t("global.homepage.link") }}
+            </p>
+          </div>
+        </NuxtLink>
       </div>
     </section>
   </header>

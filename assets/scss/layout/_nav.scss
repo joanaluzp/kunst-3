@@ -20,15 +20,6 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      &.big {
-        z-index: 1;
-        .description-title {
-          font-size: 250px;
-          color: transparent;
-          -webkit-text-stroke: 2px $white02;
-          font-style: italic;
-        }
-      }
       video,
       img {
         pointer-events: none;
@@ -46,10 +37,10 @@
         right: 50%;
         transform: translateX(50%);
         @include transition;
-        animation: floating 3s ease-in-out infinite;
-        img {
-          transform: scale(1);
-          @include transition;
+        &:hover {
+          .description-text {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -107,17 +98,14 @@
     padding: 20px;
     .menu-list-logo {
       width: 30%;
-      animation: rotate3d 4s linear infinite;
       img {
-        border-radius: 50px;
-        background-color: $white02;
         width: 100%;
       }
     }
     li {
       cursor: pointer;
       padding: 15px 0;
-      border: 1px solid $color03;
+      border: 1px solid $white02;
       margin: 5px 0;
       border-radius: 10px;
       padding: 10px;
@@ -162,9 +150,9 @@
   border-radius: 0 0 30px 30px;
   transition: top 0.3s;
   background-color: $white;
-  border: 2px solid $color03;
+  border: 2px solid $white02;
   border-top: none;
-  box-shadow: 10px 7px 30px -4px rgba($color03, 0.37);
+  box-shadow: 10px 7px 30px -4px rgba($white02, 0.37);
   .menu-list-icon {
     min-width: 100px;
     height: 50px;
@@ -173,13 +161,13 @@
     background-color: $white;
     border-radius: 20px;
     padding: 10px 15px;
-    border: 2px solid $color03;
+    border: 2px solid $white02;
     @include transition;
     .description-text {
       @include transition2(all, 0.2s, ease-in-out);
     }
     .menu-list-options {
-      border: 2px solid $color03;
+      border: 2px solid $white02;
       display: none;
       background-color: $white;
       position: absolute;
@@ -188,7 +176,7 @@
       padding: 15px;
       border-radius: 10px;
       min-width: 200px;
-      box-shadow: 7px 7px 5px -4px rgba($color03, 0.37);
+      box-shadow: 7px 7px 5px -4px rgba($white02, 0.37);
       li {
         margin-bottom: 5px;
         padding: 0 10px 5px 10px;
@@ -222,17 +210,14 @@
         align-items: center;
         &:active,
         &:focus {
-          border: 1px solid $black;
+          border: 1px solid $white02;
           border-radius: 5px;
         }
       }
     }
   }
   .menu-list-logo {
-    animation: rotate3d 4s linear infinite;
     img {
-      border-radius: 50px;
-      background-color: $white02;
       width: 100px;
       height: auto;
     }
@@ -269,6 +254,7 @@
   z-index: 3;
   @include transition2(all, 1s, ease-in-out);
   border-radius: 25px;
+  animation: circle 15s ease-in-out infinite;
   .homepage-background-text {
     width: 100%;
     position: absolute;
@@ -278,7 +264,6 @@
     z-index: 4;
     .description-title {
       @include transition2(all, 0.5s, ease-in-out);
-      transition-delay: 0.3s;
       text-align: center;
       padding: 15px;
     }
@@ -287,10 +272,6 @@
       bottom: 30px;
       right: 30px;
     }
-  }
-  &.big {
-    width: 100%;
-    height: 100vh;
   }
 }
 @media (min-width: 576px) {
@@ -304,25 +285,10 @@
   }
 }
 @media (min-width: 992px) {
-  .header {
-    .homepage-background-wrapper {
-      .slider-arrows-wrapper {
-        .arrow-gallery-down {
-          img {
-            &:hover {
-              animation: strobe 0.2s ease-in-out infinite;
-              transform: scale(2.5);
-            }
-          }
-        }
-      }
-    }
-  }
   .navbar {
     right: 30px;
   }
   .navbar-menu {
-    box-shadow: -85px 56px 4px -80px $color02;
     width: 30%;
     bottom: 0;
     top: auto;
@@ -342,7 +308,7 @@
 
       /* Handle */
       &::-webkit-scrollbar-thumb {
-        background: $black;
+        background: $white02;
         border-radius: 50%;
       }
     }
@@ -350,28 +316,28 @@
       border-radius: 15px 0 0 0;
       li {
         padding: 15px 0;
-        border: 1px solid $color03;
+        border: 1px solid $white02;
         margin: 5px 0;
         border-radius: 10px;
         padding: 10px;
         @include transition;
         &:hover {
-          background-color: $color03;
+          background-color: $white02;
           box-shadow: inset 0 0 40px $white;
           border: 1px solid $white;
           p {
-            color: $white;
+            color: $grey02;
             font-family: $Gramatika-Bold-Italic;
           }
           .search {
-            color: $white;
+            color: $grey02;
             &::placeholder {
-              color: $white;
+              color: $grey02;
             }
           }
           .navbar-menu-social {
             i {
-              color: $white;
+              color: $grey02;
             }
           }
         }
@@ -388,7 +354,7 @@
           &::placeholder {
             text-transform: uppercase;
             font-weight: 700;
-            color: $black;
+            color: $white02;
             padding-left: 3px;
           }
         }
@@ -428,27 +394,8 @@
         right: 80px;
       }
       .description-title {
-        border-radius: 50px;
-        border: 2px solid transparent;
         &:hover {
           transform: scale(0.2);
-          color: $black;
-          background-color: $white;
-          border: 2px solid $black;
-        }
-      }
-    }
-    &.big {
-      &:hover {
-        transform: none;
-        .description-title {
-          border: 2px solid transparent;
-          &:hover {
-            transform: scale(1);
-            background-color: transparent;
-            border: 2px solid transparent;
-            color: $grey03;
-          }
         }
       }
     }

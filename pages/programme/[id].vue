@@ -9,7 +9,7 @@
                 <div
                   class="description-text uppercase black font-bold d-inline-flex align-items-center"
                 >
-                  {{ "👀 " + $t("global.programme_id.top.btn_go_back") }}
+                  {{ $t("global.programme_id.top.btn_go_back") }}
                 </div></NuxtLink
               >
             </div>
@@ -38,7 +38,7 @@
               @click="modalOpen = !modalOpen"
             >
               <p class="description-title font-italic white uppercase">
-                {{ "😨 " + $t("global.programme_id.top.btn_ticket") + " 🍰" }}
+                {{ $t("global.programme_id.top.btn_ticket") }}
               </p>
             </div>
           </div>

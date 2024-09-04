@@ -8,7 +8,7 @@
           <h1
             class="description-title color-02 font-bold-italic bigger uppercase"
           >
-            {{ $t("global.programme.top.title") + "😶‍🌫️" }}
+            {{ $t("global.programme.top.title") }}
             <span class="description-title black text-decoration lowercase">
               {{ searchType }}</span
             >

@@ -17,7 +17,7 @@
             <div
               class="menu-list-icon icon-lang d-none d-lg-flex justify-content-center align-items-center"
             >
-              <p class="description-text uppercase big text-center color-03">
+              <p class="description-text uppercase big text-center">
                 {{ $t("global.nav.lang.title") }}
               </p>
               <ul class="menu-list-options">
@@ -38,7 +38,7 @@
             <div
               class="menu-list-icon icon-help d-none d-lg-flex justify-content-center align-items-center"
             >
-              <p class="description-text uppercase big text-center color-03">
+              <p class="description-text uppercase big text-center">
                 {{ $t("global.nav.help.title") }}
               </p>
               <ul class="menu-list-options">
@@ -61,7 +61,7 @@
             <div
               class="menu-list-icon icon-search d-none d-lg-flex justify-content-center align-items-center"
             >
-              <p class="description-text uppercase big text-center color-03">
+              <p class="description-text uppercase big text-center">
                 {{ $t("global.nav.search.title") }}
               </p>
               <div class="menu-list-options search">
@@ -82,7 +82,7 @@
               @click="openMenu(event)"
             >
               <p
-                class="description-text uppercase big text-center color-03 toggle"
+                class="description-text uppercase big text-center toggle"
               >
                 {{ $t("global.nav.menu.title") }}
               </p>
@@ -276,11 +276,11 @@ const handleScrollNavbar = () => {
     if (scroll < prevScroll.value) {
       elmNavbarList.style.top = "0";
       elmNavbarList.style.boxShadow =
-        "7px 7px 5px -4px rgba(76, 69, 250, 0.37)";
+        "7px 7px 5px -4px rgba(240, 240, 240, 0.37)";
     }
   } else {
     elmNavbarList.style.top = "0";
-    elmNavbarList.style.boxShadow = "7px 7px 5px -4px rgba(76, 69, 250, 0.37)";
+    elmNavbarList.style.boxShadow = "7px 7px 5px -4px rgba(240, 240, 240, 0.37)";
   }
   prevScroll.value = scroll;
 };

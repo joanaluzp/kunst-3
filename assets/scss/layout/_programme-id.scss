@@ -10,20 +10,14 @@
   }
 }
 .programme-id-top {
-  background-color: $white02;
-  @include transition;
-  transition-delay: 0.5s;
   .id-information-wrapper {
     .row {
       & > div {
         &:first-child {
           margin: 50px 10px 20px 5px;
           .description-text {
-            border-bottom: 7px solid transparent;
-            @include transition;
             &:hover {
-              border-bottom: 7px solid $black;
-              transform: translateX(-20px);
+              text-decoration: underline;
             }
           }
         }
@@ -60,7 +54,6 @@
         height: 100%;
         object-fit: cover;
         @include transition;
-        transition-delay: 0.7s;
       }
     }
     .btn-ticket-wrapper {
@@ -68,12 +61,13 @@
       z-index: 2;
       bottom: 30px;
       right: 50px;
-      animation: strobe 0.3s infinite;
       .btn-ticket {
         cursor: pointer;
         padding: 20px;
         border-radius: 50px;
+        animation: strobe 0.3s infinite;
         &:hover {
+          animation: none;
           background-color: $color04;
         }
       }
@@ -119,13 +113,14 @@
             }
           }
           .share-item {
+            display: none;
             cursor: pointer;
             @include transition;
-            display: none;
-            border-bottom: 0 solid $white;
             &:hover {
               transform: translateX(-20px);
-              border-bottom: 7px solid $white;
+              .description-text {
+                text-decoration: underline;
+              }
             }
           }
         }
@@ -137,22 +132,21 @@
   position: absolute;
   z-index: 3;
   border-radius: 25px;
-  background-color: $grey03;
+  background-color: $white;
+  border: 1px solid $black;
   width: 95vw;
   max-width: 800px;
   height: auto;
   left: 50%;
   top: 100px;
   transform: translateX(-50%);
-  padding: 30px 25px;
-  box-shadow: 30px 40px 25px 10px rgba($white, 0.8);
+  padding: 15px;
   .ticket-modal-close {
     .description-text {
       @include transition;
       cursor: pointer;
       &:hover {
         font-family: $Fungal;
-        transform: translateX(5px);
       }
     }
   }
@@ -163,7 +157,7 @@
     .bottom {
       .ticket-item-wrapper {
         i {
-          color: $color04;
+          cursor: pointer;
           margin: 0 10px;
         }
       }
@@ -182,7 +176,7 @@
           width: 100%;
           height: auto;
           background-color: $white;
-          border: 2px solid $color02;
+          border: 2px solid $grey03;
           padding: 7px 10px;
           min-height: 50px;
           border-radius: 15px;
@@ -218,8 +212,9 @@
         .ticket-modal-submit {
           cursor: pointer;
           color: $black;
-          background-color: $color05;
-          padding: 10px 25px;
+          font-weight: 700;
+          background-color: $color02;
+          padding: 10px 20px;
           border-radius: 30px;
           width: fit-content;
           @include transition;
@@ -232,7 +227,7 @@
   .ticket-modal-wrapper {
     width: 90vw;
     top: 120px;
-    padding: 20px 60px;
+    padding: 30px 40px;
     .ticket-modal-info {
       .bottom {
         .input-wrapper {
@@ -265,41 +260,6 @@
 }
 @media (min-width: 992px) {
   .programme-id-top {
-    &:hover {
-      background-color: $color06;
-      .description-text,
-      .description-title {
-        color: $white;
-      }
-      .full-width-wrapper {
-        .btn-ticket-wrapper {
-          .btn-ticket {
-            .description-title {
-              color: $white;
-            }
-          }
-        }
-      }
-      .id-information-wrapper {
-        .row {
-          & > div {
-            &:first-child {
-              .description-text {
-                &:hover {
-                  border-bottom: 7px solid $white;
-                }
-              }
-            }
-            .btn {
-              border: 1px solid $white;
-              &:hover {
-                animation: strobe 0.3s infinite;
-              }
-            }
-          }
-        }
-      }
-    }
     .full-width-wrapper {
       marquee {
         visibility: hidden;
@@ -311,8 +271,9 @@
         position: relative;
         top: 5px;
         left: 0;
-        &:hover {
-          animation: translating 0.6s ease-in-out;
+      }
+      &:hover {
+        .id-img-wrapper {
           img {
             transform: scale(1.1);
           }
@@ -345,21 +306,17 @@
     position: absolute;
     z-index: 3;
     border-radius: 25px;
-    background-color: $grey03;
     width: 95vw;
     max-width: 800px;
     height: auto;
     left: 50%;
     top: 100px;
     transform: translateX(-50%);
-    padding: 30px 75px;
-    box-shadow: 30px 40px 25px 10px rgba($white, 0.8);
     .ticket-modal-close {
       .description-text {
         @include transition;
         &:hover {
           font-family: $Fungal;
-          transform: translateX(5px);
         }
       }
     }
@@ -368,7 +325,7 @@
         .ticket-modal-submit-wrapper {
           .ticket-modal-submit {
             &:hover {
-              animation: shake 0.3s ease-in-out infinite;
+              animation: shake 0.2s ease-in-out infinite;
             }
           }
         }

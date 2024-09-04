@@ -86,12 +86,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: $color05;
-  background: $black;
+  color: $color02;
+  background: $white02;
 }
 ::selection {
-  color: $color05;
-  background: $black;
+  color: $color02;
+  background: $white02;
 }
 
 #loader {
@@ -106,7 +106,6 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 100%;
     height: 100%;
     position: relative;
-    animation: strobe 0.2s linear infinite;
     img {
       position: absolute;
       display: block;
@@ -196,4 +195,8 @@ input[type="search"]::-webkit-search-results-decoration {
   100% {
     transform: rotate(360deg);
   }
+}
+
+@keyframes circle {
+  to { transform: rotate(360deg); }
 }

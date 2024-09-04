@@ -6,10 +6,10 @@ footer {
 .footer-wrapper {
   width: 100%;
   @include transition;
-  background-color: $color01;
+  background-color: $white02;
   border-radius: 100px 100px 0 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   justify-content: center;
   position: relative;
   bottom: -100px;
@@ -21,6 +21,8 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     a {
+      display: inline-flex;
+      align-items: center;
       margin: 5px;
       width: fit-content;
       .description-text {
@@ -31,6 +33,11 @@ footer {
         border-radius: 30px;
         text-overflow: ellipsis;
       }
+      &:hover {
+        .description-text {
+          text-decoration: underline;
+        }
+      }
     }
   }
   .right {
@@ -39,8 +46,6 @@ footer {
 }
 @media (min-width: 768px) {
   .footer-wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
     justify-content: center;
     .left {
       justify-content: start;
@@ -55,21 +60,6 @@ footer {
       margin-top: 0;
       .description-text {
         text-align: right;
-      }
-    }
-  }
-}
-@media(min-width: 992px){
-  .footer-wrapper {
-    .left {
-      a {
-        .description-text {
-            &:hover {
-            animation: strobe 0.3s infinite;
-            color: $black;
-            background-color: $color05;
-          }
-        }
       }
     }
   }
