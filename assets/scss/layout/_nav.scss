@@ -254,7 +254,6 @@
   z-index: 3;
   @include transition2(all, 1s, ease-in-out);
   border-radius: 25px;
-  animation: circle 15s ease-in-out infinite;
   .homepage-background-text {
     width: 100%;
     position: absolute;
@@ -277,6 +276,9 @@
 @media (min-width: 576px) {
   .navbar-menu {
     width: 80%;
+  }
+  .swiper {
+    animation: circle 25s ease-in-out infinite;
   }
 }
 @media (min-width: 768px) {

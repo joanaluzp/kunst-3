@@ -3696,7 +3696,6 @@ input[type=search]::-webkit-search-results-decoration {
   z-index: 3;
   transition: all 1s ease-in-out;
   border-radius: 25px;
-  animation: circle 15s ease-in-out infinite;
 }
 .swiper .homepage-background-text {
   width: 100%;
@@ -3720,6 +3719,9 @@ input[type=search]::-webkit-search-results-decoration {
 @media (min-width: 576px) {
   .navbar-menu {
     width: 80%;
+  }
+  .swiper {
+    animation: circle 25s ease-in-out infinite;
   }
 }
 @media (min-width: 768px) {
